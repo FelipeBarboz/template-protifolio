@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>STUDIO Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#848484",
+                        "surface-variant": "#e2e2e2",
+                        "secondary": "#5e5e5e",
+                        "primary-fixed": "#e2e2e2",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "surface-container": "#eeeeee",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-container-low": "#f3f3f4",
+                        "on-surface": "#1a1c1c",
+                        "surface": "#f9f9f9",
+                        "on-surface-variant": "#4c4546",
+                        "inverse-on-surface": "#f0f1f1",
+                        "inverse-surface": "#2f3131",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-background": "#1a1c1c",
+                        "outline": "#7e7576",
+                        "on-primary-fixed-variant": "#474747",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "inverse-primary": "#c6c6c6",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#1b1b1b",
+                        "surface-dim": "#dadada",
+                        "outline-variant": "#cfc4c5",
+                        "tertiary": "#000000",
+                        "primary": "#000000",
+                        "tertiary-container": "#1a1c1c",
+                        "background": "#f9f9f9",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#e4e2e2",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f9f9f9",
+                        "on-secondary-fixed-variant": "#464747",
+                        "on-tertiary-container": "#838484",
+                        "surface-tint": "#5e5e5e",
+                        "primary-container": "#1b1b1b",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#e8e8e8",
+                        "on-secondary-container": "#626263",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#e1dfdf",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-secondary-fixed": "#1b1c1c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "160px",
+                        "container-max": "1440px",
+                        "gutter": "24px",
+                        "element-gap": "12px",
+                        "edge-margin": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "display-xl": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                        "display-xl": ["80px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "500" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Grid/List Toggle Logic purely in CSS via radio inputs */
+        #grid-view-radio:checked ~ #view-container .grid-view { display: grid; }
+        #grid-view-radio:checked ~ #view-container .list-view { display: none; }
+        
+        #list-view-radio:checked ~ #view-container .grid-view { display: none; }
+        #list-view-radio:checked ~ #view-container .list-view { display: block; }
+        
+        #grid-view-radio:checked ~ .view-controls .grid-label { border-bottom-color: black; }
+        #list-view-radio:checked ~ .view-controls .list-label { border-bottom-color: black; }
+        
+        #grid-view-radio:checked ~ .view-controls .grid-label { font-weight: 700; color: #000; }
+        #list-view-radio:checked ~ .view-controls .list-label { font-weight: 700; color: #000; }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased min-h-screen flex flex-col relative">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full pt-[10px] bg-surface-container-lowest border-b border-surface-container-highest z-50 flex justify-between items-center px-16 h-20 transition-colors duration-150">
+<div class="flex-shrink-0">
+<a class="text-xl font-bold tracking-tighter text-on-surface" href="#">STUDIO</a>
+</div>
+<div class="hidden md:flex flex-1 justify-center space-x-12">
+<a class="font-label-caps text-label-caps text-on-surface border-b border-on-surface pb-1 transition-colors duration-150" href="#">WORK</a>
+<a class="font-label-caps text-label-caps text-on-primary-container hover:text-on-surface transition-colors duration-150" href="#">ABOUT</a>
+<a class="font-label-caps text-label-caps text-on-primary-container hover:text-on-surface transition-colors duration-150" href="#">NEWS</a>
+<a class="font-label-caps text-label-caps text-on-primary-container hover:text-on-surface transition-colors duration-150" href="#">CAREERS</a>
+</div>
+<div class="flex-shrink-0">
+<a class="inline-block bg-primary text-on-primary font-label-caps text-label-caps px-6 py-3 hover:bg-surface-tint transition-colors duration-150" href="#">GET IN TOUCH</a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 w-full max-w-container-max mx-auto px-edge-margin pt-[160px] pb-section-gap relative">
+<!-- Header & Toggle Controls -->
+<div class="flex justify-between items-end mb-gutter relative z-10">
+<h1 class="font-display-xl text-display-xl text-on-surface m-0">Selected Work</h1>
+<!-- Hidden Radios for CSS State -->
+<input checked="" class="hidden" id="grid-view-radio" name="view-toggle" type="radio"/>
+<input class="hidden" id="list-view-radio" name="view-toggle" type="radio"/>
+<!-- Visual Toggle UI -->
+<div class="view-controls flex items-center space-x-4 mb-2">
+<label class="grid-label font-label-caps text-label-caps text-on-primary-container cursor-pointer pb-1 border-b-2 border-transparent transition-all duration-150 hover:text-on-surface" for="grid-view-radio">GRID</label>
+<span class="w-px h-3 bg-surface-container-highest"></span>
+<label class="list-label font-label-caps text-label-caps text-on-primary-container cursor-pointer pb-1 border-b-2 border-transparent transition-all duration-150 hover:text-on-surface" for="list-view-radio">LIST</label>
+</div>
+</div>
+<!-- Dynamic View Container -->
+<div class="w-full relative" id="view-container">
+<!-- GRID VIEW -->
+<div class="grid-view grid grid-cols-1 md:grid-cols-2 gap-x-gutter gap-y-edge-margin w-full transition-opacity duration-300">
+<!-- Project Card 1 -->
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] mb-element-gap overflow-hidden bg-surface-container">
+<img alt="Minimalist architectural interior with concrete walls and modern furniture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale" data-alt="Minimalist architectural interior with concrete walls and modern furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbFUD9TUETKzgVMoAmkuwHnDZeyLWT06uzDgl6wH75GFAApcxedb3kUun_VaIL9Ux_lGbogTsVOBQNsdn606YfVNBWkd873iqP924gerB4mOgF2cbfYe64vN_e_Ls1mFvy5W1vFi_XRLEh9wbkTTkINH8Li_SDcmMAg9e33NlN2ydvzgesDkxeeSFMZ8H4i5AasJ1kMlJFEZpLHOau4y1jtR_h-JwOToCdM7wdaR6MqP4bFulZevbNBRC5t2h79UCTB68ynWz3Oq0"/>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-1">Crescent Residence</h2>
+<p class="font-body-sm text-body-sm text-on-primary-container">Architecture, Interior</p>
+</article>
+<!-- Project Card 2 -->
+<article class="group cursor-pointer mt-0 md:mt-[80px]">
+<div class="w-full aspect-[4/5] mb-element-gap overflow-hidden bg-surface-container">
+<img alt="Clean structured workspace with minimal desk accessories and soft lighting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale" data-alt="Clean structured workspace with minimal desk accessories and soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgWpq821FSDxXYmoJLUrG2BBuaCh3HiL2-fuwz8hxNHYUNdKoHoaOkgCLDxMgXkFR3G_56TPHLjU3Mk3G6j4QyUcR5na8ZjNqAjJdxSoWU8d1s5cPwupBUQnfFXkoWsEL4WTto4bRIjxsjiaYZCddEpn2Cz4tfVfj-TuObxy-vjQAJmCIZNyBbugf0TVxOI7gqQHV32LL2X-I5cvbQjBSSVdoS-Wj5JcYbTfzGkKIG5z--g3bREOXl2plr9bSBMIgf0tUHoXKmaNs"/>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-1">Forma Office</h2>
+<p class="font-body-sm text-body-sm text-on-primary-container">Spatial Design</p>
+</article>
+<!-- Project Card 3 -->
+<article class="group cursor-pointer">
+<div class="w-full aspect-[4/5] mb-element-gap overflow-hidden bg-surface-container">
+<img alt="Abstract sculptural elements in a neutral gallery setting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale" data-alt="Abstract sculptural elements in a neutral gallery setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOpgb9CLP6HJfH6p_fJB8jMbWpm6HXszDF8wy_n_b-D6UvCdduvQKzhN2WcNDXRGGIPyOv890QkuEdhTFjFfrSv9PMr2FMDQLGhhYdP7IZm0wgy7EW-9DolSMdwuqARZh2lb5drD-CgwFhCmLqamHKeo7XKu0Xcq7ttjsDt0ih7M2Mvy1vayyIK1WnQUG6aB1tczobA5thuSQLzthgezMXIzV_QGi7Lvq9S4VX5vZAAplVJhBopl9_P2AcgKoht0qNIfQrqLH4qj4"/>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-1">Gallery Pavilion</h2>
+<p class="font-body-sm text-body-sm text-on-primary-container">Exhibition</p>
+</article>
+<!-- Project Card 4 -->
+<article class="group cursor-pointer mt-0 md:mt-[80px]">
+<div class="w-full aspect-[4/5] mb-element-gap overflow-hidden bg-surface-container">
+<img alt="Detail shot of modernist building facade with clean lines and shadows" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter grayscale" data-alt="Detail shot of modernist building facade with clean lines and shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB__MhOGDI2EmGnFJvHSCD2X7toiM-18Btty3OihWNIGXCCRELVT84S3_8fBH_X73joyEiqraXXIBq1G6qcRbW_G66_rEftrtLak92lP0K_JSjhQJjOno_AMMb0jaP-tGeNOzXJEqarqh8GSDJW1W0PI48dqBieDY5zpcrSS-88N8EL4DE_uwqlvIXLgEBApTmqNa1mC56yX2DKuNQsf6Kgk7EQQNZpn4bdzikFihmFR1iPAD3jdNuRgmBV6aEX26xyp1nJIogZ7Sk"/>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-1">Apex Tower</h2>
+<p class="font-body-sm text-body-sm text-on-primary-container">Architecture</p>
+</article>
+</div>
+<!-- LIST VIEW -->
+<div class="list-view w-full transition-opacity duration-300">
+<!-- Table Header -->
+<div class="grid grid-cols-12 gap-gutter border-b border-surface-container-highest pb-4 mb-4">
+<div class="col-span-5 md:col-span-4 font-label-caps text-label-caps text-on-primary-container">PROJECT</div>
+<div class="col-span-3 md:col-span-4 hidden md:block font-label-caps text-label-caps text-on-primary-container">CLIENT</div>
+<div class="col-span-4 md:col-span-3 font-label-caps text-label-caps text-on-primary-container">INDUSTRY</div>
+<div class="col-span-3 md:col-span-1 text-right font-label-caps text-label-caps text-on-primary-container">YEAR</div>
+</div>
+<!-- List Items -->
+<div class="border-b border-surface-container-highest group relative">
+<a class="grid grid-cols-12 gap-gutter py-6 items-center hover:bg-surface-container-low transition-colors duration-150" href="#">
+<div class="col-span-5 md:col-span-4 font-body-lg text-body-lg text-on-surface font-medium">Crescent Residence</div>
+<div class="col-span-3 md:col-span-4 hidden md:block font-body-sm text-body-sm text-on-primary-container">Private</div>
+<div class="col-span-4 md:col-span-3 font-body-sm text-body-sm text-on-primary-container">Architecture</div>
+<div class="col-span-3 md:col-span-1 text-right font-body-sm text-body-sm text-on-primary-container">2024</div>
+</a>
+</div>
+<div class="border-b border-surface-container-highest group relative">
+<a class="grid grid-cols-12 gap-gutter py-6 items-center hover:bg-surface-container-low transition-colors duration-150" href="#">
+<div class="col-span-5 md:col-span-4 font-body-lg text-body-lg text-on-surface font-medium">Forma Office</div>
+<div class="col-span-3 md:col-span-4 hidden md:block font-body-sm text-body-sm text-on-primary-container">Tech Corp</div>
+<div class="col-span-4 md:col-span-3 font-body-sm text-body-sm text-on-primary-container">Spatial Design</div>
+<div class="col-span-3 md:col-span-1 text-right font-body-sm text-body-sm text-on-primary-container">2023</div>
+</a>
+</div>
+<div class="border-b border-surface-container-highest group relative">
+<a class="grid grid-cols-12 gap-gutter py-6 items-center hover:bg-surface-container-low transition-colors duration-150" href="#">
+<div class="col-span-5 md:col-span-4 font-body-lg text-body-lg text-on-surface font-medium">Gallery Pavilion</div>
+<div class="col-span-3 md:col-span-4 hidden md:block font-body-sm text-body-sm text-on-primary-container">City Arts Council</div>
+<div class="col-span-4 md:col-span-3 font-body-sm text-body-sm text-on-primary-container">Exhibition</div>
+<div class="col-span-3 md:col-span-1 text-right font-body-sm text-body-sm text-on-primary-container">2023</div>
+</a>
+</div>
+<div class="border-b border-surface-container-highest group relative">
+<a class="grid grid-cols-12 gap-gutter py-6 items-center hover:bg-surface-container-low transition-colors duration-150" href="#">
+<div class="col-span-5 md:col-span-4 font-body-lg text-body-lg text-on-surface font-medium">Apex Tower</div>
+<div class="col-span-3 md:col-span-4 hidden md:block font-body-sm text-body-sm text-on-primary-container">Horizon Dev</div>
+<div class="col-span-4 md:col-span-3 font-body-sm text-body-sm text-on-primary-container">Architecture</div>
+<div class="col-span-3 md:col-span-1 text-right font-body-sm text-body-sm text-on-primary-container">2022</div>
+</a>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="w-full flex justify-between items-center px-16 py-12 bg-surface-container-lowest border-t border-surface-container-highest mt-auto">
+<div>
+<p class="font-label-caps text-label-caps text-on-surface">© 2024 STUDIO. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex space-x-8">
+<a class="font-label-caps text-label-caps text-on-primary-container hover:text-on-surface hover:underline transition-colors duration-150" href="#">INSTAGRAM</a>
+<a class="font-label-caps text-label-caps text-on-primary-container hover:text-on-surface hover:underline transition-colors duration-150" href="#">LINKEDIN</a>
+<a class="font-label-caps text-label-caps text-on-primary-container hover:text-on-surface hover:underline transition-colors duration-150" href="#">TWITTER</a>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>STUDIO - Work List</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#5e5e5e",
+                        "primary-container": "#1b1b1b",
+                        "on-tertiary-container": "#838484",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#464747",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e8e8e8",
+                        "on-secondary-container": "#626263",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "secondary-container": "#e1dfdf",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#1a1c1c",
+                        "background": "#f9f9f9",
+                        "primary": "#000000",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#e4e2e2",
+                        "surface-bright": "#f9f9f9",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "inverse-primary": "#c6c6c6",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-background": "#1a1c1c",
+                        "inverse-surface": "#2f3131",
+                        "outline": "#7e7576",
+                        "on-primary-fixed-variant": "#474747",
+                        "surface-dim": "#dadada",
+                        "outline-variant": "#cfc4c5",
+                        "on-primary-fixed": "#1b1b1b",
+                        "tertiary": "#000000",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e2e2e2",
+                        "secondary": "#5e5e5e",
+                        "primary-fixed": "#e2e2e2",
+                        "on-primary-container": "#848484",
+                        "surface-container-low": "#f3f3f4",
+                        "on-surface": "#1a1c1c",
+                        "surface": "#f9f9f9",
+                        "on-surface-variant": "#4c4546",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-container": "#eeeeee"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "element-gap": "12px",
+                        "edge-margin": "64px",
+                        "container-max": "1440px",
+                        "section-gap": "160px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter", "sans-serif"],
+                        "body-sm": ["Inter", "sans-serif"],
+                        "display-xl": ["Inter", "sans-serif"],
+                        "headline-md": ["Inter", "sans-serif"],
+                        "headline-lg": ["Inter", "sans-serif"],
+                        "body-lg": ["Inter", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "display-xl": ["80px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-primary min-h-screen flex flex-col antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="bg-white dark:bg-neutral-950 full-width pt-[10px] pb-[160px] border-b border-neutral-100 dark:border-neutral-900 z-50 relative">
+<div class="flex justify-between items-center w-full px-16">
+<!-- Brand Logo -->
+<a class="text-xl font-bold tracking-tighter text-neutral-900 dark:text-neutral-50" href="#">STUDIO</a>
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center gap-12 font-inter text-[11px] tracking-[0.1em] font-medium uppercase">
+<a class="text-neutral-900 dark:text-neutral-50 border-b border-neutral-900 dark:border-neutral-50 pb-1 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-150 scale-100 active:opacity-80" href="#">WORK</a>
+<a class="text-neutral-400 dark:text-neutral-500 pb-1 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-150 scale-100 active:opacity-80" href="#">ABOUT</a>
+<a class="text-neutral-400 dark:text-neutral-500 pb-1 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-150 scale-100 active:opacity-80" href="#">NEWS</a>
+<a class="text-neutral-400 dark:text-neutral-500 pb-1 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-150 scale-100 active:opacity-80" href="#">CAREERS</a>
+</nav>
+<!-- Trailing Action -->
+<a class="bg-primary text-on-primary font-label-caps text-label-caps py-3 px-6 hover:bg-surface-tint transition-colors duration-150 scale-100 active:opacity-80" href="#">
+                GET IN TOUCH
+            </a>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="flex-grow px-edge-margin w-full max-w-[1920px] mx-auto">
+<!-- Header & Controls -->
+<div class="flex justify-between items-end mb-16 pt-8 border-b border-outline-variant pb-8">
+<h1 class="font-headline-lg text-headline-lg text-primary">All Projects (12)</h1>
+<!-- View Toggle -->
+<div class="flex items-center gap-4 font-label-caps text-label-caps">
+<button class="text-on-surface-variant hover:text-primary transition-colors duration-150">GRID</button>
+<span class="text-outline-variant">|</span>
+<button class="text-primary border-b border-primary pb-0.5">LIST VIEW</button>
+</div>
+</div>
+<!-- List View Table -->
+<div class="w-full flex flex-col">
+<!-- Table Header -->
+<div class="grid grid-cols-12 gap-gutter font-label-caps text-label-caps text-on-surface-variant border-b border-outline-variant pb-4 mb-2">
+<div class="col-span-4">PROJECT</div>
+<div class="col-span-3">CLIENT</div>
+<div class="col-span-3">INDUSTRY</div>
+<div class="col-span-2 text-right">YEAR</div>
+</div>
+<!-- Table Rows -->
+<!-- Row 1 -->
+<a class="group block relative grid grid-cols-12 gap-gutter py-8 border-b border-outline-variant hover:bg-surface transition-colors duration-300" href="#">
+<div class="col-span-4 flex items-center font-headline-md text-headline-md text-primary">Casa Blanc</div>
+<div class="col-span-3 flex items-center font-body-sm text-body-sm text-on-surface-variant">Private Client</div>
+<div class="col-span-3 flex items-center font-body-sm text-body-sm text-on-surface-variant">Residential Architecture</div>
+<div class="col-span-2 flex items-center justify-end font-body-sm text-body-sm text-primary">2023</div>
+<!-- Hover Preview Image -->
+<div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[480px] aspect-[4/3] bg-surface-variant z-40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none shadow-2xl overflow-hidden">
+<img alt="Modern minimalist white residential exterior architecture with clean lines and warm lighting" class="w-full h-full object-cover" data-alt="Modern minimalist white residential exterior architecture with clean lines and warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLf9Y9G4qWI25zgRybhuLVzDhedkU3coh-NruUnp7TGv5YlzvZtUxYRrhFQV89RLfpvmo8N08b5TsGL8ItgUxYnRdotmmntgSz-mEP0Eq3fXyKr1hYCO1mA_jol4KxJ5sKTBMk1vRyN8JWspFlpmKnjC30e4NwxKAClzUjsOF9CppDcvZekdb6uCt65Qfh3zAqJWEvoBGzweoF09p3zSYyEMicKIcrM0GOPhjJdgXD-EIxgdHgCl7UJoUJdrjo7hZ7c53mk0JnHVw"/>
+</div>
+</a>
+<!-- Row 2 -->
+<a class="group block relative grid grid-cols-12 gap-gutter py-8 border-b border-outline-variant hover:bg-surface transition-colors duration-300" href="#">
+<div class="col-span-4 flex items-center font-headline-md text-headline-md text-primary">The Onyx Residence</div>
+<div class="col-span-3 flex items-center font-body-sm text-body-sm text-on-surface-variant">The Onyx Group</div>
+<div class="col-span-3 flex items-center font-body-sm text-body-sm text-on-surface-variant">Interior Design</div>
+<div class="col-span-2 flex items-center justify-end font-body-sm text-body-sm text-primary">2023</div>
+<!-- Hover Preview Image -->
+<div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[480px] aspect-[4/3] bg-surface-variant z-40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none shadow-2xl overflow-hidden">
+<img alt="Dark moody luxury interior design living room with black marble accents and modern furniture" class="w-full h-full object-cover" data-alt="Dark moody luxury interior design living room with black marble accents and modern furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJSYHEeDOkV7CuqRKxRd4sAkfczefWxHYJ0Fon02dLRbCdcw5WnvhVdpZifXhhAvz517_dOU_wqersH4gzEUIjHFPSfDMkLTPwTBk_w25D2i8evynLjNcvx2RmFcCFXtVeaowxwOhR3v5yzbshrcBZycdBayi6yWthBYySYYtraC4dHtABxmCREvWiRmvkiAogqn_V4Ynseb6WolLvSf3Yv4sJKVnbbLPS-g_1rYaNq0irh8Yf2YA17_32NKc4c-rmS_xNoHDcWfs"/>
+</div>
+</a>
+<!-- Row 3 -->
+<a class="group block relative grid grid-cols-12 gap-gutter py-8 border-b border-outline-variant hover:bg-surface transition-colors duration-300" href="#">
+<div class="col-span-4 flex items-center font-headline-md text-headline-md text-primary">Gallery House</div>
+<div class="col-span-3 flex items-center font-body-sm text-body-sm text-on-surface-variant">Studio Arts</div>
+<div class="col-span-3 flex items-center font-body-sm text-body-sm text-on-surface-variant">Renovation</div>
+<div class="col-span-2 flex items-center justify-end font-body-sm text-body-sm text-primary">2022</div>
+<!-- Hover Preview Image -->
+<div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[480px] aspect-[4/3] bg-surface-variant z-40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none shadow-2xl overflow-hidden">
+<img alt="Spacious minimalist room with large artwork on white walls, polished concrete floor, bright natural light" class="w-full h-full object-cover" data-alt="Spacious minimalist room with large artwork on white walls, polished concrete floor, bright natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARRRNxCFp-A2AVIsY6yCLvQJy2xYleHqiapXQIUoEr_jr_H9NFjoh8KYme9Ql4p4IdvUwfZpN9H8pUMBXfJ4qiXA5AMdR_fSNgpmnJPlZaB-mdmrXzymSjcRSA2hxEsFFG4TjtLulxUG9tajPa8SLFo_QGmwTnkWYEEdvmV-yJDyMmg6eUfdZfyoXJpgg5fyN-xZHIipRpmEmDsFlI7iA2CuG_9zrw2Yj-VC9q87RqPdd3I1Vg_FTNHR_EZSCaj5Rj7mpfnNUMaVM"/>
+</div>
+</a>
+<!-- Row 4 -->
+<a class="group block relative grid grid-cols-12 gap-gutter py-8 border-b border-outline-variant hover:bg-surface transition-colors duration-300" href="#">
+<div class="col-span-4 flex items-center font-headline-md text-headline-md text-primary">Villa Nova</div>
+<div class="col-span-3 flex items-center font-body-sm text-body-sm text-on-surface-variant">Nova Estates</div>
+<div class="col-span-3 flex items-center font-body-sm text-body-sm text-on-surface-variant">Residential Architecture</div>
+<div class="col-span-2 flex items-center justify-end font-body-sm text-body-sm text-primary">2022</div>
+<!-- Hover Preview Image -->
+<div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[480px] aspect-[4/3] bg-surface-variant z-40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none shadow-2xl overflow-hidden">
+<img alt="Contemporary concrete villa architecture integrated into a cliffside with ocean views at dusk" class="w-full h-full object-cover" data-alt="Contemporary concrete villa architecture integrated into a cliffside with ocean views at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3JoN2pIfb-JJ43ol5X-926ujOK3EJ9mTg0BtWxpzW8n7dG0BwMlfpuznQsykr5H6j3AOUZIcdJvqCD6ghP371tajwL1fi1lVX2DoIsT2oiyXjiyCStQUbUCae2SLr5P0zDrt4INBTMtslGeI2xsfd87ZARla3-exTl4NxJ3Cw33lteg7B1dfUitXxVSwY39t9uhpN9fbVepijFk_rca-PochWVhXlVxI5ekWpjNl1cqbEPgqNK4TKBFi7QS3j-CSGzgsqSDpOzRQ"/>
+</div>
+</a>
+<!-- Row 5 -->
+<a class="group block relative grid grid-cols-12 gap-gutter py-8 border-b border-outline-variant hover:bg-surface transition-colors duration-300" href="#">
+<div class="col-span-4 flex items-center font-headline-md text-headline-md text-primary">Nordic Echo</div>
+<div class="col-span-3 flex items-center font-body-sm text-body-sm text-on-surface-variant">Nordic Living</div>
+<div class="col-span-3 flex items-center font-body-sm text-body-sm text-on-surface-variant">Interior Design</div>
+<div class="col-span-2 flex items-center justify-end font-body-sm text-body-sm text-primary">2021</div>
+<!-- Hover Preview Image -->
+<div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[480px] aspect-[4/3] bg-surface-variant z-40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none shadow-2xl overflow-hidden">
+<img alt="Light wood paneled interior with minimalist Scandinavian furniture, soft natural daylight, cozy texture" class="w-full h-full object-cover" data-alt="Light wood paneled interior with minimalist Scandinavian furniture, soft natural daylight, cozy texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApL649sj9Fh82qSrpePkKac7sg_NeAy9PsaRsLKfF6oTtZP-hD2DWL2JOsjWiy2ZKP_emy3IBrCUjouqhNGqX3dI2aA8tbzyLDRIPtK4nZU7_WzVO1wU6bxTA2namIwvVxiObjP8kSS2qg2TkVkc39DQGofxem7p9CKI7-xxjwcgpMV0-ejS_Evmp-zqsXmnQkP9tIaZQDbXKdZ07Mlo88poxXce0bXFWYygBIKpEmIjoBA9vEGbSyIu-h_OcqFA37vct7lfU1Pns"/>
+</div>
+</a>
+<!-- Row 6 -->
+<a class="group block relative grid grid-cols-12 gap-gutter py-8 border-b border-outline-variant hover:bg-surface transition-colors duration-300" href="#">
+<div class="col-span-4 flex items-center font-headline-md text-headline-md text-primary">The Retreat</div>
+<div class="col-span-3 flex items-center font-body-sm text-body-sm text-on-surface-variant">Hospitality Intl</div>
+<div class="col-span-3 flex items-center font-body-sm text-body-sm text-on-surface-variant">Hospitality Design</div>
+<div class="col-span-2 flex items-center justify-end font-body-sm text-body-sm text-primary">2021</div>
+<!-- Hover Preview Image -->
+<div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[480px] aspect-[4/3] bg-surface-variant z-40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none shadow-2xl overflow-hidden">
+<img alt="High-end boutique hotel lobby design with natural stone pillars, indoor plants, and muted earthy tones" class="w-full h-full object-cover" data-alt="High-end boutique hotel lobby design with natural stone pillars, indoor plants, and muted earthy tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbpwNcMsasEVvadKkvhhn6nACAjETzMV6-FPA77puNM3YGVJQO9sJddVBf2N9nOPnQQgnGo54MrdJnA1mgRtrYe3uqY2vUtMbvPP3qpb6InX1fxWs-5JaFnScfMLYFGF1AnG9zya2pHqmO73-Eum6kUPuNvSmvkd9WHx1Ii6LErJ_5vhuJveGhGkGD9HQGmrdniQgqD0faiY2FBGF8qZ9WfSsm6dhlpdWn0HxYxZbuM7NsqBJucw8kX1nZaYhm_jY-E6ZdA_BcinE"/>
+</div>
+</a>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-neutral-950 full-width mt-20 border-t border-neutral-100 dark:border-neutral-900 z-10 relative">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-16 py-12 gap-8">
+<p class="font-inter text-[10px] tracking-[0.15em] font-light uppercase text-neutral-900 dark:text-neutral-50 opacity-100">
+                © 2024 STUDIO. ALL RIGHTS RESERVED.
+            </p>
+<nav class="flex items-center gap-8 font-inter text-[10px] tracking-[0.15em] font-light uppercase">
+<a class="text-neutral-400 dark:text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-150 opacity-100 active:opacity-70" href="#">INSTAGRAM</a>
+<a class="text-neutral-400 dark:text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-150 opacity-100 active:opacity-70" href="#">LINKEDIN</a>
+<a class="text-neutral-400 dark:text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-150 opacity-100 active:opacity-70" href="#">TWITTER</a>
+</nav>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>MONOLITH - Manifesto</title>
+<!-- Google Fonts: Epilogue and Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700;800&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#e2e2e2",
+                        "outline-variant": "#444748",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "tertiary-fixed": "#e4e2e1",
+                        "on-secondary-fixed-variant": "#474646",
+                        "on-error": "#690005",
+                        "secondary-container": "#4a4949",
+                        "surface-container": "#1f1f1f",
+                        "on-background": "#e2e2e2",
+                        "error-container": "#93000a",
+                        "error": "#ffb4ab",
+                        "on-tertiary": "#303030",
+                        "on-secondary": "#313030",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "tertiary": "#ffffff",
+                        "on-primary-container": "#636565",
+                        "surface": "#131313",
+                        "secondary": "#c8c6c5",
+                        "surface-container-lowest": "#0e0e0e",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "surface-bright": "#393939",
+                        "surface-tint": "#c6c6c7",
+                        "surface-container-high": "#2a2a2a",
+                        "outline": "#8e9192",
+                        "inverse-surface": "#e2e2e2",
+                        "inverse-primary": "#5d5f5f",
+                        "primary-container": "#e2e2e2",
+                        "tertiary-container": "#e4e2e1",
+                        "on-secondary-container": "#bab8b7",
+                        "surface-variant": "#353535",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "on-tertiary-container": "#656464",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "on-primary": "#2f3131",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-error-container": "#ffdad6",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-primary-fixed-variant": "#454747",
+                        "surface-dim": "#131313",
+                        "surface-container-low": "#1b1b1b",
+                        "surface-container-highest": "#353535",
+                        "background": "#131313",
+                        "on-surface-variant": "#c4c7c8",
+                        "primary": "#ffffff",
+                        "inverse-on-surface": "#303030",
+                        "primary-fixed": "#e2e2e2",
+                        "on-primary-fixed": "#1a1c1c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "element-gap": "20px",
+                        "section-gap": "160px",
+                        "nav-padding": "10px",
+                        "grid-margin": "40px",
+                        "base-unit": "10px",
+                        "footer-padding": "10px"
+                    },
+                    "fontFamily": {
+                        "display-xl": ["Epilogue"],
+                        "headline-md": ["Epilogue"],
+                        "label-sm": ["Inter"],
+                        "headline-xl": ["Epilogue"],
+                        "display-lg": ["Epilogue"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-xl": ["160px", { "lineHeight": "0.9", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "headline-md": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-xl": ["80px", { "lineHeight": "1.0", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg": ["120px", { "lineHeight": "0.95", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }],
+                        "body-lg": ["20px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col selection:bg-primary selection:text-background overflow-x-hidden antialiased">
+<!-- Shared TopAppBar Component -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-surface-variant p-nav-padding w-full shrink-0">
+<div class="flex items-center gap-4 text-primary">
+<div class="w-4 h-4">
+<svg class="w-full h-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-primary font-label-sm text-label-sm uppercase m-0 p-0">MONOLITH</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-primary font-label-sm text-label-sm uppercase hover:text-secondary transition-colors duration-300" href="#">MANIFESTO</a>
+<a class="text-primary font-label-sm text-label-sm uppercase hover:text-secondary transition-colors duration-300" href="#">ARCHIVE</a>
+<a class="text-primary font-label-sm text-label-sm uppercase hover:text-secondary transition-colors duration-300" href="#">CONTACT</a>
+</div>
+</div>
+</header>
+<!-- Main Centralized Content -->
+<main class="flex-1 flex flex-col items-center justify-center py-section-gap px-grid-margin w-full max-w-[1440px] mx-auto gap-section-gap">
+<!-- Large Manifesto Text -->
+<div class="w-full flex justify-center px-4">
+<h1 class="text-primary font-display-lg text-display-lg uppercase text-center max-w-[1200px] m-0 leading-[0.85]">
+                WE REJECT THE SUPERFLUOUS. WE EMBRACE THE VOID.
+            </h1>
+</div>
+<!-- Central Column: Image & Text -->
+<div class="flex flex-col items-center gap-element-gap w-full max-w-[960px]">
+<!-- Horizontal Rectangular Image -->
+<div class="w-full aspect-[21/9] border border-surface-variant p-1 bg-surface-container-lowest">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover grayscale" data-alt="High contrast black and white photo of stark geometric concrete architecture with harsh angular shadows, emphasizing minimal brutalist structure" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6Sxuz4ogsD-IX9WpvDMyQZ2xd1F7es9RVWsDFTWKhShmbSCpAqNFNpSObrWBLYP3clsHYw_ROEMjb1ZOFaU0KI41jEllim12MIDjb2n8hQnz3tumLWu2Ix0ubZu8lO0ahIx0bdZlN7wKbGGeRRWo5-xItirJnWnwhCPBGQGzH0LdB4Xst2TP4zqJvOLw6EEqqstyQHnyNz6pEIaCtvS0reZn0Re9Lo7x293LLTdEFSgRosEvZCHR8LFuYF037ehxsHST0mLxfx64');">
+</div>
+</div>
+<!-- Small Block of Centered Text -->
+<p class="text-secondary font-body-md text-body-md uppercase text-center m-0 px-4">
+                TRUE DESIGN EMERGES WHEN THERE IS NOTHING LEFT TO TAKE AWAY. FORM IS ABSOLUTE.
+            </p>
+</div>
+</main>
+<!-- Shared Footer Component -->
+<footer class="flex flex-col md:flex-row items-center justify-between p-footer-padding border-t border-solid border-surface-variant w-full shrink-0 gap-6 @container">
+<p class="text-secondary font-label-sm text-label-sm uppercase m-0">© 2024 MONOLITH</p>
+<div class="flex items-center gap-6">
+<a class="text-secondary font-label-sm text-label-sm uppercase hover:text-primary transition-colors duration-300" href="#">TERMS</a>
+<a class="text-secondary font-label-sm text-label-sm uppercase hover:text-primary transition-colors duration-300" href="#">PRIVACY</a>
+</div>
+</footer>
+</body></html>

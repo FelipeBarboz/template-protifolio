@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>STUDIO - Portfolio Grid</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#c8c6c5",
+                        "primary": "#000000",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "on-primary-fixed-variant": "#474646",
+                        "surface-tint": "#5f5e5e",
+                        "on-background": "#1a1c1c",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "tertiary-container": "#191c1e",
+                        "tertiary-fixed": "#e1e2e4",
+                        "on-primary-fixed": "#1c1b1b",
+                        "surface-container-high": "#e8e8e8",
+                        "secondary-fixed-dim": "#c0c7d6",
+                        "secondary-fixed": "#dce2f3",
+                        "surface-container-low": "#f3f3f4",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c5c6c8",
+                        "primary-fixed": "#e5e2e1",
+                        "on-secondary-fixed-variant": "#404754",
+                        "on-tertiary-container": "#828486",
+                        "surface-variant": "#e2e2e2",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dadada",
+                        "on-secondary-container": "#5e6572",
+                        "secondary": "#585f6c",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#000000",
+                        "on-surface": "#1a1c1c",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c4c7c7",
+                        "surface-container": "#eeeeee",
+                        "secondary-container": "#dce2f3",
+                        "on-primary-container": "#858383",
+                        "on-secondary-fixed": "#151c27",
+                        "inverse-surface": "#2f3131",
+                        "on-error": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f0f1f1",
+                        "background": "#f9f9f9",
+                        "on-surface-variant": "#444748",
+                        "primary-container": "#1c1b1b",
+                        "on-tertiary-fixed": "#191c1e",
+                        "outline": "#747878"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "lg": "4rem",
+                        "gutter": "24px",
+                        "xs": "0.5rem",
+                        "md": "2rem",
+                        "sm": "1rem",
+                        "margin": "32px",
+                        "unit": "4px",
+                        "xl": "8rem"
+                    },
+                    "fontFamily": {
+                        "display-xl": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-xl": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "label-sm": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "headline-md": ["20px", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar Component -->
+<nav class="bg-white dark:bg-black text-neutral-900 dark:text-neutral-100 font-sans text-xs tracking-[0.2em] font-medium uppercase docked full-width top-0 sticky z-50 border-b border-neutral-100 dark:border-neutral-900 flat no shadows flex justify-between items-center w-full px-6 py-8 md:px-12 max-w-[1440px] mx-auto">
+<div class="text-xl font-black tracking-tighter text-neutral-900 dark:text-neutral-50">
+            STUDIO
+        </div>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center gap-10">
+<a class="text-neutral-900 dark:text-neutral-100 border-b border-neutral-900 dark:border-neutral-100 pb-1 opacity-100 hover:opacity-70 active:scale-95 transition-all" href="#">WORK</a>
+<a class="text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors duration-300 opacity-100 hover:opacity-70 active:scale-95" href="#">ABOUT</a>
+<a class="text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors duration-300 opacity-100 hover:opacity-70 active:scale-95" href="#">NEWS</a>
+<a class="text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors duration-300 opacity-100 hover:opacity-70 active:scale-95" href="#">CAREERS</a>
+</div>
+<!-- Mobile Menu Trigger -->
+<button class="md:hidden flex items-center justify-center p-2 text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-[1440px] mx-auto px-6 md:px-12">
+<!-- Header & View Toggle -->
+<header class="mt-[160px] flex flex-col md:flex-row md:items-end justify-between mb-24 gap-8">
+<h1 class="font-headline-lg text-headline-lg text-primary uppercase">All Projects</h1>
+<div class="flex items-center gap-8">
+<button class="font-label-sm text-label-sm text-primary uppercase tracking-[0.1em] border-b border-primary pb-1 transition-all">
+                    Grid View
+                </button>
+<a class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-[0.1em] hover:text-primary transition-colors pb-1 border-b border-transparent hover:border-primary/30" href="/list-view">
+                    List View
+                </a>
+</div>
+</header>
+<!-- Project Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-gutter gap-y-24">
+<!-- Grid Item 1 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-dim mb-6 overflow-hidden relative">
+<img alt="Modern minimalist living room" class="w-full h-full object-cover transform group-hover:scale-[1.03] transition-transform duration-700 ease-out filter grayscale group-hover:grayscale-0" data-alt="stark high contrast architectural photography of a minimalist interior living room with poured concrete floors and stark shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeYHdgN7-3_MKpMos3MpbSRYqfWkVJFk-qkjJiagjrLO-idltIFB_oPwhgmoXZHvDbewoazP8lobUOspW0_aS7CEZ5YlLBj8NUtbwC8LtkunuhQGg6EWzCUrNfsYiykTlvesXbZ21sVUud_gZpCsDP_ZNWawViOdsV1RLx9lZ0boprp1Bk8diu1aXOyU_3BgDQQ2XGK5D90lurjjolQC5SEwh0Z7WK26H0LNrW9uZ7CwxJGjfETP7elcG8Wr1oPhGB0kjkqAMNCWc"/>
+</div>
+<div class="flex justify-between items-baseline">
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-primary uppercase">Villa Lemoine</h2>
+<span class="font-body-md text-body-md text-on-surface-variant mt-1">Bordeaux, France</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2023</span>
+</div>
+</article>
+<!-- Grid Item 2 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-dim mb-6 overflow-hidden relative">
+<img alt="Minimalist geometric staircase" class="w-full h-full object-cover transform group-hover:scale-[1.03] transition-transform duration-700 ease-out filter grayscale group-hover:grayscale-0" data-alt="abstract architectural detail of a minimal white spiral staircase casting harsh geometric shadows in natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrecUpfF1iNiH6VPesRmaDtzD2ucWRE0loGJ41dkzsSp7vBNFku1pwf9yT5J-TJzMYKx_1YmKyAoqBPhXZyqKq0lAU_WrAcFzB5-LAaf4oyZPrVjxDg4F746oj09WxGkBhm1VHNdCpLG-2mAty1BONSvS202Fx3tE2FufYYbRvW_OPH-h6CmjeQpnGtbT917w_dyn_Htn1xkdnC8HMu9vpSrllO_0QIqh6pP2tgGX2WSR-qo9FsEBh0HYOyzsF5PX0tZ8ulfxZjQo"/>
+</div>
+<div class="flex justify-between items-baseline">
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-primary uppercase">Kunsthaus</h2>
+<span class="font-body-md text-body-md text-on-surface-variant mt-1">Zurich, Switzerland</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2022</span>
+</div>
+</article>
+<!-- Grid Item 3 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-dim mb-6 overflow-hidden relative">
+<img alt="Modern concrete exterior facade" class="w-full h-full object-cover transform group-hover:scale-[1.03] transition-transform duration-700 ease-out filter grayscale group-hover:grayscale-0" data-alt="exterior shot of a brutalist concrete residence surrounded by arid landscape under a clear sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAce5yfhbpSWimnXPjBamQhAnLWTGrJ_NLPECsYtCuJ-RkH9rfV28ZTB65oVEesOXAlTmxwnQkYlb_M51aiq-4-U3oI9sESc13sBsaxppQoWN_tduqB4ujsj1rcJt2OSchrNJBWSTQdNAsscWfgfLaFiwoi52fHDQdx4bbkBxu76vZ1v9FmQi5XCdiqnVAV-wg7HDtJXWou7VhNx9xvyccqAKPRzHFh_xwgw4QHnHcgW-7c109SPysZOv6R1xskcPrcXfpqw3bNBLE"/>
+</div>
+<div class="flex justify-between items-baseline">
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-primary uppercase">Casa Azul</h2>
+<span class="font-body-md text-body-md text-on-surface-variant mt-1">Oaxaca, Mexico</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2023</span>
+</div>
+</article>
+<!-- Grid Item 4 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-dim mb-6 overflow-hidden relative">
+<img alt="Minimalist contemporary kitchen" class="w-full h-full object-cover transform group-hover:scale-[1.03] transition-transform duration-700 ease-out filter grayscale group-hover:grayscale-0" data-alt="interior design of a sleek contemporary kitchen with matte black cabinetry and minimal white marble countertops" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZjkUqtC08fGLFlbV56r_jBOM4k0_CuIgok5GOuiLzcAP8Lw9nqLJeR5CsGgsBMoKKk8CV793QL_AUQ6EhY1InLgeTAm9Zpm3MCDpcTVFDtMx_QmSqyll1v7r8sqwUXtJMdnuqlLlcZBB9r4d1PE7FSE0e5sqAzvmxuIeP6O2U-O0UBlA1ixbpjOD-Njd1xYJg_f9MiLflEC3k6hQI8HERU7awtvuAGZtqxuTt-hIdnEiLaoB07wF7_EjwQPIg3Uq1w1GItq79iUg"/>
+</div>
+<div class="flex justify-between items-baseline">
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-primary uppercase">Oculus Pavilion</h2>
+<span class="font-body-md text-body-md text-on-surface-variant mt-1">Milan, Italy</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2021</span>
+</div>
+</article>
+<!-- Grid Item 5 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-dim mb-6 overflow-hidden relative">
+<img alt="Open plan office architecture" class="w-full h-full object-cover transform group-hover:scale-[1.03] transition-transform duration-700 ease-out filter grayscale group-hover:grayscale-0" data-alt="expansive minimalist open plan office space with structural steel columns and large industrial windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUiaG0zYWzg24MHPJCqpLn24yJfLEZ7iFe7zADP7c5171QEo_nuPXO0wRnLsFoOMmoI45yVSELOrb0upZgEf43ISqeWDsOeCAcZ8Q9wslFUcnFk5MoSDRm6nF0w3mJI0qkV8q2OqjN66M3LgxxJkbElvV4n_fxP-k6mp8oQ0MiPXaKrpwsViEAaLreQt0YNfXtX4VeQkzWiWhm4whnLuKXuns6db2TItwkyEWMXnA1MmptL-PYwWIxPFfRJFNkr8_RKO_HE2AMnkE"/>
+</div>
+<div class="flex justify-between items-baseline">
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-primary uppercase">The Foundry</h2>
+<span class="font-body-md text-body-md text-on-surface-variant mt-1">London, UK</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2024</span>
+</div>
+</article>
+<!-- Grid Item 6 -->
+<article class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-dim mb-6 overflow-hidden relative">
+<img alt="Modern bathroom interior" class="w-full h-full object-cover transform group-hover:scale-[1.03] transition-transform duration-700 ease-out filter grayscale group-hover:grayscale-0" data-alt="high end minimalist bathroom interior with dark stone walls, freestanding white tub and ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBd6WavtbFqQZ3rxzmVl3TWSF-SRrHVSSIRkss_xk7n-1VUwzLjRCrEwnCIkHMqiHX9rUXVkkMplt-gokP84JlW9QxH_puQBJZtDrBE4z3EQH2ErTRGoqctRY5r8BvQWyCZEa0QYMJsBj-6WIDwZFPlr1RuWz1bfo4QEs0povFHltHmeWzVYdEO2-C2JYdERRbL6yTNNR2T1Nk8mU6FMQ4Vp0QP--aq7chqw_w9Bc0_-c3y0plqI8t42zu3zANTkClNou5eZC60cyA"/>
+</div>
+<div class="flex justify-between items-baseline">
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-primary uppercase">Therme Vals</h2>
+<span class="font-body-md text-body-md text-on-surface-variant mt-1">Graubünden, Switzerland</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2020</span>
+</div>
+</article>
+</section>
+<!-- Load More Button -->
+<div class="w-full flex justify-center mt-32 mb-16">
+<button class="bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-[0.1em] px-12 py-4 rounded hover:bg-inverse-surface transition-colors duration-300">
+                Load More
+            </button>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="bg-white dark:bg-black text-neutral-900 dark:text-neutral-100 font-sans text-[10px] tracking-[0.25em] uppercase font-light full-width mt-32 border-t border-neutral-100 dark:border-neutral-900 flat no shadows flex flex-col md:flex-row justify-between items-center w-full px-6 py-12 md:px-12 max-w-[1440px] mx-auto gap-8 transition-all duration-500 ease-in-out">
+<div class="text-neutral-400 dark:text-neutral-600">
+            © 2024 STUDIO. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex gap-8">
+<a class="text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-100 underline underline-offset-4 transition-colors" href="#">INSTAGRAM</a>
+<a class="text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-100 underline underline-offset-4 transition-colors" href="#">LINKEDIN</a>
+<a class="text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-100 underline underline-offset-4 transition-colors" href="#">TWITTER</a>
+</div>
+</footer>
+</body></html>

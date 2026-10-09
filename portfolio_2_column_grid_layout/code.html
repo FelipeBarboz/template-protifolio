@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>STUDIO ARCHIVES</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline": "#7e7576",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#1b1b1b",
+                        "surface-container": "#eeeeee",
+                        "on-surface": "#1a1c1c",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary": "#000000",
+                        "secondary-fixed": "#e4e2e2",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-container-high": "#e8e8e8",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-secondary-container": "#636262",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "primary": "#000000",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#5e5e5e",
+                        "tertiary-container": "#1a1c1c",
+                        "inverse-surface": "#2f3131",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#f9f9f9",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "background": "#f9f9f9",
+                        "surface-dim": "#dadada",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "surface-container-low": "#f3f3f4",
+                        "on-background": "#1a1c1c",
+                        "inverse-primary": "#c6c6c6",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#e2e2e2",
+                        "on-surface-variant": "#4c4546",
+                        "secondary-container": "#e1dfdf",
+                        "primary-container": "#1b1b1b",
+                        "on-secondary-fixed-variant": "#464747",
+                        "on-primary-container": "#848484",
+                        "secondary": "#5e5e5e",
+                        "on-tertiary-container": "#838484",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-primary-fixed-variant": "#474747",
+                        "outline-variant": "#cfc4c5",
+                        "surface-variant": "#e2e2e2"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "edge-margin": "40px",
+                        "element-gap": "12px",
+                        "section-gap": "160px",
+                        "row-padding": "4px",
+                        "container-max": "1800px"
+                    },
+                    fontFamily: {
+                        "label-micro": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "display-xl": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    fontSize: {
+                        "label-micro": ["10px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "display-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-md": ["20px", { "lineHeight": "1.4", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-lg text-body-lg antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 h-16 pt-[10px] bg-white border-b border-gray-100 flex justify-between items-center px-10 max-w-[1800px] mx-auto left-0 right-0">
+<div class="text-lg font-bold tracking-tighter text-black">
+            STUDIO
+        </div>
+<nav class="hidden md:flex gap-8">
+<a class="font-['Inter'] uppercase tracking-widest text-[11px] font-medium text-black opacity-40 hover:opacity-70 transition-opacity duration-300" href="#">WORK</a>
+<a class="font-['Inter'] uppercase tracking-widest text-[11px] font-medium text-black opacity-100 hover:opacity-70 transition-opacity duration-300" href="#">STUDIO</a>
+<a class="font-['Inter'] uppercase tracking-widest text-[11px] font-medium text-black opacity-40 hover:opacity-70 transition-opacity duration-300" href="#">NEWS</a>
+<a class="font-['Inter'] uppercase tracking-widest text-[11px] font-medium text-black opacity-40 hover:opacity-70 transition-opacity duration-300" href="#">CONTACT</a>
+</nav>
+<a class="font-['Inter'] uppercase tracking-widest text-[11px] font-medium text-black opacity-100 hover:opacity-70 transition-opacity duration-300" href="#">
+            INQUIRY
+        </a>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-[160px] pb-edge-margin px-edge-margin max-w-container-max mx-auto w-full">
+<!-- Header Section -->
+<div class="mb-[80px]">
+<h1 class="font-headline-lg text-headline-lg text-primary">Archives</h1>
+</div>
+<!-- Image Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-element-gap w-full">
+<!-- Row 1 -->
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img alt="interior design shot" class="w-full h-full object-cover grayscale-0 transition-transform duration-700 hover:scale-105 cursor-pointer" data-alt="Minimalist modern living room interior with white curved sofa, concrete coffee table, and large arched window bringing in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL9ELWQmg6VhfSM89d1zBq-N3_hKI70gkKUVtZXFImBGCE-N2E5s1J5cA4_G3DtOubBTDegdWHP_wbA-eh664uqRKzuvAr2pYEPcEQnoUHGAutcbYibLpoY0yRj11Xz9OoVcYPU2alCZgg8bAbS3aeM3J3Qhbnp_QErUw3NZTaTENfZvRw-8pcl3iRHT6gTsj7uqWsRvoa5cvtgnT-oP9leox4x8pkZ87KoYOg4VgDupa-K68YCbG4bXx-GG9VXWDZGWtaIA0X_7o"/>
+</div>
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img alt="architectural detail" class="w-full h-full object-cover grayscale-0 transition-transform duration-700 hover:scale-105 cursor-pointer" data-alt="Close up of a modern brutalist concrete staircase casting strong geometric shadows under harsh afternoon sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3fWIXeU1GwarmD2DQLpvZrgG-LJUv6NNBpfAH84uxwYLqoPL_yEQVa1eQjlC-leGe4tsaqpE-bcBwC6ahn-Za4Exy1tUtkrw4IQa6nzTA2mW3AwKvPkonE516ymsjsP1QkvOjAUPu6BeHxYobOKQ5Uy-ezpQVEGXyV8Z012VPzZUj0U-E5ihKMsskxR1m3TpS9m-lUJawvWg2Dhxer2gDhYjKjmXMZUSqlHwdUBVZYzF9cGjmDflm9Ip2rJsrA2AP9mTHMFxw_ks"/>
+</div>
+<!-- Row 2 -->
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img alt="furniture piece" class="w-full h-full object-cover grayscale-0 transition-transform duration-700 hover:scale-105 cursor-pointer" data-alt="High end luxury minimalist kitchen with dark marble island, matte black fixtures and warm wood cabinetry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQilcGiqTJqz95o66fG-uximUQmatJ5ulLl6_9ORAgBgc3e89PzxyQjVoOTdMZdCbcrGli3BsxcK6U7F-hrcDmIkmaGcODmUfAXpCaaJHZULIMXFRsizDJbMimgcvmwEIMoMa0XLy37pAnxvV9Vyf4ZSMsqawuhxZ_DsfRSWg8ILCmtawWQtvGpbvBn-TAGAXkmY7-QDoM4T0qQvjFfO7ElaPR205cgo8R6MeKY7X_xMvNseZL2xzjQU7mMU_YprIcUgPXPrbzQ7o"/>
+</div>
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img alt="building exterior" class="w-full h-full object-cover grayscale-0 transition-transform duration-700 hover:scale-105 cursor-pointer" data-alt="Contemporary architecture facade featuring clean lines, large glass panels and natural wood slats against a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADZObnoO-pv0QmeOx1fOFwg0ZM1ocNvl-WkoXu7KhgxAQxrHW6u2-8BFpvqjbUBVJub-4igxctnaq4OSSwUswFT7v0fO6_omAfUiVLVvN5-mJDk1a1SDsvypKRh7-0B7gyhP4xJJ_PsiNT_R46b_Zp6m3x7Hs00IXtod_tNOxh4t8MIKuro1iNt-dJj7uIkO01vrwRjrp-8tbGa2z0hHtsFBoeUvPFMgnYeFMNU4o62vZiyxAtlDbHtpzPmxMJcxN1i9nHB8XhWRk"/>
+</div>
+<!-- Row 3 -->
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img alt="office space" class="w-full h-full object-cover grayscale-0 transition-transform duration-700 hover:scale-105 cursor-pointer" data-alt="Minimalist corporate lobby with polished concrete floors, sleek reception desk and subtle recessed ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlIb_x2fIyUR--HNlDwneoZQPaRHs97VYt1xizH4la0v2m1hB9Sfj3Cc1YSuQ9bRIuYzPR4JxKkclj04d7h1qp1eBTJCX_MsXidJjwCb-snW8So2lBtTlRGfJaRHMntEZYvZJxjJryk9h1vJSlbDIAWVzg44UPbItrNnn63J3yjkpwUB2P4i3jU-GdAgmOPQA5qdTRn6ZGpUATxezLrYVm3vWRV1sybxSd19YrLF_u4AVJShiOXhU6nhrzrEvg7sYKBH-2ZjSBJ8w"/>
+</div>
+<div class="aspect-[4/3] w-full overflow-hidden bg-surface-container">
+<img alt="bathroom interior" class="w-full h-full object-cover grayscale-0 transition-transform duration-700 hover:scale-105 cursor-pointer" data-alt="Luxury modern bathroom featuring a freestanding white tub, dark stone walls, and minimal brushed brass fixtures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0QyNQL6M8paNW8tNm4_jeba2273V7EFmfJFQ5DxVKLD5NsEggqSCE1ad-ttF_jGbJTlrZCI52tehDyIOIpvVRVTPK9iZBMnOExYB4SMNMdCtm3bNE-4XDh5wHaD8pzGAYXe9Ex45mzdKruh-7-ICNYfrHO68zisCuZTOIU4HPDdhsNo25p_tDIQ78iZJ2IROYl_1rO7fBWTJb-l7erYXVvWo1WEBgy8PsSJGhpLMDc_B7Rh-KooGL7K03oh_4_FY6CP4Vg1W4tmE"/>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-40 border-t border-gray-100 bg-white pb-[10px] pt-12 flex justify-between items-end px-10 max-w-[1800px] mx-auto">
+<div class="font-['Inter'] text-[10px] tracking-[0.2em] font-light uppercase text-gray-400">
+            ©2024 STUDIO ALL RIGHTS RESERVED
+        </div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-[10px] tracking-[0.2em] font-light uppercase text-gray-400 hover:text-black transition-colors duration-300" href="#">INSTAGRAM</a>
+<a class="font-['Inter'] text-[10px] tracking-[0.2em] font-light uppercase text-gray-400 hover:text-black transition-colors duration-300" href="#">LINKEDIN</a>
+<a class="font-['Inter'] text-[10px] tracking-[0.2em] font-light uppercase text-gray-400 hover:text-black transition-colors duration-300" href="#">TWITTER</a>
+</div>
+</footer>
+</body></html>

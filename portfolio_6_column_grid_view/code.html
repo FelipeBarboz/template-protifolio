@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Studio Portfolio - High Density Grid</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#4c4546",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "tertiary": "#000000",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#5e5e5e",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-primary-container": "#848484",
+                        "outline": "#7e7576",
+                        "primary-fixed": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "on-tertiary-container": "#838484",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f3f3f4",
+                        "tertiary-container": "#1a1c1c",
+                        "secondary": "#5e5e5e",
+                        "on-error": "#ffffff",
+                        "primary": "#000000",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-secondary-container": "#626263",
+                        "surface-container": "#eeeeee",
+                        "surface-variant": "#e2e2e2",
+                        "on-background": "#1a1c1c",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "surface-container-highest": "#e2e2e2",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#1b1b1b",
+                        "tertiary-fixed": "#e2e2e2",
+                        "surface-dim": "#dadada",
+                        "surface-bright": "#f9f9f9",
+                        "error": "#ba1a1a",
+                        "background": "#f9f9f9",
+                        "on-surface": "#1a1c1c",
+                        "inverse-primary": "#c6c6c6",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#464747",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "inverse-surface": "#2f3131",
+                        "surface-container-high": "#e8e8e8",
+                        "secondary-fixed": "#e4e2e2",
+                        "secondary-container": "#e1dfdf",
+                        "outline-variant": "#cfc4c5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "section-gap": "160px",
+                        "element-gap": "12px",
+                        "edge-margin": "64px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-xl": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-sm": ["14px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "display-xl": ["80px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full pt-[10px] pb-4 z-50 bg-surface-container-lowest border-b border-surface-container-highest">
+<div class="flex justify-between items-center px-edge-margin w-full max-w-container-max mx-auto">
+<div class="text-lg font-bold tracking-tighter text-primary">STUDIO</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1" href="#">WORK</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-150" href="#">ABOUT</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-150" href="#">NEWS</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-150" href="#">CAREERS</a>
+</nav>
+<button class="bg-primary text-on-primary font-label-caps text-label-caps px-6 py-3 hover:opacity-80 transition-opacity duration-150">
+                GET IN TOUCH
+            </button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-[80px] px-edge-margin max-w-container-max mx-auto w-full">
+<!-- Header Section -->
+<div class="mt-section-gap flex justify-between items-end mb-gutter">
+<h1 class="font-headline-lg text-headline-lg text-primary">All Projects (12)</h1>
+<!-- View Toggle -->
+<div class="flex items-center gap-4">
+<button class="font-label-caps text-label-caps text-primary border-b border-primary pb-1">GRID</button>
+<div class="w-px h-4 bg-outline-variant"></div>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors">LIST</button>
+</div>
+</div>
+<!-- High Density 6-Column Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-gutter gap-y-[48px] mb-section-gap">
+<!-- Project Card 1 -->
+<article class="flex flex-col gap-element-gap group cursor-pointer">
+<div class="aspect-[3/4] w-full bg-surface-container overflow-hidden">
+<img alt="Modern minimalist residential exterior with clean lines and large windows" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Modern minimalist residential architecture exterior with concrete and large glass windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbu3zvJ8YSCyhUVdbJ54m2oVCoPLztmzpNSSllpVi3Kv5KQXhPp4CrnpcBjLAljH6ctIJoo6ts6gJhIdxtsd-N_cbE1AtLhTR0q4Zv3Maee4V1ggSSxlBf8-MJ4OlKLYaoASe-ddxxaFsfeV-wE8mFLb3Uay-QV_-0HBG6-9CAHAwgj8IP8jQTdiMA4CDohDH7_13S8x0dm1GxCPyxqLCKaX29A3K2P2KjHMsnx2Jkuhb6kxmpqbTBXHfdht7rBHI3hFM5DJb2Mhs"/>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary truncate">Aalto Residence</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Residential</p>
+</div>
+</article>
+<!-- Project Card 2 -->
+<article class="flex flex-col gap-element-gap group cursor-pointer">
+<div class="aspect-[3/4] w-full bg-surface-container overflow-hidden">
+<img alt="Sleek modern interior design with natural light and monochrome palette" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Minimalist interior design living space with natural light pouring in, neutral monochrome tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYoGieW-KxZ5n8ZiHKmCS7NRDaCYeNOggepeGp-S3rT6U4hxvxERoWAjhiohZVhkKx5b-1c7s71GBkby1Ol3I9BblDxcKujRa1X0ox5UY-UfmWhY4hgz3MR8elerJG9I6lMcKS1b5LgGmCg50CFcugxWhvT0fMY1kPqbRdPlZJZ2xRlYrlBC-SdLDPgAjXWGc0CivV6He60U4CcPflF7otW0nBgZTQzBhVH-kR9ZEqXYw-B8VsDHaZj-SS6-p4RXEjACRQtYnGzpE"/>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary truncate">Gallery Haus</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Cultural</p>
+</div>
+</article>
+<!-- Project Card 3 -->
+<article class="flex flex-col gap-element-gap group cursor-pointer">
+<div class="aspect-[3/4] w-full bg-surface-container overflow-hidden">
+<img alt="Abstract architectural detail of curved concrete structure" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Abstract architectural detail showing curved concrete lines and shadows in minimalist style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsBzLyq4sP858bczoV-JmAzQZ7VNsFhBpzxY6JxLuDL_42YiLNMX2qDqZIGMPSxAv5x_YiAkjwmxJa22yUYMxQQDZueJvApfrhePqwLzrvspV0LQwkh812xBR954mhNailiegZbfKudJGE4p-NagMiNgDYwF5Bsb97KSvbeZjtEEj9Aqku142GO4Pw44BGST-D33Ra7DslForm_zVtXilkTOYNn63_1yUAEdMA7do80iSKacNBk-EhyvzPMHFUvPMKslUpmXmmh1s"/>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary truncate">Oculus Pavilion</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Public Space</p>
+</div>
+</article>
+<!-- Project Card 4 -->
+<article class="flex flex-col gap-element-gap group cursor-pointer">
+<div class="aspect-[3/4] w-full bg-surface-container overflow-hidden">
+<img alt="Modern commercial building facade with repetitive geometric patterns" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Modern commercial building exterior showing repetitive geometric facade patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-EAp6M7bh9BZwLoiKCGsMMtHL4nkXg1Yqljq6CHqNvbNmvoLhtQ2E8CA7mlyk86BwM00FkZAtWzmijfiYyvShOZpGtJz9Q1bg1riMoIgAuoTzEQU7c_uuYdPpv4Peuzm2FFFQnHKW6OU2T0c4b8YKKBjTjAHe3rM35iCHksa2fZlcRNdHbZBRwpFGu-vjKWahGpnS3KK-SnuXGN5-fRpEC9yCYl4NKp9rMa5ygnIBLdXBdWQTvLVj3Czvvx2_xV0MtQTkQKE_x0s"/>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary truncate">Zenith Tower</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Commercial</p>
+</div>
+</article>
+<!-- Project Card 5 -->
+<article class="flex flex-col gap-element-gap group cursor-pointer">
+<div class="aspect-[3/4] w-full bg-surface-container overflow-hidden">
+<img alt="Minimalist kitchen interior with dark wood and marble" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="High-end minimalist kitchen interior design featuring dark wood and marble countertops" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3Ix3XreiEpLAbvHhvKBFCJEAU2fNyEY4CmMiOzCzXTRxIEuhzi1jaAgqcrVXm5Fxa-ITgc21i2B8WSwv4OobiQhJRA_gzYIJICzYj7B1Lmi1QJ6871ex-54_XtmMvZUsTmk97qLiJg9Cj6iL9Nmt2alzeMYQBEwL1jaeA38g09YhKGJhCXqWMYKNoNEIFmq21cXgwh-2fyvWQayf8avVueCa5iqNVhWaZ1wpHxEniLTXUpDs1jPTTqOa4rAWSiaQy3-yI3Ebj60k"/>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary truncate">Crestview Villa</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Residential</p>
+</div>
+</article>
+<!-- Project Card 6 -->
+<article class="flex flex-col gap-element-gap group cursor-pointer">
+<div class="aspect-[3/4] w-full bg-surface-container overflow-hidden">
+<img alt="Contemporary art gallery interior with white walls and natural light" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Spacious contemporary art gallery interior with pristine white walls and diffuse natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-tnSF1IZA0oBaZMVBTrqzca5pVCDAIDJEjJAVF9jUWvGRjSdK6z1jBOboD0-xXJgzWlrxwMR04SgTmSckDZouwe7z-LxNrunTKdPGTlWah_SvZwFQbnMFxPAG4RvjHyiP0p2kkrmvPN3rl_jluc-SMNfyw901MqhTUq6A_4STS4Ea8_VQklQPaApA9UkXZYHtWxrlLnUE6vreSkg1hFBEwG_AalT4co_cXMHzoH5BeO5DzNzcwRk8zEZkerZLS7N5MzaxkdcAxaU"/>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary truncate">Lumina Arts</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Cultural</p>
+</div>
+</article>
+<!-- Project Card 7 -->
+<article class="flex flex-col gap-element-gap group cursor-pointer">
+<div class="aspect-[3/4] w-full bg-surface-container overflow-hidden">
+<img alt="Brutalist concrete architecture building exterior" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Brutalist concrete architecture building exterior with sharp geometric lines against clear sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeWFKa_aJiq5itCBNIQFcJl7E1g7qG9Dl96tsARQWiNbR4KGwYyoVvrhdE0657SvOKzVivOfbqrVP6QUuy2VCMSTGrLgaRM3pQ_NMv5pnlcKznMG0A3kNxdRP8JafZ9sNn1P3wHjTiXq_CzsaL9Vf7vIUjUO1E_uHCzNDSA-KTj3YUqEMEdyjfnGCzewd3S1vVhDFbdTlQ2AKGcrchE3Z1hfNeQ5cN3rMionjT3yc3UZBUNVlmOUGaZo7RDLac6HjhSUX49Jso7zw"/>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary truncate">The Monolith</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Civic</p>
+</div>
+</article>
+<!-- Project Card 8 -->
+<article class="flex flex-col gap-element-gap group cursor-pointer">
+<div class="aspect-[3/4] w-full bg-surface-container overflow-hidden">
+<img alt="Modern minimalist living room with carefully curated furniture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Modern minimalist living room interior with carefully curated designer furniture pieces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEOAqCMzNte1nkbliAXNtGuw9BKUfqXFg78UAp-HAGPmHIiWt4MjbH8MBlIPZwoxpZAOkxW06szwSIpRwt3P3jyCfCwgrMMY8KSDKaGbasCocvmqgraaLH8LeBgdqsBP9O_xgwRFW08mCLmQDzc5YEm6HHz94xZq7DD6M4WKr0VWDdAtyuwgPJUBL5E7yoEjZASJqfNENEoUcvNZC_-DUMHkNLlbnXVK062BO_yOjfSC0HhvoOL-8sXDGg7MOq69prus9SxisWa5M"/>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary truncate">Nordic Retreat</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Residential</p>
+</div>
+</article>
+<!-- Project Card 9 -->
+<article class="flex flex-col gap-element-gap group cursor-pointer">
+<div class="aspect-[3/4] w-full bg-surface-container overflow-hidden">
+<img alt="Architectural bridge structure over water" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Modern architectural bridge structure with suspension cables over calm water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8FSTURUL-q5S5e416B7Hotp4Sg2phF7Sn5eDPgjQ1B178tsE37qJPxrPytXYuKiX1K-zAeiSqpWJ-MFagj-yTTmF96Hg_Ord_HmgrDcU4YERs6TN_nB9C7XnvedlI-SwRw4NE9FyQd5n6qXBZ_beUgtQbENaX4A20_tILJAZDD8rItg9H8ZMakd8alwCTyquMQTAcuVn9PIdNvFPQLSs4hJd8jNsSdakmOo2tSU3htZr-8z5ioV6cFywlNso4AezfefNaNIP8s48"/>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary truncate">Helix Crossing</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Infrastructure</p>
+</div>
+</article>
+<!-- Project Card 10 -->
+<article class="flex flex-col gap-element-gap group cursor-pointer">
+<div class="aspect-[3/4] w-full bg-surface-container overflow-hidden">
+<img alt="Minimalist modern home office setup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Minimalist modern home office interior setup with sleek desk and neutral colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8YTc0DpFsFglgsci3qhLagngOtggtYRZT38pLqImlQlBMhDWYPOE5eqijZ779iGB1jylpSAjoISmlBcGhpPUQG123QoMbuHuqxYB5YXF0svP4wzTsPKYVvrbKmnBQC_dcaUYbpEDHvSCUdiQC14jC7Vo5QHPekjdi94I5e_CiQBLezq_0_b-QRPJO5bhz52rtnu1pu3-BXOBGq5Y3xvCFpmeYO0GzRv347_FJO1OJoaqbkBdBeutw5PQaF53GFGVJegyEtAY_8Sc"/>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary truncate">Studio K</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Workspace</p>
+</div>
+</article>
+<!-- Project Card 11 -->
+<article class="flex flex-col gap-element-gap group cursor-pointer">
+<div class="aspect-[3/4] w-full bg-surface-container overflow-hidden">
+<img alt="Modern architecture interior hallway with dramatic lighting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Modern architectural interior hallway with concrete walls and dramatic lighting patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa-60cqObIvv6h45dRD8gVIWZthXu6m2jtuHtAePxglUMNrcusLR2Ku5kjpkb0KZ9X8t0r2maUKSOxNCO1rC5q4g6r2jsdV3E_yyQx9BsyywmTMxVkj8GjBAKkAjCNXqdjUsxucuh8up0yp_cNlG0GaFD3zm8ufmkBxUl0ywb8r2x_uufQvb6Q4AIDOyMFwEFl5TYzVfJ7bF9lk4xIk3s5iCQ-BqDfGVEZ7hI4toC-1Df3xi_arAJtbv23eDceg8NxCunMWDQ09hE"/>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary truncate">Echo Corridor</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Commercial</p>
+</div>
+</article>
+<!-- Project Card 12 -->
+<article class="flex flex-col gap-element-gap group cursor-pointer">
+<div class="aspect-[3/4] w-full bg-surface-container overflow-hidden">
+<img alt="Luxury modern home exterior with pool at twilight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Luxury modern architectural home exterior featuring a pool at twilight with interior lights glowing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY4aQ95FTqZ3CzDILpXxmP8SKFidZEaWT0LstvsKrcPZ5hrrgViccULsx3wZAduiZkbZMk3tqhu-9zupXXsVmvFyxiqdXvLRCQk1O9LOvBKwyVt-omhXgAJe1_J7ZJBHHaf8HwUS8UqQQXaCAFfedy5Uz_iPPDdDu-a61Gn8IzL6asHau2XcuqC9xcr7iVQSuU2PAvjxwVV9HTaql2vrHlZp_UNtR9C1G7IFWcXO5dgZVotppjCbH0ypBrOTi5W0IfwGY6zY8a4m8"/>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary truncate">Villa Horizon</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Residential</p>
+</div>
+</article>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-surface-container-lowest border-t border-surface-container-highest mt-auto">
+<div class="flex justify-between items-center px-edge-margin w-full max-w-container-max mx-auto">
+<span class="font-label-caps text-label-caps text-on-surface-variant">© 2024 ARCHITECTURAL STUDIO</span>
+<div class="flex gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-150" href="#">INSTAGRAM</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-150" href="#">LINKEDIN</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-150" href="#">TWITTER</a>
+</div>
+</div>
+</footer>
+</body></html>

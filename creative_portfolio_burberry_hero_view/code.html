@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>STUDIO - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-container-highest": "#e2e2e2",
+                        "secondary-fixed": "#e4e2e2",
+                        "outline-variant": "#cfc4c5",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "secondary": "#5e5e5e",
+                        "primary-container": "#1b1b1b",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "tertiary": "#000000",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-surface": "#1a1c1c",
+                        "on-primary-container": "#848484",
+                        "inverse-primary": "#c6c6c6",
+                        "surface": "#f9f9f9",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#838484",
+                        "surface-dim": "#dadada",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-surface-variant": "#4c4546",
+                        "secondary-container": "#e1dfdf",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#000000",
+                        "tertiary-container": "#1a1c1c",
+                        "surface-container-low": "#f3f3f4",
+                        "background": "#f9f9f9",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "surface-container": "#eeeeee",
+                        "primary-fixed": "#e2e2e2",
+                        "surface-container-high": "#e8e8e8",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "surface-tint": "#5e5e5e",
+                        "outline": "#7e7576",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "inverse-surface": "#2f3131",
+                        "on-secondary-fixed-variant": "#464747",
+                        "on-secondary-container": "#626263",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e2e2e2",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-primary-fixed": "#1b1b1b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "160px",
+                        "gutter": "24px",
+                        "element-gap": "12px",
+                        "edge-margin": "64px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "display-xl": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "display-xl": ["80px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                        "body-sm": ["14px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .hairline-divider-top { border-top: 1px solid theme('colors.surface-container-highest'); }
+    </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface min-h-screen flex flex-col relative overflow-x-hidden">
+<!-- Full Screen Background Image -->
+<div class="fixed inset-0 z-0 w-full h-full pointer-events-none">
+<!-- Light overlay to ensure text contrast while keeping image visible -->
+<div class="absolute inset-0 bg-surface-container-lowest/40 z-10"></div>
+<img alt="Black and white high fashion editorial photograph featuring a model in architectural avant-garde clothing, dramatic lighting, sharp shadows, minimalist studio setting" class="w-full h-full object-cover object-center grayscale contrast-125" data-alt="Black and white high fashion editorial photograph featuring a model in architectural avant-garde clothing, dramatic lighting, sharp shadows, minimalist studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5bZUE8SXN_X9G6i2JS1ygkd46JRTe7sg_0QcUFAOweLNo6lU0vySerzOMuFK1UH-hZRB5eWYmNXjpbkhUPutrplzkksQP0EPgjGNgtVfKmXZ4VtG9xCihG8O9t9OYNbKNlidYZT82lLQbbmj4_LkXlbfjZa1RM6g4udUgsz0OMw5YoxUTxf7BNBmJGhICD_ch6O6qB4tWvpdOOjpEs2hFpMD61M_q43lziE2KHrlgXS-lJCF-e2HUz7PRG9E9Zoo8MInra-bw1To"/>
+</div>
+<!-- TopNavBar Component -->
+<header class="bg-transparent text-zinc-900 font-inter text-[11px] tracking-[0.2em] uppercase font-medium fixed top-0 w-full z-50 flat no shadows flex justify-between items-center px-16 py-[10px] mb-[160px] border-b border-zinc-100/30 backdrop-blur-sm">
+<a class="text-xl font-bold tracking-tighter text-zinc-900" href="#">STUDIO</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-zinc-900 border-b border-zinc-900 pb-0.5 opacity-80 transition-opacity duration-150" href="#">WORK</a>
+<a class="text-zinc-500 hover:text-zinc-900 transition-colors duration-150" href="#">ABOUT</a>
+<a class="text-zinc-500 hover:text-zinc-900 transition-colors duration-150" href="#">NEWS</a>
+<a class="text-zinc-500 hover:text-zinc-900 transition-colors duration-150" href="#">CAREERS</a>
+</nav>
+<a class="bg-primary text-on-primary px-6 py-3 font-label-caps text-label-caps hover:bg-zinc-800 transition-colors duration-150" href="#">GET IN TOUCH</a>
+</header>
+<!-- Main Content Area -->
+<main class="relative z-10 flex-grow flex flex-col w-full container-max mx-auto px-edge-margin pt-[208px]">
+<!-- 
+          pt-[208px] calculated as: 
+          Approx Nav Height (48px) + Explicit 160px gap requested = 208px 
+        -->
+<div class="max-w-[800px] flex flex-col items-start gap-12">
+<h1 class="font-display-xl text-display-xl text-zinc-900 text-left">
+                Redefining creativity for the future with flawless execution.
+            </h1>
+<a class="inline-flex items-center justify-center bg-primary text-on-primary px-8 py-4 font-label-caps text-label-caps hover:bg-zinc-800 transition-colors duration-150" href="#">
+                VIEW PROJECTS
+            </a>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="relative z-10 bg-transparent text-zinc-900 font-inter text-[10px] tracking-[0.15em] uppercase w-full hairline-divider-top flat no shadows flex justify-between items-center px-16 pb-[10px] pt-8 mt-auto backdrop-blur-sm">
+<div class="text-zinc-900 font-bold">
+            © 2026 STUDIO
+        </div>
+<nav class="flex gap-8">
+<a class="text-zinc-500 hover:text-zinc-900 underline decoration-zinc-300 transition-all duration-150" href="#">INSTAGRAM</a>
+<a class="text-zinc-500 hover:text-zinc-900 underline decoration-zinc-300 transition-all duration-150" href="#">BEHANCE</a>
+<a class="text-zinc-500 hover:text-zinc-900 underline decoration-zinc-300 transition-all duration-150" href="#">LINKEDIN</a>
+</nav>
+</footer>
+</body></html>

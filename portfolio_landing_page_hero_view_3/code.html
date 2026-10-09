@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>STUDIO - Redefining Creativity</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-container": "#626263",
+                      "surface-variant": "#e2e2e2",
+                      "primary-fixed-dim": "#c6c6c6",
+                      "on-tertiary-container": "#838484",
+                      "on-tertiary-fixed-variant": "#454747",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed": "#1b1c1c",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed": "#e4e2e2",
+                      "on-primary-fixed-variant": "#474747",
+                      "surface-dim": "#dadada",
+                      "surface-container-low": "#f3f3f4",
+                      "surface-container-highest": "#e2e2e2",
+                      "background": "#f9f9f9",
+                      "on-surface-variant": "#4c4546",
+                      "primary": "#000000",
+                      "inverse-on-surface": "#f0f1f1",
+                      "primary-fixed": "#e2e2e2",
+                      "on-primary-fixed": "#1b1b1b",
+                      "on-surface": "#1a1c1c",
+                      "outline-variant": "#cfc4c5",
+                      "secondary-fixed-dim": "#c7c6c6",
+                      "tertiary-fixed": "#e2e2e2",
+                      "on-secondary-fixed-variant": "#464747",
+                      "on-error": "#ffffff",
+                      "secondary-container": "#e1dfdf",
+                      "surface-container": "#eeeeee",
+                      "on-background": "#1a1c1c",
+                      "error-container": "#ffdad6",
+                      "error": "#ba1a1a",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-fixed": "#1a1c1c",
+                      "tertiary": "#000000",
+                      "on-primary-container": "#848484",
+                      "surface": "#f9f9f9",
+                      "secondary": "#5e5e5e",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed-dim": "#c6c6c6",
+                      "surface-bright": "#f9f9f9",
+                      "surface-tint": "#5e5e5e",
+                      "surface-container-high": "#e8e8e8",
+                      "outline": "#7e7576",
+                      "inverse-surface": "#2f3131",
+                      "inverse-primary": "#c6c6c6",
+                      "primary-container": "#1b1b1b",
+                      "tertiary-container": "#1a1c1c"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "edge-margin": "64px",
+                      "gutter": "24px",
+                      "container-max": "1440px",
+                      "section-gap": "160px",
+                      "element-gap": "12px"
+              },
+              "fontFamily": {
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "display-xl": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "letterSpacing": "0",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "letterSpacing": "0",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-xl": [
+                              "80px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body-sm min-h-screen flex flex-col antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white dark:bg-neutral-950 border-b border-neutral-100 dark:border-neutral-900 flat no shadows text-neutral-900 dark:text-neutral-50 font-inter text-[11px] uppercase tracking-[0.15em] font-medium pt-2">
+<div class="flex justify-between items-center px-8 md:px-16 h-16 w-full">
+<a class="text-lg font-bold tracking-tighter text-neutral-900 dark:text-neutral-50 transition-opacity duration-150 ease-linear hover:opacity-70" href="#">STUDIO</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-neutral-900 dark:text-neutral-50 border-b border-neutral-900 dark:border-neutral-50 pb-1 Active: scale-[0.99] transition-transform font-label-caps text-label-caps" href="#">WORK</a>
+<a class="text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-50 transition-opacity duration-150 ease-linear hover:opacity-70 font-label-caps text-label-caps" href="#">ABOUT</a>
+<a class="text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-50 transition-opacity duration-150 ease-linear hover:opacity-70 font-label-caps text-label-caps" href="#">NEWS</a>
+<a class="text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-50 transition-opacity duration-150 ease-linear hover:opacity-70 font-label-caps text-label-caps" href="#">CAREERS</a>
+</nav>
+<a class="hidden md:flex bg-primary text-on-primary px-6 py-3 font-label-caps text-label-caps hover:bg-secondary transition-colors duration-150" href="#">GET IN TOUCH</a>
+<button class="md:hidden flex items-center justify-center p-2 text-neutral-900 dark:text-neutral-50">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<main class="flex-grow pt-[72px] flex flex-col">
+<div class="relative flex-grow flex items-center justify-center min-h-[calc(100vh-72px)] w-full overflow-hidden">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0 bg-cover bg-center" data-alt="high contrast moody automotive photograph of a sleek sports car emerging from shadow with cool blue lighting reflecting off metallic surfaces" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZffqV745OvB4temCERYgVseHpdSzW4TGLhEZYu9AB_L8O7eQdHJAL3VvvKeY0odd9vXms2WXINmrmXa_vm9ps_BlWuh2qnihhbg3P2rRCWiw78Atq3YBBOAG-P3b7WNUNRYTJSAt2NSyrDD1Bw4EqAz6S9n0_JnzKWbogCO9VlzYJ04g4DGQTUiKWRtezXNCq-DAl-Zbf05BlOv0qCO2ZMi8PBAgB8c8FWknC5Fyv6XmGxeRfENoPOlfVVGUrIuRjYwPZ9HEUylo');">
+<!-- Dark Overlay for text legibility -->
+<div class="absolute inset-0 bg-black/40"></div>
+</div>
+<!-- Content -->
+<div class="relative z-10 w-full max-w-container-max mx-auto px-8 md:px-edge-margin flex flex-col items-start justify-end pb-32 h-full">
+<div class="max-w-3xl">
+<h1 class="font-display-xl text-display-xl text-on-primary mb-12 tracking-tighter leading-[1.05]">
+                        Redefining creativity for the future with flawless execution.
+                    </h1>
+<a class="inline-flex items-center gap-4 bg-on-primary text-primary px-8 py-5 font-label-caps text-label-caps hover:bg-surface-variant transition-colors duration-150" href="#">
+<span>VIEW PROJECTS</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50 font-inter text-[10px] uppercase tracking-widest w-full py-12 px-8 md:px-16 border-t border-neutral-100 dark:border-neutral-900 flat no shadows pb-4">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 max-w-container-max mx-auto w-full">
+<p class="text-neutral-400 dark:text-neutral-600 font-label-caps text-label-caps hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-200">© 2026 STUDIO. ALL RIGHTS RESERVED.</p>
+<nav class="flex gap-6">
+<a class="text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-200 font-label-caps text-label-caps" href="#">INSTAGRAM</a>
+<a class="text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-200 font-label-caps text-label-caps" href="#">LINKEDIN</a>
+<a class="text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-50 transition-colors duration-200 font-label-caps text-label-caps" href="#">TWITTER</a>
+</nav>
+</div>
+</footer>
+</body></html>

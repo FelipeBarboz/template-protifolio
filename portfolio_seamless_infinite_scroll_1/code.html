@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Studio - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed-variant": "#454747",
+                        "surface": "#131314",
+                        "secondary": "#c8c6c5",
+                        "error": "#ffb4ab",
+                        "on-tertiary-container": "#636565",
+                        "on-surface-variant": "#c4c7c8",
+                        "surface-container-highest": "#343535",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "tertiary": "#ffffff",
+                        "on-background": "#e4e2e2",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "secondary-fixed": "#e5e2e1",
+                        "outline": "#8e9192",
+                        "surface-container": "#1f2020",
+                        "inverse-surface": "#e4e2e2",
+                        "on-error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "primary-fixed": "#e2e2e2",
+                        "surface-dim": "#131314",
+                        "on-primary": "#2f3131",
+                        "background": "#131314",
+                        "on-primary-container": "#636565",
+                        "on-tertiary": "#2f3131",
+                        "surface-container-low": "#1b1c1c",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-secondary": "#313030",
+                        "surface-container-lowest": "#0d0e0e",
+                        "inverse-on-surface": "#303031",
+                        "error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#474646",
+                        "primary": "#ffffff",
+                        "on-primary-fixed-variant": "#454747",
+                        "on-error": "#690005",
+                        "outline-variant": "#444748",
+                        "surface-tint": "#c6c6c7",
+                        "surface-bright": "#393939",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-primary-fixed": "#1a1c1c",
+                        "on-secondary-container": "#bab8b7",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-surface": "#e4e2e2",
+                        "inverse-primary": "#5d5f5f",
+                        "secondary-container": "#4a4949",
+                        "surface-variant": "#343535",
+                        "tertiary-container": "#e2e2e2",
+                        "surface-container-high": "#292a2a",
+                        "primary-container": "#e2e2e2",
+                        "project-1-bg": "#4A00E0",
+                        "project-2-bg": "#FF416C",
+                        "project-3-bg": "#F5AF19",
+                        "project-4-bg": "#00B4DB",
+                        "project-5-bg": "#11998e",
+                        "project-6-bg": "#8A2387",
+                        "project-7-bg": "#FF8008",
+                        "project-8-bg": "#1f4037",
+                        "project-9-bg": "#C02425",
+                        "project-10-bg": "#5C258D"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "gutter": "2rem",
+                        "component-gap": "1rem",
+                        "section-gap": "12rem",
+                        "safe-margin": "5vw"
+                    },
+                    fontFamily: {
+                        "headline-lg": ["Geist", "sans-serif"],
+                        "display-2xl": ["Geist", "sans-serif"],
+                        "display-xl": ["Geist", "sans-serif"],
+                        "body-regular": ["Geist", "sans-serif"],
+                        "label-caps": ["Geist", "sans-serif"]
+                    },
+                    fontSize: {
+                        "headline-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "600" }],
+                        "display-2xl": ["120px", { lineHeight: "100px", letterSpacing: "-0.05em", fontWeight: "800" }],
+                        "display-xl": ["80px", { lineHeight: "80px", letterSpacing: "-0.04em", fontWeight: "700" }],
+                        "body-regular": ["18px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "400" }],
+                        "label-caps": ["12px", { lineHeight: "16px", letterSpacing: "0.1em", fontWeight: "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            /* Fallback dynamic background */
+            background-color: theme('colors.background');
+            transition: background-color 0.8s ease-in-out;
+            overflow: hidden;
+        }
+        
+        /* Body color changes based on hover target */
+        body:has(.project-item[data-project="1"]:hover) { background-color: theme('colors.project-1-bg'); }
+        body:has(.project-item[data-project="2"]:hover) { background-color: theme('colors.project-2-bg'); }
+        body:has(.project-item[data-project="3"]:hover) { background-color: theme('colors.project-3-bg'); }
+        body:has(.project-item[data-project="4"]:hover) { background-color: theme('colors.project-4-bg'); }
+        body:has(.project-item[data-project="5"]:hover) { background-color: theme('colors.project-5-bg'); }
+        body:has(.project-item[data-project="6"]:hover) { background-color: theme('colors.project-6-bg'); }
+        body:has(.project-item[data-project="7"]:hover) { background-color: theme('colors.project-7-bg'); }
+        body:has(.project-item[data-project="8"]:hover) { background-color: theme('colors.project-8-bg'); }
+        body:has(.project-item[data-project="9"]:hover) { background-color: theme('colors.project-9-bg'); }
+        body:has(.project-item[data-project="10"]:hover) { background-color: theme('colors.project-10-bg'); }
+
+        .project-item {
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-item:hover {
+            z-index: 30;
+        }
+
+        .project-item:hover .floating-image {
+            opacity: 1;
+            transform: scale(1) translate(-50%, -50%);
+            mix-blend-mode: exclusion;
+        }
+        .project-item:hover .main-title {
+            color: #ffffff;
+            mix-blend-mode: exclusion;
+        }
+        
+        .project-list-container:hover .main-title:not(:hover) {
+            opacity: 0.2;
+        }
+
+        .floating-image {
+            opacity: 0;
+            transform: scale(0.95) translate(-50%, -50%);
+            transition: opacity 0.6s cubic-bezier(0.19, 1, 0.22, 1), transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+            pointer-events: none;
+            mix-blend-mode: exclusion;
+        }
+        
+        .cursor-tracker {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .scroll-wrapper {
+            will-change: transform;
+        }
+    </style>
+</head><body class="bg-background text-on-surface min-h-screen flex flex-col justify-between overflow-hidden relative">
+<!-- TopAppBar from JSON -->
+<header class="fixed top-0 left-0 right-0 mx-auto w-full max-w-[1280px] z-50 flex justify-between items-center px-[5vw] py-10 bg-transparent backdrop-blur-[2px] transition-all duration-700 ease-in-out">
+<div class="text-xl font-black tracking-tighter text-white" style="">STUDIO_MONOGRAPH</div>
+<nav class="hidden md:flex gap-8">
+<!-- Active State on "Work" based on primary intent of a portfolio landing page -->
+<a class="font-headline-lg text-sm uppercase font-medium text-white border-b border-white pb-1 hover:text-white transition-opacity duration-500" href="#" style="">Work</a>
+<a class="font-headline-lg text-sm uppercase font-medium text-white/60 hover:text-white transition-opacity duration-500" href="#" style="">Archive</a>
+<a class="font-headline-lg text-sm uppercase font-medium text-white/60 hover:text-white transition-opacity duration-500" href="#" style="">About</a>
+</nav>
+<a class="font-headline-lg text-sm uppercase font-medium text-white/60 hover:text-white transition-opacity duration-500 hidden md:block" href="#" style="">Contact</a>
+</header>
+<!-- Main Canvas Content -->
+<main class="flex-grow flex items-center justify-center relative w-full h-screen z-10">
+<div class="relative w-full h-full max-w-7xl mx-auto flex flex-col justify-center items-center overflow-visible">
+<div class="project-list-container scroll-wrapper flex flex-col gap-0 items-center justify-center absolute w-full"><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="1">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Vibrant abstract gradient art in purple and blue" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQKEhQSm3lQr1Tz8cYSnjAfR3t88X57Jmw7fn_Qj4_7DRrqWss5aD1Qsg8EqSkb28HEEXcroVV_quHimamOESd3C9bwbwLKEEDq6-r25o498VyUqKryOJW5uH_2sdG9F9ddC8l-ex8ktPUe_EPfDieSU9cO_ybWX8f06M1gl72ZX2PGm4jCrxphVvqS9VvWJC7rA27k7pND7wqCE5o9vGlPSJwxJTcWCugIIlY2UMmxja-53CwXtNFf-XXJKd7Tuj3Ldm0WmXak6f7" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">PROJECT 01</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="2">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="High contrast editorial fashion shot with pink and red hues" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8_lenlQnJIMxLep2ttZTy70yeStdCoBXq0SRYDHc0mUXLCs5yXaordGJqNdt4S7ui9MAO_EIsVnPHN13c1gz1kTxi6H5y0R-hkueFIN0SPu_mwzAVij8G_5vRXBzLoPC5MpneWJO3P6cmo_d_ECD5vJ-ec-h0nskC-FssDQy_I2cOER_nfabWMxPjWqWmEDIObO-JpEVI47ZOYopAiIQEXc2V5xjInP6m289bRSMns7_7OJdxU2EEhdhB7sLSh9JlK6dai4GUqwgo" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">PROJECT 02</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="3">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Dynamic yellow and orange architectural detail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVpWPO7XGkdq49Pkw3YVfjULJ93JmYacqcgmsMzAA0D14J1heSngxTEoAVupJdIFnUzw3VyUqliZpJ5YesT3knD1b7ZmQe-0Xnmpww0qv4rFHx-72yvmOpA7oCscEiw-04eSn3LPoqs5TdeLsWT52uOoSstLyvQGvlwCDMZNGFkZ9hCCuUVRDh_MpdKmy6edABkGBAaGZYvXz9ddXRyYyVsE6UXgTMs17RSzYZ8mb0YK5UaFeYJPfgJm7hKPpAN5ruL4Hf374kPXOC" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">PROJECT 03</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="4">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Abstract digital art" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd_B64PpTIQbJWNIt5ZHY00VDuoPdnthS9yE4eFl5IJgRl71sx-FUJq1hrsRGNt6HZCOtD1zHcTWUjnheBPfVXDkJodnK9e_Znz35x3W5JVRfSpf1oRlowUu-7-qyXK0SZg7gHXVWYujwuqo_YLERkI4VOPAVGgAm0z1DMZzYHl-xYc9ifFk0sYeR-sRuC97XHhpBz3b5ZAUuvig07F7hlWuCuqj-lgIDXRS2dOqlRkYEBqcYht4gKUTpYFl0SbrOPfBYDjneSZdrC" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">PROJECT 04</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="5">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Minimalist architecture" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrV2EAPitGzuKxj5X3-gFuUIJdQAYMycFv81PK1_Ll_JkXVjGvpS-L1jIQHqd6ck653L4tVUlYz4qYlt8qzB2viHCdiif8sTFzrmmwyJ6h4Jx73r2nANxGGncucqOr7EKvnSaxSpEnrqYGeZrqSvQzH9rdWmShNQ_i58oTCGWnWJw_dYU4Of0t-S6R-ogP4LW33dfpak8EDWXj6fNlKvjygF-59pNBcqx53cMWwwcpmumUQ_HYVUuCSbP6eBnHys99CtYyysvznnh2" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">PROJECT 05</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="6">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Fluid simulation graphics" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCObyGqYraW1SJ5ZpVlNeLzHjJnbrS_gOU_aLqEj_AGNAMwIBETgIUyoz9Ec2TIYCnYy9vyWc-C_x7Jtq6nPv4_C1EJyXbjAM_VqRLTKQcir62xBRyBDBtiv0cxE3gFknCCEzXwCI9KJH8lf2mqSwMR_Tq21r2_ggcaeP-VKTC8TNb6hGTNORMuFJiMz_vfaRJNil1Ve_YFFQPHW7Z3ydlDgptC-SODiIGRpQ-otxoDJ4a1k23VuBbRNq3Qmsh6fvsxngWlzhIZ4m_i" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">PROJECT 06</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="7">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Neon lights in dark space" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALtBrGE1aXe9xMLVOE-GR365JWXqCIfaLSOCSpspcdvpT0NyCn4Nr1ZHdGrAq45kfvEkkrBLxrrFE1y1yFgCHyYobpNugCd_UVs0vovQsiJ98bh68oQ2cmVkSR3IVOAM-SdQqJh91LCbVHxSDBQ9KQV1xN86xM9kp5Y-ovp4rzOcsgd8phToIQAjJ3rb7ehQs2uzyg02Mfm1yZTuqZoa-JNGn5UUFFnDTI-zR1DNUPtVOF_BfxIEiLiiZI-42yJL35LYevB3QBogDI" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">PROJECT 07</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="8">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Nature landscape" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY-W5hovhtdS_2NBkfcvdRa0JrSTAUkFlIl_vb8opNW3hPFNsIywaX41aDfyoF9b19-M0K9FwbDlNmoqfLOasZf9NOoEQHUnaju6Vw3jHa6jWE_62DSu5dgDuBfG4EI5-sCwpnZVDvi9fecj5PV0MiDm86koFuHDH2RzZS6-SFFgUZABAJBzXWQIijO2c4sOrFl04JJ410RgNzUl7v_PvkQcO9M0E95pi8t3xhdxTe8P2C776-GmefbPQXXoHUiLn7SVgT71lbzjfg" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">PROJECT 08</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="9">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Modern interior design" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZD4i3I9Am3tjxyCIcw8jeur7ns2JomR_ApfZ3hq4XexUiOeXR-IY2MI6URMwEGZEoUGMjycrg1JrX124ak4V6Y9Ixdl7hTkOZm-2ptIQvOShPV2_HfSK4Bohg85Ss12lUcPLR1mExXb-TmLRHB86u2GZ4y_uQWF33koPuNPCLA2sMWlkez0Wn8JvtCVTJ1IZMCp7GzqSJ9dW5jO7J5E7DdV7MS5XcFzlVwWVEKStgwWODdz_WK8n0ngNEMeo30NP_FRXbmxfeBVUl" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">PROJECT 09</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="10">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Cosmic rendering" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDspCdwLbVs5sJOlnO3WUVmaCEb5po6fXwdcSG5t1l2xgs_tsbG4ur_y6GVBGicqih00r3g6NCsQZSR8i7cN2WpaHu9ZHVAWOqavWAu28RBPd5459zvEj1eFXP5Qo2ZCwJhSvCM9VjbT94yWtZ8VfXc_ij7Vy7ihZ-B5C_y4MXezqxE5yE_G8Pvudk7yTp9yqzSF40DYIm05ZJf7vKSTcFPGswYODpHaytpevpuUDc3SwxYyczJHrh6lNiBFjUSSoBxXmkwyr0J8vxc" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">VAN CLEEF</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="1">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Vibrant abstract gradient art in purple and blue" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQKEhQSm3lQr1Tz8cYSnjAfR3t88X57Jmw7fn_Qj4_7DRrqWss5aD1Qsg8EqSkb28HEEXcroVV_quHimamOESd3C9bwbwLKEEDq6-r25o498VyUqKryOJW5uH_2sdG9F9ddC8l-ex8ktPUe_EPfDieSU9cO_ybWX8f06M1gl72ZX2PGm4jCrxphVvqS9VvWJC7rA27k7pND7wqCE5o9vGlPSJwxJTcWCugIIlY2UMmxja-53CwXtNFf-XXJKd7Tuj3Ldm0WmXak6f7" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">ADIDAS</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="2">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="High contrast editorial fashion shot with pink and red hues" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8_lenlQnJIMxLep2ttZTy70yeStdCoBXq0SRYDHc0mUXLCs5yXaordGJqNdt4S7ui9MAO_EIsVnPHN13c1gz1kTxi6H5y0R-hkueFIN0SPu_mwzAVij8G_5vRXBzLoPC5MpneWJO3P6cmo_d_ECD5vJ-ec-h0nskC-FssDQy_I2cOER_nfabWMxPjWqWmEDIObO-JpEVI47ZOYopAiIQEXc2V5xjInP6m289bRSMns7_7OJdxU2EEhdhB7sLSh9JlK6dai4GUqwgo" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">STUSSY</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="3">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Dynamic yellow and orange architectural detail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVpWPO7XGkdq49Pkw3YVfjULJ93JmYacqcgmsMzAA0D14J1heSngxTEoAVupJdIFnUzw3VyUqliZpJ5YesT3knD1b7ZmQe-0Xnmpww0qv4rFHx-72yvmOpA7oCscEiw-04eSn3LPoqs5TdeLsWT52uOoSstLyvQGvlwCDMZNGFkZ9hCCuUVRDh_MpdKmy6edABkGBAaGZYvXz9ddXRyYyVsE6UXgTMs17RSzYZ8mb0YK5UaFeYJPfgJm7hKPpAN5ruL4Hf374kPXOC" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">COLE BUXTON</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="4">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Abstract digital art" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd_B64PpTIQbJWNIt5ZHY00VDuoPdnthS9yE4eFl5IJgRl71sx-FUJq1hrsRGNt6HZCOtD1zHcTWUjnheBPfVXDkJodnK9e_Znz35x3W5JVRfSpf1oRlowUu-7-qyXK0SZg7gHXVWYujwuqo_YLERkI4VOPAVGgAm0z1DMZzYHl-xYc9ifFk0sYeR-sRuC97XHhpBz3b5ZAUuvig07F7hlWuCuqj-lgIDXRS2dOqlRkYEBqcYht4gKUTpYFl0SbrOPfBYDjneSZdrC" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">GEMINI</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="5">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Minimalist architecture" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrV2EAPitGzuKxj5X3-gFuUIJdQAYMycFv81PK1_Ll_JkXVjGvpS-L1jIQHqd6ck653L4tVUlYz4qYlt8qzB2viHCdiif8sTFzrmmwyJ6h4Jx73r2nANxGGncucqOr7EKvnSaxSpEnrqYGeZrqSvQzH9rdWmShNQ_i58oTCGWnWJw_dYU4Of0t-S6R-ogP4LW33dfpak8EDWXj6fNlKvjygF-59pNBcqx53cMWwwcpmumUQ_HYVUuCSbP6eBnHys99CtYyysvznnh2" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">META</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="6">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Fluid simulation graphics" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCObyGqYraW1SJ5ZpVlNeLzHjJnbrS_gOU_aLqEj_AGNAMwIBETgIUyoz9Ec2TIYCnYy9vyWc-C_x7Jtq6nPv4_C1EJyXbjAM_VqRLTKQcir62xBRyBDBtiv0cxE3gFknCCEzXwCI9KJH8lf2mqSwMR_Tq21r2_ggcaeP-VKTC8TNb6hGTNORMuFJiMz_vfaRJNil1Ve_YFFQPHW7Z3ydlDgptC-SODiIGRpQ-otxoDJ4a1k23VuBbRNq3Qmsh6fvsxngWlzhIZ4m_i" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">GOOGLE</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="7">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Neon lights in dark space" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALtBrGE1aXe9xMLVOE-GR365JWXqCIfaLSOCSpspcdvpT0NyCn4Nr1ZHdGrAq45kfvEkkrBLxrrFE1y1yFgCHyYobpNugCd_UVs0vovQsiJ98bh68oQ2cmVkSR3IVOAM-SdQqJh91LCbVHxSDBQ9KQV1xN86xM9kp5Y-ovp4rzOcsgd8phToIQAjJ3rb7ehQs2uzyg02Mfm1yZTuqZoa-JNGn5UUFFnDTI-zR1DNUPtVOF_BfxIEiLiiZI-42yJL35LYevB3QBogDI" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">LOEWE</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="8">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Nature landscape" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY-W5hovhtdS_2NBkfcvdRa0JrSTAUkFlIl_vb8opNW3hPFNsIywaX41aDfyoF9b19-M0K9FwbDlNmoqfLOasZf9NOoEQHUnaju6Vw3jHa6jWE_62DSu5dgDuBfG4EI5-sCwpnZVDvi9fecj5PV0MiDm86koFuHDH2RzZS6-SFFgUZABAJBzXWQIijO2c4sOrFl04JJ410RgNzUl7v_PvkQcO9M0E95pi8t3xhdxTe8P2C776-GmefbPQXXoHUiLn7SVgT71lbzjfg" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">COCA COLA</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="9">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Modern interior design" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZD4i3I9Am3tjxyCIcw8jeur7ns2JomR_ApfZ3hq4XexUiOeXR-IY2MI6URMwEGZEoUGMjycrg1JrX124ak4V6Y9Ixdl7hTkOZm-2ptIQvOShPV2_HfSK4Bohg85Ss12lUcPLR1mExXb-TmLRHB86u2GZ4y_uQWF33koPuNPCLA2sMWlkez0Wn8JvtCVTJ1IZMCp7GzqSJ9dW5jO7J5E7DdV7MS5XcFzlVwWVEKStgwWODdz_WK8n0ngNEMeo30NP_FRXbmxfeBVUl" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">REPRESENT</h1>
+</div><div class="relative w-full flex justify-center project-item group cursor-none py-1" data-project="10">
+<div class="floating-image absolute z-0 w-[60vw] h-[400px] md:w-[40vw] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Cosmic rendering" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDspCdwLbVs5sJOlnO3WUVmaCEb5po6fXwdcSG5t1l2xgs_tsbG4ur_y6GVBGicqih00r3g6NCsQZSR8i7cN2WpaHu9ZHVAWOqavWAu28RBPd5459zvEj1eFXP5Qo2ZCwJhSvCM9VjbT94yWtZ8VfXc_ij7Vy7ihZ-B5C_y4MXezqxE5yE_G8Pvudk7yTp9yqzSF40DYIm05ZJf7vKSTcFPGswYODpHaytpevpuUDc3SwxYyczJHrh6lNiBFjUSSoBxXmkwyr0J8vxc" style=""/>
+</div>
+<h1 class="main-title font-display-2xl text-display-2xl md:text-[160px] md:leading-[120px] text-white text-center z-10 transition-all duration-500 select-none whitespace-nowrap tracking-tighter" style="">NIKE</h1>
+</div></div>
+</div>
+</main>
+<!-- Footer from JSON -->
+<footer class="fixed bottom-0 left-0 right-0 mx-auto w-full max-w-[1280px] z-50 flex justify-between items-end px-[5vw] py-12 bg-transparent mix-blend-difference pointer-events-none">
+<div class="font-label-caps text-[10px] tracking-widest uppercase font-light text-white/50" style="">
+            ©2024 PORTFOLIO — ALL RIGHTS RESERVED
+        </div>
+<div class="flex gap-6 pointer-events-auto">
+<a class="font-label-caps text-[10px] tracking-widest uppercase font-light text-white/50 hover:text-white transition-colors duration-300" href="#" style="">Instagram</a>
+<a class="font-label-caps text-[10px] tracking-widest uppercase font-light text-white/50 hover:text-white transition-colors duration-300" href="#" style="">LinkedIn</a>
+<a class="font-label-caps text-[10px] tracking-widest uppercase font-light text-white/50 hover:text-white transition-colors duration-300" href="#" style="">Email</a>
+</div>
+</footer>
+<script>
+    const container = document.querySelector('.project-list-container');
+    const originalItems = Array.from(container.children);
+    
+    let originalHeight = 0;
+
+    // Clear the container
+    container.innerHTML = '';
+    
+    // Create 3 sets for smooth infinite scroll
+    const createSet = () => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'w-full flex flex-col gap-0 items-center justify-center';
+        originalItems.forEach(item => {
+            wrapper.appendChild(item.cloneNode(true));
+        });
+        return wrapper;
+    };
+
+    const topSet = createSet();
+    const middleSet = createSet();
+    const bottomSet = createSet();
+
+    container.appendChild(topSet);
+    container.appendChild(middleSet);
+    container.appendChild(bottomSet);
+
+    let currentY = 0;
+    let targetSpeed = 0;
+    let currentSpeed = 0;
+    const maxSpeed = 15;
+
+    function updateHeight() {
+        originalHeight = middleSet.getBoundingClientRect().height;
+    }
+
+    document.addEventListener('mousemove', (e) => {
+        // Image cursor logic
+        const items = document.querySelectorAll('.project-item');
+        items.forEach(item => {
+            const img = item.querySelector('.floating-image');
+            if(img && item.matches(':hover')) {
+                const rect = item.getBoundingClientRect();
+                // Get mouse position relative to the item
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                // Animate image towards cursor when hovered
+                img.style.left = `${x}px`;
+                img.style.top = `${y}px`;
+            }
+        });
+
+        // Scroll logic
+        const normalizedY = (e.clientY / window.innerHeight) * 2 - 1;
+        // Deadzone in the middle 20%
+        if (Math.abs(normalizedY) < 0.2) {
+            targetSpeed = 0;
+        } else {
+            // Scroll up when cursor is at bottom, scroll down when cursor is at top
+            const direction = normalizedY > 0 ? -1 : 1;
+            const magnitude = (Math.abs(normalizedY) - 0.2) / 0.8;
+            targetSpeed = direction * magnitude * maxSpeed;
+        }
+    });
+
+    function animate() {
+        // Smoothly interpolate current speed towards target speed
+        currentSpeed += (targetSpeed - currentSpeed) * 0.1;
+        
+        currentY += currentSpeed;
+
+        // Loop seamlessly
+        if (currentY <= -originalHeight) {
+            currentY += originalHeight;
+        } else if (currentY >= originalHeight) {
+            currentY -= originalHeight;
+        }
+
+        container.style.transform = `translateY(${currentY - originalHeight}px)`;
+        requestAnimationFrame(animate);
+    }
+
+    window.addEventListener('resize', updateHeight);
+
+    // Wait for fonts/layout to load to calculate accurate height
+    window.addEventListener('load', () => {
+        updateHeight();
+        // Start showing the middle set
+        currentY = 0;
+        animate();
+    });
+</script></body></html>

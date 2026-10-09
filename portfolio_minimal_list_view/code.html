@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>STUDIO - Projects List View</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface-variant": "#4c4546",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "tertiary": "#000000",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#5e5e5e",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-primary-container": "#848484",
+                        "outline": "#7e7576",
+                        "primary-fixed": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "on-tertiary-container": "#838484",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f3f3f4",
+                        "tertiary-container": "#1a1c1c",
+                        "secondary": "#5e5e5e",
+                        "on-error": "#ffffff",
+                        "primary": "#000000",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-secondary-container": "#626263",
+                        "surface-container": "#eeeeee",
+                        "surface-variant": "#e2e2e2",
+                        "on-background": "#1a1c1c",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "surface-container-highest": "#e2e2e2",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-tertiary": "#ffffff",
+                        "primary-container": "#1b1b1b",
+                        "tertiary-fixed": "#e2e2e2",
+                        "surface-dim": "#dadada",
+                        "surface-bright": "#f9f9f9",
+                        "error": "#ba1a1a",
+                        "background": "#f9f9f9",
+                        "on-surface": "#1a1c1c",
+                        "inverse-primary": "#c6c6c6",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#464747",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "inverse-surface": "#2f3131",
+                        "surface-container-high": "#e8e8e8",
+                        "secondary-fixed": "#e4e2e2",
+                        "secondary-container": "#e1dfdf",
+                        "outline-variant": "#cfc4c5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "section-gap": "160px",
+                        "element-gap": "12px",
+                        "edge-margin": "64px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-xl": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-sm": ["14px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "display-xl": ["80px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .nav-link-hover {
+                @apply transition-colors duration-150 ease-linear hover:text-black dark:hover:text-white;
+            }
+            .list-row-hover {
+                @apply transition-colors duration-150 ease-linear hover:bg-surface-container-low;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col antialiased selection:bg-tertiary selection:text-on-tertiary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full pt-[10px] pb-4 z-50 bg-white border-b border-gray-200">
+<div class="flex justify-between items-center px-16 w-full max-w-[1440px] mx-auto">
+<div class="text-lg font-bold tracking-tighter text-black">
+                STUDIO
+            </div>
+<nav class="hidden md:flex gap-8">
+<a class="font-label-caps text-label-caps text-black border-b border-black pb-1" href="#">WORK</a>
+<a class="font-label-caps text-label-caps text-gray-400 nav-link-hover" href="#">ABOUT</a>
+<a class="font-label-caps text-label-caps text-gray-400 nav-link-hover" href="#">NEWS</a>
+<a class="font-label-caps text-label-caps text-gray-400 nav-link-hover" href="#">CAREERS</a>
+</nav>
+<button class="bg-tertiary text-on-tertiary font-label-caps text-label-caps px-6 py-3 hover:opacity-90 transition-opacity duration-150">
+                GET IN TOUCH
+            </button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-[160px] px-edge-margin w-full max-w-container-max mx-auto pb-section-gap">
+<!-- View Header & Toggle -->
+<div class="flex justify-between items-end mb-element-gap">
+<h1 class="font-headline-lg text-headline-lg text-primary">All Projects (12)</h1>
+<div class="flex items-center gap-4">
+<a class="font-label-caps text-label-caps text-secondary nav-link-hover" href="#">GRID VIEW</a>
+<div class="w-[1px] h-4 bg-outline-variant"></div>
+<span class="font-label-caps text-label-caps text-primary border-b border-primary pb-1">LIST VIEW</span>
+</div>
+</div>
+<!-- List View Container -->
+<div class="w-full flex flex-col border-t border-outline-variant">
+<!-- List Header -->
+<div class="grid grid-cols-12 gap-gutter py-4 border-b border-outline-variant bg-surface-container-lowest text-secondary font-label-caps text-label-caps">
+<div class="col-span-1">NO.</div>
+<div class="col-span-5">PROJECT NAME</div>
+<div class="col-span-4">TYPE</div>
+<div class="col-span-2 text-right">YEAR</div>
+</div>
+<!-- List Items -->
+<a class="group grid grid-cols-12 gap-gutter py-6 border-b border-outline-variant list-row-hover items-center cursor-pointer" href="#">
+<div class="col-span-1 font-body-sm text-body-sm text-secondary">01</div>
+<div class="col-span-5 font-headline-md text-headline-md text-primary group-hover:pl-2 transition-all duration-300">The Obsidian House</div>
+<div class="col-span-4 font-body-sm text-body-sm text-secondary">Residential Architecture</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-secondary">2024</div>
+</a>
+<a class="group grid grid-cols-12 gap-gutter py-6 border-b border-outline-variant list-row-hover items-center cursor-pointer" href="#">
+<div class="col-span-1 font-body-sm text-body-sm text-secondary">02</div>
+<div class="col-span-5 font-headline-md text-headline-md text-primary group-hover:pl-2 transition-all duration-300">Kyoto Pavilion</div>
+<div class="col-span-4 font-body-sm text-body-sm text-secondary">Cultural Space</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-secondary">2023</div>
+</a>
+<a class="group grid grid-cols-12 gap-gutter py-6 border-b border-outline-variant list-row-hover items-center cursor-pointer" href="#">
+<div class="col-span-1 font-body-sm text-body-sm text-secondary">03</div>
+<div class="col-span-5 font-headline-md text-headline-md text-primary group-hover:pl-2 transition-all duration-300">Aura Headquarters</div>
+<div class="col-span-4 font-body-sm text-body-sm text-secondary">Commercial Workspace</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-secondary">2023</div>
+</a>
+<a class="group grid grid-cols-12 gap-gutter py-6 border-b border-outline-variant list-row-hover items-center cursor-pointer" href="#">
+<div class="col-span-1 font-body-sm text-body-sm text-secondary">04</div>
+<div class="col-span-5 font-headline-md text-headline-md text-primary group-hover:pl-2 transition-all duration-300">Coastal Retreat Series</div>
+<div class="col-span-4 font-body-sm text-body-sm text-secondary">Hospitality</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-secondary">2022</div>
+</a>
+<a class="group grid grid-cols-12 gap-gutter py-6 border-b border-outline-variant list-row-hover items-center cursor-pointer" href="#">
+<div class="col-span-1 font-body-sm text-body-sm text-secondary">05</div>
+<div class="col-span-5 font-headline-md text-headline-md text-primary group-hover:pl-2 transition-all duration-300">Lumina Museum of Modern Art</div>
+<div class="col-span-4 font-body-sm text-body-sm text-secondary">Public Infrastructure</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-secondary">2022</div>
+</a>
+<a class="group grid grid-cols-12 gap-gutter py-6 border-b border-outline-variant list-row-hover items-center cursor-pointer" href="#">
+<div class="col-span-1 font-body-sm text-body-sm text-secondary">06</div>
+<div class="col-span-5 font-headline-md text-headline-md text-primary group-hover:pl-2 transition-all duration-300">Vertex Tower</div>
+<div class="col-span-4 font-body-sm text-body-sm text-secondary">High-Rise Commercial</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-secondary">2021</div>
+</a>
+<a class="group grid grid-cols-12 gap-gutter py-6 border-b border-outline-variant list-row-hover items-center cursor-pointer" href="#">
+<div class="col-span-1 font-body-sm text-body-sm text-secondary">07</div>
+<div class="col-span-5 font-headline-md text-headline-md text-primary group-hover:pl-2 transition-all duration-300">Minimalist Library</div>
+<div class="col-span-4 font-body-sm text-body-sm text-secondary">Educational Facility</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-secondary">2021</div>
+</a>
+<a class="group grid grid-cols-12 gap-gutter py-6 border-b border-outline-variant list-row-hover items-center cursor-pointer" href="#">
+<div class="col-span-1 font-body-sm text-body-sm text-secondary">08</div>
+<div class="col-span-5 font-headline-md text-headline-md text-primary group-hover:pl-2 transition-all duration-300">Alpine Cabin Prototype</div>
+<div class="col-span-4 font-body-sm text-body-sm text-secondary">Residential Micro-Architecture</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-secondary">2020</div>
+</a>
+<a class="group grid grid-cols-12 gap-gutter py-6 border-b border-outline-variant list-row-hover items-center cursor-pointer" href="#">
+<div class="col-span-1 font-body-sm text-body-sm text-secondary">09</div>
+<div class="col-span-5 font-headline-md text-headline-md text-primary group-hover:pl-2 transition-all duration-300">Zenith Gallery Annex</div>
+<div class="col-span-4 font-body-sm text-body-sm text-secondary">Cultural Expansion</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-secondary">2020</div>
+</a>
+<a class="group grid grid-cols-12 gap-gutter py-6 border-b border-outline-variant list-row-hover items-center cursor-pointer" href="#">
+<div class="col-span-1 font-body-sm text-body-sm text-secondary">10</div>
+<div class="col-span-5 font-headline-md text-headline-md text-primary group-hover:pl-2 transition-all duration-300">Urban Oasis Masterplan</div>
+<div class="col-span-4 font-body-sm text-body-sm text-secondary">Landscape Architecture</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-secondary">2019</div>
+</a>
+<a class="group grid grid-cols-12 gap-gutter py-6 border-b border-outline-variant list-row-hover items-center cursor-pointer" href="#">
+<div class="col-span-1 font-body-sm text-body-sm text-secondary">11</div>
+<div class="col-span-5 font-headline-md text-headline-md text-primary group-hover:pl-2 transition-all duration-300">The Glass Block</div>
+<div class="col-span-4 font-body-sm text-body-sm text-secondary">Mixed-Use Development</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-secondary">2019</div>
+</a>
+<a class="group grid grid-cols-12 gap-gutter py-6 border-b border-outline-variant list-row-hover items-center cursor-pointer" href="#">
+<div class="col-span-1 font-body-sm text-body-sm text-secondary">12</div>
+<div class="col-span-5 font-headline-md text-headline-md text-primary group-hover:pl-2 transition-all duration-300">Foundation Studio</div>
+<div class="col-span-4 font-body-sm text-body-sm text-secondary">Commercial Renovation</div>
+<div class="col-span-2 text-right font-body-sm text-body-sm text-secondary">2018</div>
+</a>
+</div>
+<!-- Load More Section -->
+<div class="w-full flex justify-center mt-16">
+<button class="border border-tertiary text-primary bg-transparent font-label-caps text-label-caps px-8 py-4 hover:bg-surface-container-low transition-colors duration-150">
+                LOAD MORE PROJECTS
+            </button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-white border-t border-gray-100 mt-auto">
+<div class="flex justify-between items-center px-16 w-full max-w-[1440px] mx-auto">
+<div class="font-label-caps text-label-caps text-gray-400">
+                © 2024 ARCHITECTURAL STUDIO
+            </div>
+<div class="flex gap-8">
+<a class="font-label-caps text-label-caps text-gray-400 hover:opacity-60 transition-opacity" href="#">INSTAGRAM</a>
+<a class="font-label-caps text-label-caps text-gray-400 hover:opacity-60 transition-opacity" href="#">LINKEDIN</a>
+<a class="font-label-caps text-label-caps text-gray-400 hover:opacity-60 transition-opacity" href="#">TWITTER</a>
+</div>
+</div>
+</footer>
+</body></html>

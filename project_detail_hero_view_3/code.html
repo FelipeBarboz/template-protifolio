@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>STUDIO - Golden Hour</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#e2e2e2",
+                        "outline-variant": "#cfc4c5",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#848484",
+                        "tertiary-fixed": "#e2e2e2",
+                        "surface-bright": "#f9f9f9",
+                        "surface-tint": "#5e5e5e",
+                        "on-tertiary": "#ffffff",
+                        "surface-dim": "#dadada",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "on-primary-fixed": "#1b1b1b",
+                        "inverse-surface": "#2f3131",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-container": "#838484",
+                        "surface-container-low": "#f3f3f4",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-container": "#eeeeee",
+                        "primary-container": "#1b1b1b",
+                        "on-surface-variant": "#4c4546",
+                        "secondary": "#5e5e5e",
+                        "on-secondary-fixed-variant": "#464747",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "on-primary-fixed-variant": "#474747",
+                        "background": "#f9f9f9",
+                        "outline": "#7e7576",
+                        "on-surface": "#1a1c1c",
+                        "on-background": "#1a1c1c",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary": "#000000",
+                        "surface": "#f9f9f9",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "tertiary-container": "#1a1c1c",
+                        "primary": "#000000",
+                        "on-secondary-container": "#626263",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "surface-variant": "#e2e2e2",
+                        "secondary-container": "#e1dfdf",
+                        "secondary-fixed": "#e4e2e2",
+                        "inverse-primary": "#c6c6c6"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "section-gap": "160px",
+                        "gutter": "24px",
+                        "element-gap": "12px",
+                        "container-max": "1440px",
+                        "edge-margin": "64px"
+                    },
+                    fontFamily: {
+                        "headline-md": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "display-xl": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    fontSize: {
+                        "headline-md": ["24px", { lineHeight: "1.4", letterSpacing: "-0.01em", fontWeight: "500" }],
+                        "label-caps": ["12px", { lineHeight: "1", letterSpacing: "0.1em", fontWeight: "600" }],
+                        "body-sm": ["14px", { lineHeight: "1.6", letterSpacing: "0", fontWeight: "400" }],
+                        "headline-lg": ["40px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "400" }],
+                        "display-xl": ["80px", { lineHeight: "1.1", letterSpacing: "-0.04em", fontWeight: "500" }],
+                        "body-lg": ["18px", { lineHeight: "1.6", letterSpacing: "0", fontWeight: "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-primary antialiased selection:bg-primary selection:text-on-primary">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center h-16 px-8 md:px-16 pt-[10px] bg-transparent transition-all duration-150">
+<div class="text-xl font-bold tracking-tighter text-primary">
+            STUDIO
+        </div>
+<div class="hidden md:flex items-center gap-8 font-inter uppercase tracking-widest text-xs font-medium">
+<a class="text-primary border-b border-primary pb-1 opacity-50 transition-all duration-150" href="#">WORK</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-70 duration-150" href="#">ABOUT</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-70 duration-150" href="#">NEWS</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors hover:opacity-70 duration-150" href="#">CAREERS</a>
+</div>
+<a class="bg-primary text-on-primary px-6 py-3 font-label-caps text-label-caps hover:opacity-70 transition-opacity duration-150" href="#">
+            GET IN TOUCH
+        </a>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen w-full flex flex-col justify-center px-8 md:px-edge-margin">
+<div class="absolute inset-0 -z-10 bg-surface-container-high">
+<img alt="warm golden hour lighting illuminating a minimalist architectural space with concrete walls and sharp shadows" class="w-full h-full object-cover object-center opacity-80" data-alt="warm golden hour lighting illuminating a minimalist architectural space with concrete walls and sharp shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYbsKjKK4dQ_VEFR4hYru6wI4WD19nMNmShKPATm5u9azlx2V7KOChbkeUqsjar1CnpHxaYRa8EMZ8_wPw7MLB8b7CF_kzVCmNdesfIvAr0syslERdHb07kHbPw6QNFuejrWkoVj7AqNWEJU-U19lLHKsI6YvcKkpGxsxy7r3yZU86EplL1kKtJIB5Y7hzPd6D7nrWLKH34ng2d8-0-iULRMsPE8P_kRoHjP6PWwcCGl2PEOfDkGqo6HD8a4-p2FqGGdyYM1IQzKM"/>
+</div>
+<div class="max-w-container-max w-full mx-auto">
+<h1 class="font-display-xl text-display-xl text-primary mb-6">
+                Golden Hour
+            </h1>
+<div class="flex gap-8">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-outline">CLIENT</span>
+<span class="font-body-sm text-body-sm text-primary">VOGUE</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-outline">YEAR</span>
+<span class="font-body-sm text-body-sm text-primary">2023</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Content Layout -->
+<main class="max-w-container-max mx-auto px-8 md:px-edge-margin pb-section-gap pt-section-gap">
+<!-- Description & Metadata -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-gap">
+<div class="md:col-span-7">
+<p class="font-body-lg text-body-lg text-primary max-w-2xl">
+                    An exploration of natural light and its interaction with brutalist forms. This project aimed to capture the ephemeral moments when the setting sun transforms cold concrete into a canvas of warm hues and dramatic geometries. The strict minimalist approach allows the interplay of shadow and light to become the primary subject of the visual narrative.
+                </p>
+</div>
+<div class="md:col-start-10 md:col-span-3 flex flex-col gap-8 mt-12 md:mt-0">
+<div>
+<h3 class="font-label-caps text-label-caps text-outline uppercase mb-2">CLIENT</h3>
+<p class="font-body-sm text-body-sm text-primary lowercase">vogue</p>
+</div>
+<div>
+<h3 class="font-label-caps text-label-caps text-outline uppercase mb-2">YEAR</h3>
+<p class="font-body-sm text-body-sm text-primary lowercase">2023</p>
+</div>
+<div>
+<h3 class="font-label-caps text-label-caps text-outline uppercase mb-2">ROLE</h3>
+<p class="font-body-sm text-body-sm text-primary lowercase">art direction, photography</p>
+</div>
+</div>
+</section>
+<!-- Rhythmic Showcase -->
+<section class="flex flex-col gap-gutter">
+<!-- Full Width Image -->
+<div class="w-full h-[819px] bg-surface-container">
+<img alt="expansive view of a brutalist concrete interior bathed in rich orange sunset light with deep contrasting shadows" class="w-full h-full object-cover" data-alt="expansive view of a brutalist concrete interior bathed in rich orange sunset light with deep contrasting shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu96REY3W1a1DrijCEcEhgWhKptkTPJmgs2EIbfk8eY0drKjOmgwTD7cvMN-BZG7re_kX56aZqa1izwb0mndO7DIqN5g44WB1C8JHg2Sls4RLJor2l7D6tDU3jnLIybY3SdX-RHh4_a7bRUPJ7w-8RRwRIFHn3cAP1GO2c373zamyhcEUujXwaZyreGe_V1djXXL43u0aWln3aUJ0usOV2FuxYbV76GsBO_S2789A8a0bBjjys1qYAZj6Fv6KEiuj5qWBSaxd6DTY"/>
+</div>
+<!-- Two Column Images -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="w-full h-[614px] bg-surface-container">
+<img alt="close-up detail of textured concrete wall intersecting with a smooth glass pane reflecting golden hour light" class="w-full h-full object-cover" data-alt="close-up detail of textured concrete wall intersecting with a smooth glass pane reflecting golden hour light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo3kToKszyiAVTdWnBFhiodL-iK1Cry3-FIU_140BT2SIZJLEBvXkfTfG72-iePPJJU9ohEsu9XeFsPif-fDWasGZSXp0XrzC8w1_EZ5pUDmVhvrN5VnMa8kbH0iYBJatyqWgrCLG91B_cjyofiiwc3ocUL0TkIHILgyOmgvHOpnvIZYxx0K-5AsvN8IjXPjmxaoSH_CBLgPPK3-ENweLVxMnIFblNqYlyTvYR2r8RUwgBorgMy-QpopxQBYEhNl2uwTHYgZ7E_KY"/>
+</div>
+<div class="w-full h-[614px] bg-surface-container">
+<img alt="minimalist geometric staircase in a concrete building with a single shaft of warm sunlight hitting the steps" class="w-full h-full object-cover" data-alt="minimalist geometric staircase in a concrete building with a single shaft of warm sunlight hitting the steps" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt2ExdUrdlfIO6xl9lqDb2PZGEzhnk21re2A7lhMpyURl-0pkUFtod-G1oxyM3aE0gjb63suAL7y9wTE1V4G-mtKazelP81ycaZbnxkJSslz3aPRL8sLn7xSynBOgvyTsaFREqU8I0US1qESCQcyuD-JqDmatOSGCPJt5nfcaV3TRu2aG2Rg9wkDGv3DgkhyUSwr295TwECpiH_xXzrOOfuENUcw6A053pweprYNWkOROarV0i-4kLiQaexwS4vtSB6hvlanRLJbo"/>
+</div>
+</div>
+<!-- Full Width Image -->
+<div class="w-full h-[819px] bg-surface-container">
+<img alt="wide shot of a vast empty architectural gallery space during sunset with elongated shadows stretching across the floor" class="w-full h-full object-cover" data-alt="wide shot of a vast empty architectural gallery space during sunset with elongated shadows stretching across the floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYwKo9QwKywPf6sERBI6k-uXgOFPAEQg1BrQOVWXjuAaYiWapqi6MA0F1ex9-it_lsxtnaW3Nuj6HIMyqHdL1OSwSYTA2WaKqWlRjexQkr6G34Olz495WXb0ARiVlS621O9ZXTb8A7A5Le4v-SmNLWFeX4WaK6pJ-2AcZHmyEmaJq4cWm9VDfBpAzNiirMbsAJzBIhMhzf3MmW2xyFzeGNRJxH-nc1bKBO0P-BuX4e9MakZZJlIbgy6XIcbf1570cJGGUw44F6ekw"/>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-12 pb-[10px] px-8 md:px-16 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4 bg-background">
+<div class="font-inter uppercase tracking-widest text-[10px] text-primary">
+            © 2024 STUDIO. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex gap-6 font-inter uppercase tracking-widest text-[10px]">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-150" href="#">INSTAGRAM</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-150" href="#">LINKEDIN</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-150" href="#">TWITTER</a>
+</div>
+</footer>
+</body></html>

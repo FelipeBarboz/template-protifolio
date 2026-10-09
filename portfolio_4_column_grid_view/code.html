@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio - 4 Column Grid</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-background": "#1a1c1c",
+                        "on-primary-fixed-variant": "#474747",
+                        "primary-fixed": "#e2e2e2",
+                        "outline": "#7e7576",
+                        "surface-container-low": "#f3f3f4",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#464747",
+                        "on-primary-container": "#848484",
+                        "on-surface-variant": "#4c4546",
+                        "inverse-surface": "#2f3131",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e2e2e2",
+                        "on-surface": "#1a1c1c",
+                        "surface-bright": "#f9f9f9",
+                        "on-tertiary-container": "#838484",
+                        "secondary-fixed": "#e4e2e2",
+                        "surface": "#f9f9f9",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "secondary": "#5e5e5e",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-secondary-container": "#626263",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#e8e8e8",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "primary": "#000000",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#1b1b1b",
+                        "inverse-primary": "#c6c6c6",
+                        "outline-variant": "#cfc4c5",
+                        "tertiary-fixed": "#e2e2e2",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-container": "#eeeeee",
+                        "tertiary-container": "#1a1c1c",
+                        "surface-dim": "#dadada",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "error": "#ba1a1a",
+                        "tertiary": "#000000",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "surface-tint": "#5e5e5e",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "on-secondary": "#ffffff",
+                        "background": "#f9f9f9",
+                        "secondary-container": "#e1dfdf"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "edge-margin": "64px",
+                        "gutter": "24px",
+                        "container-max": "1440px",
+                        "element-gap": "12px",
+                        "section-gap": "160px"
+                    },
+                    fontFamily: {
+                        "label-caps": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display-xl": ["Inter"],
+                        "body-sm": ["Inter"]
+                    },
+                    fontSize: {
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                        "display-xl": ["80px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "500" }],
+                        "body-sm": ["14px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full pt-[10px] bg-white dark:bg-black z-50 border-b border-gray-100 dark:border-gray-900">
+<div class="flex justify-between items-center w-full px-16 h-20">
+<!-- Brand -->
+<a class="text-xl font-bold tracking-tighter text-black dark:text-white" href="#">
+                STUDIO
+            </a>
+<!-- Links -->
+<div class="hidden md:flex items-center space-x-8 font-['Inter'] uppercase tracking-[0.1em] text-[11px] font-medium">
+<a class="text-black dark:text-white border-b border-black dark:border-white pb-1 transition-colors duration-150" href="#">WORK</a>
+<a class="text-gray-400 dark:text-gray-600 hover:text-black dark:hover:text-white transition-colors duration-150" href="#">ABOUT</a>
+<a class="text-gray-400 dark:text-gray-600 hover:text-black dark:hover:text-white transition-colors duration-150" href="#">NEWS</a>
+<a class="text-gray-400 dark:text-gray-600 hover:text-black dark:hover:text-white transition-colors duration-150" href="#">CAREERS</a>
+</div>
+<!-- CTA -->
+<a class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary px-6 py-3 font-label-caps text-label-caps hover:bg-black/90 transition-colors duration-150" href="#">
+                GET IN TOUCH
+            </a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-[250px] pb-section-gap px-edge-margin max-w-container-max mx-auto">
+<!-- Header & View Toggle -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16">
+<div>
+<h1 class="font-display-xl text-display-xl text-primary mb-4">All Projects</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl">A curated selection of our recent architectural and spatial design work.</p>
+</div>
+<div class="mt-8 md:mt-0 flex items-center space-x-4 font-label-caps text-label-caps">
+<a class="text-secondary hover:text-primary transition-colors" href="#">LIST</a>
+<div class="w-px h-3 bg-outline-variant"></div>
+<a class="text-secondary hover:text-primary transition-colors" href="#">GRID 2</a>
+<div class="w-px h-3 bg-outline-variant"></div>
+<a class="text-primary border-b border-primary pb-1" href="#">GRID 4</a>
+</div>
+</div>
+<!-- 4 Column Grid Portfolio -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[10px]">
+<!-- Project 1 -->
+<a class="group block relative overflow-hidden bg-surface-container-low aspect-[4/5]" href="#">
+<img alt="Minimalist concrete house exterior with large windows" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist concrete modern house exterior with large floor to ceiling windows, clean lines, natural light, architectural photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr7_5pOcaGvhbjpOUVLZ3B2ky_xsEE__TVX4I4TCZCfnNu0_cDk5xD5Fg4k-9A3AUfPRETjLJqQLoAfqXMjMDFb6QvpFdQyDigU8W2iP2Y08BjF0VhFB5-pUmbgrd9bf6VXJdjXhv17s--KZt0oWLqri-4ukw92A1iDOFvhBW1BFZIwFC_CLP9PlEPtfWXLipdNEI0AUmR4ib41_t4yrsawV0fpqDktpuxVynI4Jdj38yLd6ANZmvNm2N9yJwv2SxbGstP_S0Q4Xk"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0 bg-gradient-to-t from-black/80 to-transparent">
+<h3 class="font-headline-md text-headline-md text-on-primary mb-1">Residence 04</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80">Residential, Tokyo</p>
+</div>
+</a>
+<!-- Project 2 -->
+<a class="group block relative overflow-hidden bg-surface-container-low aspect-[4/5]" href="#">
+<img alt="Modern interior with minimalist furniture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist modern interior living room with neutral tones, designer furniture, subtle lighting, editorial architectural style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYfbFAr2LSRrMerKvnsPA2pElBttD8LGVeXm7SSsZhCbMqB22X4ey0fpWW7ZGEas7iJIx1Zsbgh9RfEGzxKjYxW1REE5lnVhaDBmIYdeyHydoGaKywts7MYSTuSbK22X6bxDX4NVsO6nhUykaUv6NI23RmmM0j5z7k5RMdm3dnryG6mCFYuVs_9TmkMJMSNHNED21Ydxe8JhPVUzJ3dtGydmWK4GwJa25Pp-Komkdc8DfVngNk82j_FbRq_mzhJs3AqY7Wb6g0fY8"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0 bg-gradient-to-t from-black/80 to-transparent">
+<h3 class="font-headline-md text-headline-md text-on-primary mb-1">The Gallery</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80">Commercial, London</p>
+</div>
+</a>
+<!-- Project 3 -->
+<a class="group block relative overflow-hidden bg-surface-container-low aspect-[4/5]" href="#">
+<img alt="Minimalist staircase design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Architectural detail of a minimalist concrete and wood staircase, strong shadows, geometric composition, editorial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2kaBf7ZL2cgi54fSGBcU5oy8VUVubT5J6cvYXPkFtNxkl6tj5eTeovUkJC7nI9m71i20oMFwmNvXCGvGqnrfvvZxTQysnS11LQtdcZTtpOxfYTZyo6k0ZC70d_xzgJDuvCX1RsrS8U3OAHIhc7PuRyg8zvx6u6TuLChNJ33xkG-Oz4phJKypOL11V1RxPo-H6zI-yWWJdOcaj0oASTwiNmdw0wrMqyTuWoNHjZHCHkTdm4gKOGRBY9kzVs9Zc2NywYWLT1kDMbLY"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0 bg-gradient-to-t from-black/80 to-transparent">
+<h3 class="font-headline-md text-headline-md text-on-primary mb-1">Aura Pavilion</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80">Cultural, Kyoto</p>
+</div>
+</a>
+<!-- Project 4 -->
+<a class="group block relative overflow-hidden bg-surface-container-low aspect-[4/5]" href="#">
+<img alt="Modern kitchen with marble islands" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-end modern minimalist kitchen with dark marble island, sleek cabinetry, natural light, sophisticated interior design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUlNvkCyaR47X4jmWfu8BO6k-MUQvmCnZvt9Ivn-66mDeJqHluvLde-DrFuG5fMIWoqJjgY306WOxjYioePqTwqQ3ndZkrnrAinnBIoFbXDi-GEQKTg6S6e-YxsOxx7z4MRVQMU4r1JHENV2IRIX9lRvxFqqVdc004vMmFgsaRMg1k4nvTPNwbsFa58ETxG6Bxszqso1pW9uGIZMOE8EPltvvkwIJQQBsc1MjMQXR71-gLomEJHF4N_L3j7J71yjrWNCNGIXDrZ3g"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0 bg-gradient-to-t from-black/80 to-transparent">
+<h3 class="font-headline-md text-headline-md text-on-primary mb-1">Villa L</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80">Residential, Milan</p>
+</div>
+</a>
+<!-- Project 5 -->
+<a class="group block relative overflow-hidden bg-surface-container-low aspect-[4/5]" href="#">
+<img alt="Minimalist bedroom with large window" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Serene minimalist bedroom with large window overlooking nature, neutral bedding, soft diffused natural light, quiet luxury aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKLgO44HiS_L_AiT8vZ1EvTGlXDW2EA6xFUoP73WC_6fipUHoKJ7kAQjHSBbrXNRFBf6kHnYzpsi757A9v08tyj-LJh_8fImB8uuy0BJb8XK1dPxlfnxjrHWeWVvTWG9jDDPNoXSWevrz2SLxaOSFnl-8VUldn-uisr0wCFVkebqJHBFEjG9AqudXXHkMbimKK1wLyu7c50IX-495P87HUH9om0QICV6TVK072qKkJUS_B9Lx_V6V8FYsSRaTEsNKVwphFVH-n5b0"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0 bg-gradient-to-t from-black/80 to-transparent">
+<h3 class="font-headline-md text-headline-md text-on-primary mb-1">Retreat House</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80">Residential, Aspen</p>
+</div>
+</a>
+<!-- Project 6 -->
+<a class="group block relative overflow-hidden bg-surface-container-low aspect-[4/5]" href="#">
+<img alt="Modern office interior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist creative office space, raw concrete columns, glass partitions, modern desks, architectural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwKGYejI4WitBMQg6YP89gkRq--xMsrw_SdYYyJnonFQYHpm7rD0TA2dgkNP6-FMl9dpoA4cMUEIzpJJClPlKeAlPDAxyxfMwAMMo0Vo4zYkjfNX5mNuOZpe3EmOesZC8myHroWEOl6hATmNBxoTXKEVjw4fyHQJ8kSxGB8jYzBAMZF6tbDVz-NZ-E0MXeZs-51cmYfyJyeckew4SSu5qNQH9lJ27GQgYuF9xM4yNVGIt21W8DRADytdnht-VbY_dhrCSxkIQZ1PQ"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0 bg-gradient-to-t from-black/80 to-transparent">
+<h3 class="font-headline-md text-headline-md text-on-primary mb-1">Studio Space</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80">Commercial, Berlin</p>
+</div>
+</a>
+<!-- Project 7 -->
+<a class="group block relative overflow-hidden bg-surface-container-low aspect-[4/5]" href="#">
+<img alt="Abstract architectural detail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Abstract architectural facade detail, ribbed texture, monochromatic, strong light and shadow play" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU5EW-WY2ZIdiYQZiWp-rGSLGIOPZbVilS5mWtyPbzx784zs4OmfeAfzOvtz2Z49nlBJN665IUZePTjBiIj5lPsmq3GELx2AUXtYMJnqDYlfjQSViqzCoGJhQmKI-SRheaQBW-b2ILXJ7cHsOIfBgL2qS_xCjuTlaV9oCfR-x9wbvYIfKuMWz_07EVTPztIInbYKfskTYlxLbVn1_aoktnA07zv3iqOgCIgRt9bdO4WRmRfXYJuuAbhyU9WjbWLMXPbX54pazMeIg"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0 bg-gradient-to-t from-black/80 to-transparent">
+<h3 class="font-headline-md text-headline-md text-on-primary mb-1">Facade Study</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80">Research, Internal</p>
+</div>
+</a>
+<!-- Project 8 -->
+<a class="group block relative overflow-hidden bg-surface-container-low aspect-[4/5]" href="#">
+<img alt="Modern bathroom interior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxury minimalist bathroom, freestanding tub, textured stone walls, ambient soft lighting, high-end spa aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfXDw9JMisbaOMRLGZfQULVNJ2lREKNnwyXX17wf43Bdbk0kC3REK0Ko0ITv7zs5voRffwJYTWtGtWsDa7XsmY-7LHSJOXF5i9nDnbd6gcleugH7nlokpPw45rHPqhEwwaXZBPIlQTyaDN0hQU0XWblUpYcfo6wtXIcxKi8X7y4OZie16_MKYw2faCO0wWLHak0o9bT2VdBa3P8Squicfnz11dQM1lMxTJqEmVs8wDCbvJigj1Dsxgi-XyNrqUW99LwYc6Dgy0GzY"/>
+<div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+<div class="absolute bottom-0 left-0 w-full p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0 bg-gradient-to-t from-black/80 to-transparent">
+<h3 class="font-headline-md text-headline-md text-on-primary mb-1">Spa Pavilion</h3>
+<p class="font-body-sm text-body-sm text-on-primary/80">Hospitality, Bali</p>
+</div>
+</a>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-gray-100 dark:border-gray-900 bg-white dark:bg-black">
+<div class="flex flex-col md:flex-row justify-between items-center px-16 py-12 w-full max-w-container-max mx-auto font-['Inter'] uppercase text-[10px] tracking-widest text-black dark:text-white">
+<div class="mb-4 md:mb-0">
+                © 2024 STUDIO. ALL RIGHTS RESERVED.
+            </div>
+<div class="flex space-x-8">
+<a class="text-gray-400 dark:text-gray-600 hover:text-black dark:hover:text-white hover:underline transition-colors duration-150" href="#">INSTAGRAM</a>
+<a class="text-gray-400 dark:text-gray-600 hover:text-black dark:hover:text-white hover:underline transition-colors duration-150" href="#">LINKEDIN</a>
+<a class="text-gray-400 dark:text-gray-600 hover:text-black dark:hover:text-white hover:underline transition-colors duration-150" href="#">TWITTER</a>
+</div>
+</div>
+</footer>
+</body></html>

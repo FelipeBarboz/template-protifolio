@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio - List View</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#c8c6c5",
+                        "primary": "#000000",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "on-primary-fixed-variant": "#474646",
+                        "surface-tint": "#5f5e5e",
+                        "on-background": "#1a1c1c",
+                        "on-secondary": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "tertiary-container": "#191c1e",
+                        "tertiary-fixed": "#e1e2e4",
+                        "on-primary-fixed": "#1c1b1b",
+                        "surface-container-high": "#e8e8e8",
+                        "secondary-fixed-dim": "#c0c7d6",
+                        "secondary-fixed": "#dce2f3",
+                        "surface-container-low": "#f3f3f4",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c5c6c8",
+                        "primary-fixed": "#e5e2e1",
+                        "on-secondary-fixed-variant": "#404754",
+                        "on-tertiary-container": "#828486",
+                        "surface-variant": "#e2e2e2",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dadada",
+                        "on-secondary-container": "#5e6572",
+                        "secondary": "#585f6c",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#000000",
+                        "on-surface": "#1a1c1c",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c4c7c7",
+                        "surface-container": "#eeeeee",
+                        "secondary-container": "#dce2f3",
+                        "on-primary-container": "#858383",
+                        "on-secondary-fixed": "#151c27",
+                        "inverse-surface": "#2f3131",
+                        "on-error": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f0f1f1",
+                        "background": "#f9f9f9",
+                        "on-surface-variant": "#444748",
+                        "primary-container": "#1c1b1b",
+                        "on-tertiary-fixed": "#191c1e",
+                        "outline": "#747878"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "lg": "4rem",
+                        "gutter": "24px",
+                        "xs": "0.5rem",
+                        "md": "2rem",
+                        "sm": "1rem",
+                        "margin": "32px",
+                        "unit": "4px",
+                        "xl": "8rem"
+                    },
+                    "fontFamily": {
+                        "display-xl": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-xl": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400" }],
+                        "label-sm": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                        "headline-md": ["20px", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-white dark:bg-black docked full-width top-0 sticky z-50 flex justify-between items-center w-full px-6 py-[10px] md:px-12 max-w-[1440px] mx-auto">
+<a class="text-xl font-black tracking-tighter text-neutral-900 dark:text-neutral-50" href="#">STUDIO</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-neutral-900 dark:text-neutral-100 border-b border-neutral-900 dark:border-neutral-100 pb-1 font-sans text-xs tracking-[0.2em] font-medium uppercase opacity-100 hover:opacity-70 active:scale-95 transition-colors duration-300" href="#">WORK</a>
+<a class="text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-100 font-sans text-xs tracking-[0.2em] font-medium uppercase opacity-100 hover:opacity-70 active:scale-95 transition-colors duration-300" href="#">ABOUT</a>
+<a class="text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-100 font-sans text-xs tracking-[0.2em] font-medium uppercase opacity-100 hover:opacity-70 active:scale-95 transition-colors duration-300" href="#">NEWS</a>
+<a class="text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-100 font-sans text-xs tracking-[0.2em] font-medium uppercase opacity-100 hover:opacity-70 active:scale-95 transition-colors duration-300" href="#">CAREERS</a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-[1440px] mx-auto px-6 md:px-12 pt-[160px] pb-xl">
+<!-- Header Section -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-lg gap-6">
+<h1 class="font-display-xl text-display-xl text-primary m-0">All Projects</h1>
+<!-- View Toggle -->
+<div class="flex items-center gap-4 bg-surface-container-highest p-1 rounded-full border border-tertiary">
+<a class="px-6 py-2 rounded-full font-label-sm text-label-sm text-on-surface hover:bg-surface-variant transition-colors" href="#">GRID</a>
+<span class="px-6 py-2 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">LIST</span>
+</div>
+</div>
+<!-- List View -->
+<div class="w-full">
+<!-- Table Header -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 pb-4 border-b border-tertiary text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<div class="md:col-span-5">Project</div>
+<div class="hidden md:block md:col-span-3">Client</div>
+<div class="hidden md:block md:col-span-3">Industry</div>
+<div class="hidden md:block md:col-span-1 text-right">Year</div>
+</div>
+<!-- List Items -->
+<div class="flex flex-col">
+<!-- Item 1 -->
+<a class="grid grid-cols-1 md:grid-cols-12 gap-4 py-8 border-b border-tertiary group hover:bg-surface-bright transition-colors items-center" href="#">
+<div class="md:col-span-5 flex items-center gap-6">
+<div class="w-24 h-16 bg-surface-variant overflow-hidden">
+<img alt="Modern minimalist architectural design with clean lines" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Modern minimalist architectural interior with clean lines, white walls, and natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6P1fd4doKpag9EWEW9-A8r7r0U8BqBlSgy9kh0Oubg1vfHSQYYu8WdWhXSgFAZ0DVGRDPXQvbUmylDIB15VG_-1qh60u4WPBLab5xrfdDFSMvKtOS7dwQ11otI8v2AWVvMTWHFnIzuWgjiAZkGORvu3PVjbAHh10hZad3eabyFrsfBlcb4I_Wph9zk3fkQdRp50usuS9h3_IlysHWQx-HqStrIKssbC0FvvVTAdQADFV6PgXmCaNL6Z6uRjl1XoZtyCAiv7YuZSI"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Lumina Residence</h3>
+</div>
+<div class="hidden md:block md:col-span-3 font-body-md text-body-md text-on-surface">Private Client</div>
+<div class="hidden md:block md:col-span-3 font-body-md text-body-md text-on-surface-variant">Architecture</div>
+<div class="md:col-span-1 text-right font-body-md text-body-md text-on-surface">2023</div>
+</a>
+<!-- Item 2 -->
+<a class="grid grid-cols-1 md:grid-cols-12 gap-4 py-8 border-b border-tertiary group hover:bg-surface-bright transition-colors items-center" href="#">
+<div class="md:col-span-5 flex items-center gap-6">
+<div class="w-24 h-16 bg-surface-variant overflow-hidden">
+<img alt="Sleek tech product design with matte black finish" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Sleek tech product design with matte black finish on dark grey background, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPIPaAjy4SV2w46a4SyFQfFCQs-V4kGWFVSwRtFsPrhVrRghrMrD45WoxUsfTJ9etKsWp2nI0V3JmsmegxqzdfSCLUFsH9bBMwFQFUmmeIV2cTjv1KI-xMglxf5dDt5xGqJEP2NNg5rGVL7r0aRC5P0ROlzzEERadojyqyHsO9XKqSfOlsDjPK6yT6tJoidSjRexqtHkBMSxkaXgySEQfPYDfLGEpMqEInY2vLHaAVCgPTv4NDCSWmQw2ZMt8YLOwjx12Inwim-TA"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Aura Audio</h3>
+</div>
+<div class="hidden md:block md:col-span-3 font-body-md text-body-md text-on-surface">Aura Tech Inc.</div>
+<div class="hidden md:block md:col-span-3 font-body-md text-body-md text-on-surface-variant">Industrial Design</div>
+<div class="md:col-span-1 text-right font-body-md text-body-md text-on-surface">2023</div>
+</a>
+<!-- Item 3 -->
+<a class="grid grid-cols-1 md:grid-cols-12 gap-4 py-8 border-b border-tertiary group hover:bg-surface-bright transition-colors items-center" href="#">
+<div class="md:col-span-5 flex items-center gap-6">
+<div class="w-24 h-16 bg-surface-variant overflow-hidden">
+<img alt="Corporate branding presentation on white desk" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Corporate branding materials laid out on clean white desk with soft natural window lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAll6f8QdzkG-w-IxS-NypjPlmV8Z8YZg6XaSlb6D46BoVaj1shRTM-0iTmB3E6m_AOhLtDWvdEU9dhovm1g_E3yJ7BVXvfYHmmOT10R0lyXYUKzdh9Gwqi89Rm8RNUBsqjMM6ECmERzdIpsGnYgmBzvzP2EJ7KYoUbcAPdfMDr_PNoe8h0dZvqDohVtzoRzRlGhnH3snLH9MLhDsMTmByyinO29SSty_d90BCKcDADif0dpPVxVagxRK-wFWKuL3rTmCV24fpXEBY"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Nexus Rebrand</h3>
+</div>
+<div class="hidden md:block md:col-span-3 font-body-md text-body-md text-on-surface">Nexus Global</div>
+<div class="hidden md:block md:col-span-3 font-body-md text-body-md text-on-surface-variant">Branding</div>
+<div class="md:col-span-1 text-right font-body-md text-body-md text-on-surface">2022</div>
+</a>
+<!-- Item 4 -->
+<a class="grid grid-cols-1 md:grid-cols-12 gap-4 py-8 border-b border-tertiary group hover:bg-surface-bright transition-colors items-center" href="#">
+<div class="md:col-span-5 flex items-center gap-6">
+<div class="w-24 h-16 bg-surface-variant overflow-hidden">
+<img alt="Minimalist office workspace interior" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Minimalist office workspace interior with concrete walls, wooden desk, and sleek modern chair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNDEbBAbPaL-xr8jsO8Mgwlkfs99nu-0XcL7ZRBy-twa0ku49ct6ot3ZNNzl-3iNHaXvtqO63_2ByaF3Ru1-jRltqtehllFFLxOTHuojg-wssOVtK07KP3fEL8aMZl_1IdZ8JlvFu5lr5Dxe8MNUG_Q5sDQinlwvcKWI-a04bt5g7fQ6eyHtyxLMSdNyBmEBZGijYiJlX53aP-7tJy2zrobVjYhAexqZr6ViSLoKgLguk92ST7lFF0rxSBKqcY26cBB_0JlCPpOC0"/>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Creative HQ</h3>
+</div>
+<div class="hidden md:block md:col-span-3 font-body-md text-body-md text-on-surface">Oasis Agency</div>
+<div class="hidden md:block md:col-span-3 font-body-md text-body-md text-on-surface-variant">Interior Design</div>
+<div class="md:col-span-1 text-right font-body-md text-body-md text-on-surface">2022</div>
+</a>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-black full-width mt-32 border-t border-neutral-100 dark:border-neutral-900 flex flex-col md:flex-row justify-between items-center w-full px-6 py-12 md:px-12 max-w-[1440px] mx-auto gap-8 transition-all duration-500 ease-in-out">
+<div class="font-sans text-[10px] tracking-[0.25em] uppercase font-light text-neutral-400 dark:text-neutral-600">
+            © 2024 STUDIO. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex gap-8">
+<a class="font-sans text-[10px] tracking-[0.25em] uppercase font-light text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-100 underline underline-offset-4" href="#">INSTAGRAM</a>
+<a class="font-sans text-[10px] tracking-[0.25em] uppercase font-light text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-100 underline underline-offset-4" href="#">LINKEDIN</a>
+<a class="font-sans text-[10px] tracking-[0.25em] uppercase font-light text-neutral-400 dark:text-neutral-600 hover:text-neutral-900 dark:hover:text-neutral-100 underline underline-offset-4" href="#">TWITTER</a>
+</div>
+</footer>
+</body></html>

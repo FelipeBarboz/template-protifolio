@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>All Projects - PORTFOLIO</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#848484",
+                        "inverse-primary": "#c6c6c6",
+                        "on-surface": "#1a1c1c",
+                        "on-tertiary-container": "#838484",
+                        "surface": "#f9f9f9",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#dadada",
+                        "on-surface-variant": "#4c4546",
+                        "secondary-container": "#e1dfdf",
+                        "tertiary-fixed": "#e2e2e2",
+                        "secondary-fixed": "#e4e2e2",
+                        "outline-variant": "#cfc4c5",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "secondary": "#5e5e5e",
+                        "primary-container": "#1b1b1b",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary": "#000000",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "surface-tint": "#5e5e5e",
+                        "outline": "#7e7576",
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#636262",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "inverse-surface": "#2f3131",
+                        "on-secondary-fixed-variant": "#464747",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-primary-fixed": "#1b1b1b",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-lowest": "#ffffff",
+                        "primary": "#000000",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "tertiary-container": "#1a1c1c",
+                        "surface-container-low": "#f3f3f4",
+                        "background": "#f9f9f9",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-container": "#eeeeee",
+                        "primary-fixed": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "row-padding": "4px",
+                        "container-max": "1800px",
+                        "element-gap": "12px",
+                        "edge-margin": "40px",
+                        "section-gap": "160px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "display-xl": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "label-micro": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["20px", { "lineHeight": "1.4", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "display-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "label-micro": ["10px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white dark:bg-black text-on-surface dark:text-white font-['Inter'] antialiased min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 dark:bg-black/90 backdrop-blur-sm border-b border-gray-100 dark:border-gray-900 transition-all">
+<div class="flex justify-between items-center px-10 py-[10px] max-w-[1800px] mx-auto">
+<div class="text-lg font-bold tracking-tighter text-black dark:text-white">
+<a href="#">PORTFOLIO</a>
+</div>
+<nav class="hidden md:flex space-x-8">
+<a class="font-label-caps text-label-caps text-black dark:text-white opacity-100 hover:opacity-70 transition-opacity duration-300" href="#">WORK</a>
+<a class="font-label-caps text-label-caps text-black/70 dark:text-white/70 hover:opacity-70 transition-opacity duration-300" href="#">ABOUT</a>
+<a class="font-label-caps text-label-caps text-black/70 dark:text-white/70 hover:opacity-70 transition-opacity duration-300" href="#">NEWS</a>
+<a class="font-label-caps text-label-caps text-black/70 dark:text-white/70 hover:opacity-70 transition-opacity duration-300" href="#">CAREERS</a>
+</nav>
+<div>
+<a class="font-label-caps text-label-caps text-black dark:text-white hover:opacity-70 transition-opacity duration-300 flex items-center gap-2" href="#">
+                    GET IN TOUCH
+                    <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[160px] pb-24 px-10 max-w-[1800px] mx-auto w-full">
+<!-- Section Header -->
+<div class="mb-12 border-b border-outline-variant dark:border-gray-800 pb-4">
+<h1 class="font-headline-lg text-headline-lg text-black dark:text-white">All Projects (40)</h1>
+</div>
+<!-- 8-Column Dense Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
+<!-- Row 1 -->
+<div class="group relative aspect-[3/4] overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer">
+<img alt="High fashion editorial with stark contrast lighting" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="High fashion model in avant-garde monochrome clothing against a stark architectural background with harsh shadows and bright highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARwBH5z9nzneiqbrOjUzuLAC-Cs8C74M7DOnm2IF0vK_erJ6XW7r0gcPa3ZM5m366dM2Uith8cjEuhXjaUMlXnV0y4Qx5Amek0frbKMO3qAVtsuGluggVmr7o0VFR1XHqyBhpIS045Bsys3UyQckaJBuE-qJIEg2boAK_a_4Z_rA0cMc6RreOYJwxDWDgFG7IfAtj_LfDYKlUk0CeiolFKSqzFH1rzzvUbRL0dUx_HXX4ZXSXe5SJeFAD9rPhUm7OvBQ_b2qSrBoo"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Project Alpha</h3>
+<p class="font-label-micro text-label-micro text-white/70">EDITORIAL / 2023</p>
+</div>
+</div>
+<div class="group relative aspect-square overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer lg:col-span-2">
+<img alt="Minimalist architectural details" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Close up detail of modern brutalist concrete architecture with sharp angles and deep shadows in pure black and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSFVhclLIwoqHoB5g0IjRIDxUYNEVT4PAy8mt-bFZfgno808fDss7YPZSxS7x717NAKX9lnk1OsbLsmbYpylVAUCezat86dRu0vHFYQq8ogFaHc0kJI049m7N9KJk7v78F07KrlHHJms03EkBqIkZtUDraKPlesX7U9UlAwtSy6CrYK_GlacWWSzkfsqj3c8o4ObaMamVQl7rQF-KTZ2NhCWwiMY6xc1J5-2ffJ8Y1Jl8lVm2WbBy5jYVR6zBWeF4tNUMtiJnWJhU"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Brutalism Vol 1</h3>
+<p class="font-label-micro text-label-micro text-white/70">ARCHITECTURE / 2024</p>
+</div>
+</div>
+<div class="group relative aspect-[4/3] overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer">
+<img alt="Automotive detail shots" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Close up macro shot of classic sports car curves and chrome details in high contrast monochrome lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0lXyF6YVBiMsxkoHHxEkBaEfYjqHKVSCMzZkZpfSOR3l2OzGyH0kb4n993MYHh4VUpUO7ivjzwxY_f-rKYjJuDlA5QZ2k-Ex8yx2XMxDx-MX47CKt2butv3A7rZOgbX_jFM9iP2hrZZhQUNZCJsIEDupizUrVE6OZ9XY619H6kA4W8wgMoMbDKWGeXCqp6bOyfNXXCIwHXBqkxV-7LEnETx3xEwqwvRlkKrWlnzsRxgS3_FnseDZuTqu1FafjAvIgZFNBUVqHyus"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Machine</h3>
+<p class="font-label-micro text-label-micro text-white/70">AUTOMOTIVE / 2023</p>
+</div>
+</div>
+<div class="group relative aspect-[3/4] overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer">
+<img alt="Creative portraiture" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Abstract portrait of a person with geometric shadows cast across their face, high contrast black and white photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2sdoW6DSVGI5h-T9AO4KZwsAhixXT2pZd2N_ehXx8SSaToMv4IJTHogewMpDyiPXSgXu2DocvxYS2LZ9g6s2TH8E5UFtXYsOeLKjgS6Ba4oRiMZdaF2XQ23H3YpVqxGqKyb8U3Oe0zsNz2pQ_sp6uqLnTQ-y0vaQwpYAsMIhY96c7uvp6GqDDxtYPwf0MpjTOYbaltNNY4i5H40kdVxF-uxfxTsh6-TQGSTWwZ8c6xwkVF-XlqVXvHJn2dF870mBtWKq3PtlKPZc"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Shadow Play</h3>
+<p class="font-label-micro text-label-micro text-white/70">PORTRAITURE / 2022</p>
+</div>
+</div>
+<div class="group relative aspect-square overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer">
+<img alt="Still life minimalism" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist still life of geometric glass objects on a dark surface with strong directional light creating complex refractions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKZsydfYBoS7Zz67fbUpza_C9SwyIjoKXxzaESJzg4ngioffFgsYYtjMq6js272_6kK0xEF5DKxAbrZQ9I4Qgjf4G688ldsdmC2RxhAhW2TD87SLtv0tFtwe5ESd7gKTtGAghvZHF6uoPqP_f_ljBBmueCeDK0Ib1Oplf1-F5YimsGlyj3MNwvaP7tEpdzD4B1CdkRxD4FFQxzU6qJgCbA_TO29YtzDgVU4DFGsLAcLAIk7h11nouWXymnAyN875MXjy7CQkcP4b8"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Glass Forms</h3>
+<p class="font-label-micro text-label-micro text-white/70">STILL LIFE / 2024</p>
+</div>
+</div>
+<div class="group relative aspect-[4/3] overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer lg:col-span-2">
+<img alt="Landscape conceptual" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Vast empty desert landscape in severe monochrome with a single perfectly straight road leading to the horizon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ_QiNft_8js7pcUp5mKQlh73WrbTtsvUPYPIiVra_38-nFp7Teh3oPFwunSiwKeVA8P38cMihCA3U-EKYz71EceEEbZwp6rERpoi3PcTvjG5uYCFgjlUSSyEExY13w4vEV4QC_VCoWM99LiX3qk8w0PB-e_hZgHM_dgDfHwMuIboGFKE_zW4kQwvjF5L3IuDc5TxUoKCvKj5IhAUvC1oaS5W2lQNMen73TKZN929XrShFWx1FQ7xxXlspyC_cAihn075Mp5bQxd8"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Horizons</h3>
+<p class="font-label-micro text-label-micro text-white/70">LANDSCAPE / 2021</p>
+</div>
+</div>
+<!-- Generate remaining items procedurally for visual density (32 more items needed for 40 total, showing a representative sample here) -->
+<!-- Row 2 -->
+<div class="group relative aspect-[3/4] overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer">
+<img alt="Studio portrait" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Classic studio portrait of a woman with intense gaze, dramatic rembrandt lighting, deep shadows, monochrome" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoOwv4JXwYykGDvtJ-IQuSbyWuu04w1AM0NJV-p_NpuSL9PwL3kwdmcRwfTD8MtST5MhAYPw_BlYVgKXUbWeBBoaDHdNgAC8SACgEQCgBkWTkOLowaip5qFv_Jwn07WuUM_LbSwyg8lCZQCI0jVCdO6zYINnL5hXvFqrezeS-Om-va8AVfn7Hd2icmvaQKld0hBUfoa-oggx2dni6MUtK2gN0DP7AbBl_FGLaEXEhWQINFKEpQbNpx_KT2MeWwTp02PcUO0yjjCFI"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Studio I</h3>
+<p class="font-label-micro text-label-micro text-white/70">PORTRAITURE / 2024</p>
+</div>
+</div>
+<div class="group relative aspect-square overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer">
+<img alt="Interior design detail" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist interior space featuring a single modern chair against a textured concrete wall, stark lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC79cuN7oGXopSmXJSE-DEOBLLgaSWEryzO9W-3KZxGlpEJ0eN8pNV0q45vqYpN7rfaDdWANb4SpVIAJFJ3M2xIcKntpDVf6u0ldsT0lXPvwkaoUu60cN5WI7hbJLShUT7lDaEMx4n2qFFbPItcTMU3zocfGLWSFOGvIYn4PKyi7P2ysjA7bxKJ1jRkB1jMleMYmzHG0mBaSLO4BB-Zl5fCTZx_8-1mRiWHdyO83tvICO-c0d7-Qkd0pwTnQQ70IQMstu4ExkBfvtg"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Interiors</h3>
+<p class="font-label-micro text-label-micro text-white/70">SPACE / 2023</p>
+</div>
+</div>
+<div class="group relative aspect-[4/3] overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer lg:col-span-2">
+<img alt="Automotive profile" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Sleek profile of a vintage sports car parked in an industrial setting, heavy contrast, dramatic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBUQf3Zh4uuHFdLRtsD7KCC37sK6d9mFr9E06O88IIq9s5B55qXfFM0zJ4DVL50Dzpuge3CldkP1VpQLGsa8b69Y34Sb0J-Sn3GcOTFB_9kaUOc9bs61WM7hCUPO0qKhMnwMmpdm2tHypn0A4lcjJ4zDrT0LNTJN3OhwachbBNV3FBtUmtDY8Q133dchFqDDlJ3tSipT3oLugJmxnGzcNzNgVFo4i9fd_dPuvn7DWVwr2QmcJXCTEmrZHGKs53ekLgI9Fn4Zo0SiY"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Velocity</h3>
+<p class="font-label-micro text-label-micro text-white/70">AUTOMOTIVE / 2024</p>
+</div>
+</div>
+<div class="group relative aspect-[3/4] overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer">
+<img alt="Fashion detail" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Close up of fabric textures and garments in a high fashion context, abstract composition, monochrome" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOCrBwxelnVXLloANsErJ3GQEXJ5CRqXtCLUATsS2hV04ZGo19JwbCHyK9SXVvps-8--LDF9ZGlG6y1U5GLj183LBxCX6BxVwYF-hjzHyvANtjY7bS_JN9TK5i_vtZkZQOzqq_HE3ZMqKCzPIJZWF2oL2s7xPD5yCHSWPTcnkdenBHrUJ1mREQNk93l2BD6_xhFqQJdqLZJr5ulZz7UwVlCLiyBcxiN6zrf8vwJWEKgUq7jG5Oe3oMpLIg4QFQybYh6FZbCqyBEJw"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Textures</h3>
+<p class="font-label-micro text-label-micro text-white/70">FASHION / 2023</p>
+</div>
+</div>
+<div class="group relative aspect-square overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer">
+<img alt="Abstract architecture" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Looking straight up at towering modern skyscrapers converging towards the sky, heavy contrast, black and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeyquxb30BU9iI5JC6GSKH9PrzWek6F8MWFmNn1LfQwr4d4Pg0IdddiA5t8iqs1XR0olMSS8U1mhbzwFPwiuBl4023fhSiK7-NlNNKVsATR0DBbxxbxWUvOlnK1BlTBm_5I-S3IFP1JK2dao6C0MGAIlgqUQ7U5_EMEtm4ZZ-YmUJumKd1ImLjS9o0QkXZt1lkp-QZx789__ftHGvZ18oMdL0X5AMq9waHGHp2-U0KWStXptsHHpE4eRJwM-JyOb4qFCndwgtJ9tI"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Vertical</h3>
+<p class="font-label-micro text-label-micro text-white/70">ARCHITECTURE / 2022</p>
+</div>
+</div>
+<div class="group relative aspect-[4/3] overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer lg:col-span-2">
+<img alt="Minimalist nature" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="A single stark bare tree against a completely white foggy background, extreme minimalism, high key lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjQIyjloaCM--4n4-AbhmFcVBkqGWYSA_2iEvpS-gBnVUdW1TX890lBv4G0PeLcd3Cg2mmKjgJUF2SsO5dQa4LxiNbmy0fcHFBcfRiUocjM7zCNmN2IDaSBFmisr19tCOaKTF2VS9ALqb0ah2pdJxvbL9w14ylvj-ZEcXxyvff0pNy8kMpqIP4edQQaOUwUKtFZWUw_SQSEnPxZcNynvauaL1wry2zKJEkKu4zZcRwwgnpjUc26JFMXRQnue9UdQ3ZQc1bCpQIoJs"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Silence</h3>
+<p class="font-label-micro text-label-micro text-white/70">NATURE / 2021</p>
+</div>
+</div>
+<!-- Continue filling grid to demonstrate density -->
+<div class="group relative aspect-square overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer">
+<img alt="Abstract shapes" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Abstract composition of geometric planes and shadows in pure monochrome" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDovkbK2eDck3-Bgqs3VzzRr5c_9JXZZlZqYssaDIuSNgi5y8z2jbeN6lUuncGxdDGhIwtiLtHlFPlA3rOHAypiZuhZvI9_DDmBj_Ap1__ZTzXGVZLJ9db-EtNxNz_QzDzIDhwJX0OfesU1z2gNypebCXkTfpwg0x8WHqj_YVuqGQzrhZmG4tSW-zyp-7jD5RSrPEaS6H-vJhRoG-1cjmLWFNXXLAagXHBkcTPuXL1RWDM8paP_P6sNW7L61LGLFFmWtqkw8_Sd4Eo"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Form I</h3>
+<p class="font-label-micro text-label-micro text-white/70">ABSTRACT / 2024</p>
+</div>
+</div>
+<div class="group relative aspect-square overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer">
+<img alt="Sculpture detail" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Close up of a classic marble sculpture face in high contrast dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvya0t9s3vthBREhErZtkKZbZTjCYdEnNPCmN_DSNWxVZpfUTjZSFW2NakzJh_PGC8JhafAGuYK_QFAiWZdwG5tv2dEhF57-ezX9j-usuvqw4TtgfJXVtgN8u8sK8wThB1El7cIkwpNn4auzSjh6B_cNb821ZRl-gMfuDEaMIXTO8-Q20mSsMNsEOoZKMK57JFJcPeiGzvaOw2879AKzIJK8ibUwtYrAPcF9o9XZRFwd2qMwH-SRs7znIWLcPdRHgK0dASS0jQroY"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Antiquity</h3>
+<p class="font-label-micro text-label-micro text-white/70">SCULPTURE / 2023</p>
+</div>
+</div>
+<div class="group relative aspect-square overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer">
+<img alt="Mountain landscape" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Stark rocky mountain peaks emerging from dark storm clouds, heavy contrast landscape photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5W_M9YiQU-ieWzzbv-VM9Km0BV6-EBtQGCu3cR2NWf7TjVMYbqvF0JlwYtbf0JO77fznFFEMxf4eofq3D_PMSYqlIb7ixOzUqGYrRsm4Q06LZ6TbueK_R_taotGVxrmZns47EQdE93rLqPv0uxYZretkIG9o4b_Xn065ZjdUs4wByl8ZWF60TeSAM13ADY38pMM7vbaWz0qjKUTdqxLoxx84dL4t1lOTWlMnPSO2QJkb1kRsi-aBawXpghI_4-uouwClFjwpptjw"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Peaks</h3>
+<p class="font-label-micro text-label-micro text-white/70">NATURE / 2022</p>
+</div>
+</div>
+<div class="group relative aspect-square overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer">
+<img alt="Abstract water" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Close up of dark rippling water surface catching sparse light, moody monochrome" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPUpipsgSxCWEe-l-Ffgp9VcHoMkMA6ejm5DsAEhBlDcLYhaYoLzoRAPU48Ve7RvYcOLUXO3wESmJLWnihQ9zWPJYf58A2saUNa3Ds106pI5cNiLshPSsq5nkb4MI5mDCGAJOoIcR14BRHKUVxeMzRLUbPRppsLl5P4nGLDOkfQbWJzuZwd_sC5_FY6iHVkLpRnJh4nq7TvHMVcAodTqfbgAcvU6jkqLxPDoSX14WKGWkBITSNnrmWei-7fkfA9f8LCB2iCGfyH9o"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Currents</h3>
+<p class="font-label-micro text-label-micro text-white/70">NATURE / 2024</p>
+</div>
+</div>
+<div class="group relative aspect-square overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer">
+<img alt="Urban detail" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Abstract crop of urban infrastructure, metal beams and concrete textures, high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKmrDXNWPrqhvP7Lq0TaH0TpXPQwoMyY0EQckwkIvDKIRk8UHhE-L3-Na1KsZuxYw-Pq5UfmwC_QezlcgtLDMrymxB-8BaRqDwUadB5n-A_9bJwMphDR1NyvtulNotE9hax492Cdf-s4VRO9ZAbH0WfPlsYvOC-Dbs1DgCg8Rx5qphcl9sLslfyuEoFu4L3dz8FFkz0U7_2rCQ0IgiITsmoUHauUNDTCTngWShUJEjsBpoLidsCt13r_wSCm75oHr8SB_KFax_J44"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Infrastructure</h3>
+<p class="font-label-micro text-label-micro text-white/70">URBAN / 2023</p>
+</div>
+</div>
+<div class="group relative aspect-square overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer">
+<img alt="Minimalist still life" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="A single sphere resting on a flat plane, perfectly smooth gradients and stark shadow, monochrome" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3iauAgFbjmi3fk4Ybg7AXNJRof_Aw4lwvI4K84rzUTQXdGRhyxKegl7r4_DKbUVgGfjkYIJR7c6tul9r9HKF39nbM8mUTvxyU-bZ8MDckBbvV71kkbq2oolQ-CwWb7iJZHduk8iv1G7UGqAC3gPhwRind1O7ktso1tXVv49n894y4k6JmGDSPOY8xgpg3EEmRF0ZCS0H-W7BPcMfe9FyrfgnY2BUXjis0HlzmiQoXwFlhg8BBTiROHdbAaZiPRYWYLjLuLfn0AgY"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Sphere</h3>
+<p class="font-label-micro text-label-micro text-white/70">STILL LIFE / 2024</p>
+</div>
+</div>
+<div class="group relative aspect-[4/3] overflow-hidden bg-surface-container dark:bg-surface-container-high cursor-pointer lg:col-span-2">
+<img alt="Abstract motion" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Blurred motion of lights in a dark tunnel, long exposure black and white photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYMK5tm9fot3J0jvIX0YtqBcpzkd7z742k_W_wTImHDKV2KANhZFvJDjN9JUINcz7zNDyP5NP8Wm5U0vgDh-y0Q1RzYPDB_8zffEuCZzUlqWE_VirmDGjkB_Seg9LcLrpEUBD7VVqOJmuIWUIs3dHVJSpX1MpDuIizpmpEIXMUVgbHGlBxXWLgsGDfnSnGgLMR0jIXszK3kPIlVn3O9tfm1lg2uhK9Z9y_pNNlsrao3iTSd-1Mcm8IW5N81VEkZ709WlSsWjvHYRQ"/>
+<div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+<h3 class="font-body-sm text-body-sm text-white mb-1">Transit</h3>
+<p class="font-label-micro text-label-micro text-white/70">MOTION / 2022</p>
+</div>
+</div>
+</div>
+<div class="mt-16 flex justify-center">
+<button class="font-label-caps text-label-caps text-black dark:text-white hover:opacity-70 transition-opacity border-b border-black dark:border-white pb-1">LOAD MORE</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bottom-0 border-t border-gray-100 dark:border-gray-900 bg-white dark:bg-black transition-all mt-auto">
+<div class="flex justify-between items-center px-10 py-[10px] max-w-[1800px] mx-auto">
+<div class="font-['Inter'] text-[10px] tracking-[0.2em] uppercase font-light text-black dark:text-white">
+                © 2024 PORTFOLIO. ALL RIGHTS RESERVED.
+            </div>
+<nav class="flex space-x-6">
+<a class="font-['Inter'] text-[10px] tracking-[0.2em] uppercase font-light text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-300" href="#">INSTAGRAM</a>
+<a class="font-['Inter'] text-[10px] tracking-[0.2em] uppercase font-light text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-300" href="#">LINKEDIN</a>
+<a class="font-['Inter'] text-[10px] tracking-[0.2em] uppercase font-light text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-300" href="#">TWITTER</a>
+</nav>
+</div>
+</footer>
+</body></html>

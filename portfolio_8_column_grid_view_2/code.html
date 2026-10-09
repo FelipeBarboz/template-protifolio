@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>STUDIO - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1a1c1c",
+                        "on-primary-fixed-variant": "#474747",
+                        "primary-fixed": "#e2e2e2",
+                        "outline": "#7e7576",
+                        "surface-container-low": "#f3f3f4",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#464747",
+                        "on-primary-container": "#848484",
+                        "on-surface-variant": "#4c4546",
+                        "inverse-surface": "#2f3131",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e2e2e2",
+                        "on-surface": "#1a1c1c",
+                        "surface-bright": "#f9f9f9",
+                        "on-tertiary-container": "#838484",
+                        "secondary-fixed": "#e4e2e2",
+                        "surface": "#f9f9f9",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "secondary": "#5e5e5e",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-secondary-container": "#626263",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#e8e8e8",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "primary": "#000000",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#1b1b1b",
+                        "inverse-primary": "#c6c6c6",
+                        "outline-variant": "#cfc4c5",
+                        "tertiary-fixed": "#e2e2e2",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-container": "#eeeeee",
+                        "tertiary-container": "#1a1c1c",
+                        "surface-dim": "#dadada",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "error": "#ba1a1a",
+                        "tertiary": "#000000",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "surface-tint": "#5e5e5e",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "on-secondary": "#ffffff",
+                        "background": "#f9f9f9",
+                        "secondary-container": "#e1dfdf"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "edge-margin": "64px",
+                        "gutter": "24px",
+                        "container-max": "1440px",
+                        "element-gap": "12px",
+                        "section-gap": "160px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display-xl": ["Inter"],
+                        "body-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                        "display-xl": ["80px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "500" }],
+                        "body-sm": ["14px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full pt-[10px] bg-background z-50 border-b border-outline-variant flex justify-between items-center px-edge-margin h-20 transition-colors duration-300">
+<div class="text-headline-md font-headline-md font-bold tracking-tighter text-on-background uppercase">
+            STUDIO
+        </div>
+<nav class="hidden md:flex gap-8 items-center font-label-caps text-label-caps uppercase tracking-[0.1em]">
+<a class="text-on-background border-b border-on-background pb-1 transition-colors duration-150" href="#">WORK</a>
+<a class="text-on-surface-variant hover:text-on-background transition-colors duration-150" href="#">ABOUT</a>
+<a class="text-on-surface-variant hover:text-on-background transition-colors duration-150" href="#">NEWS</a>
+<a class="text-on-surface-variant hover:text-on-background transition-colors duration-150" href="#">CAREERS</a>
+</nav>
+<a class="font-label-caps text-label-caps bg-primary text-on-primary px-6 py-3 uppercase tracking-widest hover:bg-on-background transition-colors duration-150" href="#">
+            GET IN TOUCH
+        </a>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[90px] px-edge-margin pb-section-gap max-w-container-max mx-auto w-full">
+<!-- Header Section (160px gap from navbar via mt-[160px]) -->
+<div class="mt-[160px] flex flex-col md:flex-row md:justify-between md:items-end mb-12">
+<h1 class="font-headline-lg text-headline-lg text-on-background">
+                All Projects
+            </h1>
+<!-- View Toggle -->
+<div class="flex items-center gap-4 mt-8 md:mt-0 font-label-caps text-label-caps text-on-surface-variant">
+<button class="hover:text-on-background transition-colors duration-150">GRID 4</button>
+<div class="w-px h-3 bg-outline-variant"></div>
+<button class="text-on-background border-b border-on-background pb-0.5 transition-colors duration-150">GRID 8</button>
+<div class="w-px h-3 bg-outline-variant"></div>
+<button class="hover:text-on-background transition-colors duration-150">LIST</button>
+</div>
+</div>
+<!-- 8-Column High Density Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-[10px]">
+<!-- Grid Item 1 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="modern minimalist architectural interior with concrete walls and sharp light beams" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="modern minimalist architectural interior with concrete walls and sharp light beams" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqnyKNrt1O59wsEJz4JY4jfKfuzxAZ40gKBdYEjNwuYaNV6oq9p-6UFpv8WpJ1pSo-2q3fPoP9b0LqNz-57xrRVDUvR8qt5MmqyUpB2BDrjQxEMAfMPMawexp2fBpRN3gvW-HuM9eaJWnZcg6py6IokF4VFTRTO6V7x8hNV51DuZ-cEmmv0LCzWqZIK9RsvLZTwXv7ytbkbF_mLIW9yyUzgFnQMvFlfeFx_OkZaiC6cdtyGBKmi08feNVpZFoeGMrg8-F7OUp-vk8"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">Villa No. 14</h3>
+</a>
+<!-- Grid Item 2 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="abstract close up of ribbed concrete building facade with deep shadows" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="abstract close up of ribbed concrete building facade with deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX5BiLY1b40pdNlVie0jk-FMsM7xrLmM8B2svxYJ3EVGQ5HpaEYD3BX4q_VN3XTnTEh_s4KZ-XeXtwwgTbdeRL6DNSxNRwab8VSMk9L8q2K43_OfXbu5aYf1hDLrB6Wt9S0wZMP3RLuPrzxzZrwS_b1MJQfiI_ql78hNaTAQgoK-G3rG6SI6k6EXNWPlV4ch9MxOQX5ryFx3_rm_BeBV8srQsN5Lbn7Y1kI_pzCNRSy-HGkTU7xr7vwZshfdD2AfGjVzqIgBpRwqk"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">KUNSTHAUS</h3>
+</a>
+<!-- Grid Item 3 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="glass corporate building reflecting a muted grey sky in strict geometry" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="glass corporate building reflecting a muted grey sky in strict geometry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa3iE8qmxnIzyIy8m5Z1XPN3O9Ztzg8SHDDk_O4OLjgUStTxdqMevzEoJNLO6kkk4UHvGvYgEYTo3zbcq3uWV-keXREcuChuptFoPWP5SmSr9Xp462cl5fPKUf1RS47OKPvKb6Ch4ikaQ3Qei9Z7noxlgxNlrD-kqTak0Pze_hDlvEPv6rdJ1a3NIndU1R-jYAlyZjk72BI_eSOmbmhS48Wxo30srSalHf14PJQKKbP_OcWbHPe1OO-fK5JPHY-2jH_8ZNWVyx_5A"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">AXIS TOWER</h3>
+</a>
+<!-- Grid Item 4 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="empty gallery space with polished concrete floor and minimal white walls" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="empty gallery space with polished concrete floor and minimal white walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBR-eH0L52QZzvFyfk5oy29TM1uPRVyDWTV8KZ3HSp9zGeIKImZclijKcuBuYwpqEuDblylb-QlPgLS7GxJgQvS0rJYA3-j2_5JllrvMMZe7NafzQlmJtuPnXWazhUiVnTsTGPNU-nZ8rGwq3wMxjHnN2tbfGAP3iTzPfWQXZot8DxcFidj524N_AVk6o3mnjqZy0uUMrnUxHR-CHydctahm9H0ejmsOAj6SuBrywVmFs-jkGh3NM6yU-cXKiDLuHUFTyPYzfOBeqQ"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">GALLERY M</h3>
+</a>
+<!-- Grid Item 5 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="brutalist architecture exterior with structural beams and severe angles" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="brutalist architecture exterior with structural beams and severe angles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxbgWc-1uwYgOTXtYWhkan7vPgaKK1BbZ0TrqU6wGL8QYIleDqA4VPMjFADODiNpW_bU5FHBSIx-y7tD5pIfUu-BKxz2bAdrgTCeH4s3vNEV1ZzxTSTkdfj5MG11HMGvxq1f3gTU02xl-O28Tgrsbo9hwajeRvTD_Rziz4SDYFj316ZDzQhWu-WKQf1DK0A_rorFV2tvr1_eMctgY54PZOR_QBXXOgYdXLfgihe2X7WX-d1arhYBDvAsRs9tvFlcTjgVOISqQ0LBU"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">THE FORUM</h3>
+</a>
+<!-- Grid Item 6 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="minimalist wooden furniture piece isolated in a stark white room" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="minimalist wooden furniture piece isolated in a stark white room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWwTg2LLp7TcnRXzoAh2y7aEZH1Hjw81DZLS6ZY-IiNjDQnMQM3xFdT8WWE3A8hGR5m7i98fmFARGGyhNBI3oNVWTBBoeK7eLn_fgCKDh0xpGJJ2uU2ELovoMP0yLfUeue8xcjB3oMx9J_Bx1Xtdf-RPXgt88DLBVrOCwTB0wRiFfTr7KUguAS0vWCphN0-bcWAtqvh_GA0nqcz_EVkwzE4pexBiMUXtHCCf14GARMRp_HkvLYl0ziV8UQuWMOnE_5EB3u1d1D9Vw"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">OBJECT 01</h3>
+</a>
+<!-- Grid Item 7 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="monochromatic interior living space with low profile seating and large window" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="monochromatic interior living space with low profile seating and large window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGT3Gjwo7nQ0UaZH8OE7F_d55RPKreuzYuIT3OC9L6qTLzYveugV0bWJ-pxN1TVuFzMT3Fe5qsig5zZvvqt1dfkaemqs8FrMQmBc7A2gGC2FPXHSdDs3F64QOWwB-tQMl8MPDZp7M_QwRWPjxJP0RJiP2RVZfBPEX8qDQUVoMqHLSVZKrKJprtj7nZ0cK9C8TPbppOo1EzkN7LIDEqbdib5UcVOWkYLPXOv_cnW4vLDFfQInubb8koSPzTwC-kAgSRwWJ1QQGcbhA"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">RESIDENCE B</h3>
+</a>
+<!-- Grid Item 8 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="top down view of a minimalist spiral staircase in dark grey tones" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="top down view of a minimalist spiral staircase in dark grey tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP1SdBJkUqxDe-izk8Q158Dmn_QW9vRSCCzFFJlSPrIfX5c69azZdWvvix91-K_RnSqeZ4zRhadem-r-JFKTfv476Jtyf9CzipmwiOASpNxJvqondVZ5mm3XMdlOkoVyucA806HVqoUegAU-K6u2YgKOLI7txs8yimSJ27az4SyijXJmIyW6KObTqQcIuVmYSas7YB5WQ2olb26qg_Jnxy7Qvl1N4cNe5SHheh6mSRiiinjnYzROkpRNDdpuqQx1GWwP4T9v_C_fA"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">ASCENSION</h3>
+</a>
+<!-- Grid Item 9 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="geometric shadows cast on a plain white architectural wall" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="geometric shadows cast on a plain white architectural wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpmFfaoPratoX_yyK60t0iAdnZCrKxFXSD-R_B7dX-m3dQynutfuzqvd02Zn9XSwci1oeri44H9OkuyfVdB6IA4ebHP-dSQHPG8nKRLOp8_y6A3WHM41mNLJfTtXEY66fgbVlu_m3r5BjbWcuXmmDH4tuxZjWo_axNtp-MLnGBBGa5cyXt1auDNQOIM-LJAZXBCjZufNdw8k7HHTO__NNyIEE4ogqYCwrhCOzaf9Agn7dyYdfOFHRFE9E8tYP_rbeRZ0zf_dR2Q74"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">STUDY IN LIGHT</h3>
+</a>
+<!-- Grid Item 10 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="minimalist dining area with a single pendant light and dark wood table" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="minimalist dining area with a single pendant light and dark wood table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5l2FuJe9-s5H2lVw0i5CsC7EDYz5q55BmVNML-uGJ0HUvxQAj44Fy0EEErpR9rBL4z6qV5Oa3kpsYzG7dNqnCXa1uFS4l-DpQt4QYoo1NZEJhVRULoF7xjLYU_AXXe8cCLepqm6OjsjgiaNHVcIHJUVcavX2lY4u_zbzgT8wqCllo5zZMxkDKEN_H8o_cW_Tz2W7J1EPsvqIi6B3QVamFk2HkUaBgr7Rumqfm-2SNAQsRYG01if20laP6biojtJo8V0MNcU1rBQQ"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">DINING PAVILION</h3>
+</a>
+<!-- Grid Item 11 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="abstract view of steel structural framework against a clear sky" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="abstract view of steel structural framework against a clear sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjgd_Xm8ky0DGwtZRzbrbXIpik0uPIEeO8oquf0SSbnZBkg9ZF5xFDEFpyKBzQsqwhGdwu4c8toZqPNDoQS7XSOXZBpY12jjO5fzEbwgf5zA-0svyTmR7zDeoG44mTVXxpokmZU1sy0EX8KJbKvupXfdGZuCREeh38gyJ3Jtdp8pKtGVO0iwhL_XmjrRSmdFDoa-1S4lkdaAjOiThrFyqoVOLKahmzRThllhSx7qt56C2uEqetYdJIfghZjQHtfMnLZV1IemSiP60"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">FRAMEWORK</h3>
+</a>
+<!-- Grid Item 12 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="modern landscape architecture with precise concrete planters and sparse greenery" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="modern landscape architecture with precise concrete planters and sparse greenery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr8D85GiHKGsFXVMom2EQThdtRYIGI7F-7HAV1qxD0y9BlBa5Nsomi1dhaYjkxvRNhn8FcwJjRvVJKm6mU7Lk4feH8YyDMf5UKkPKs0YpZ9U4a-z9UpLRAx-nBruvMeCce-scRfxYOIpQyFmWh04oowCngN4uj8ezHsq_ANCW_qtS28UJQeA0MMKpNtYKlNULfsInP8mI2Kvac9I0vsWhnk0uDk_D-Mh9xzqw5kgkJzQKIMb2-oIvX82SYA-smbsK-Z0fwhvLpOtU"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">TERRACE</h3>
+</a>
+<!-- Grid Item 13 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="interior space with repeating arches creating a tunnel effect in muted tones" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="interior space with repeating arches creating a tunnel effect in muted tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwkb7UgDt5ws-KBfnOATk4tcsFXq1m8L3RyawFDb527vVA9c3N1b52xfJtKUnMc9YE6SYE9KnZz-KUPVvRtI2wBFiKx6D6gQBZa-nTUJkoAoxhCT1LnBWfsnVpKQx2A-1Am77hnfch8ypm0ZUBnCADGalPVg1PF52JIpsdwQU771sfpmslw7upQiJ7RrNctx1Ktv_5lpmkvXVdl8DyXvVkT2938xOs652wnW7nsqwyTIJ0p9nZf8YGXo36bStO_DHLgwbWtVz3wQY"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">ARCHES</h3>
+</a>
+<!-- Grid Item 14 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="close up of a textured concrete wall with a single vertical slice of window" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="close up of a textured concrete wall with a single vertical slice of window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCLjenSh3DAqgNrzvrjwyKrHvfkRrbgwLnivxfZmjii3tCXbOeg0CdfQ7k5_zP01ObgYvcfEtedAlisXuCbgd8g2prs5BS8JRb2OGCyrFN69yo9fWhDhihxqhN5sDpWmMav5uZeShfHdBCzJ1aXqzxZzHJBp1z-rJJiq9xeRNMsmFBRwaoAXTvv7FwBcAhhxCZ3S_oQmEin9jjvxwsgH-MZ9JwAZyQ5ZvgiWaFCBeJsNpCe6l4bvEVw6WijZEmKhMPkk3knBYnS7w"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">VOID</h3>
+</a>
+<!-- Grid Item 15 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="sleek modern kitchen with black cabinetry and marble island" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="sleek modern kitchen with black cabinetry and marble island" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5RlnWkyXrGG6zvwqatKzb05DG25dAt3hGR2r_S7le5PFZ0U9K7gdzKCow3hKKswCM1BvuPozl90btpxgL4GaIQTCNy27DUcJ94C1wyT2DleZdxUE6Su-ErvpQmn-ITe_8JmxV6FfgXMi7_Kgak_VcnVwfJ5oSZxIZx795CIJaQSf4XtOQGshYo5uGC5m_2WSpIYLhDs4i2G-jz7TI7Crv8kQ85aE1nrxdKD5BoIS-MfrXSuDBqq-inSNTqGms6SgV_ZwwM42Yta0"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">KITCHEN N.4</h3>
+</a>
+<!-- Grid Item 16 -->
+<a class="group block cursor-pointer" href="#">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-2">
+<img alt="exterior of a small dark timber cabin nestled in minimal landscape" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300" data-alt="exterior of a small dark timber cabin nestled in minimal landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcm22ZYjHcq3i4hREUG4hZvqUkhyTVL6wlTy_quKL5joeGKI423qaQOdimvxZz9rSL77y6GwQ2ALs3DMwAyyYlkTv7UK_Yd3FPHreini72sKZD_JPm_k34PPvOrKSVR8wc7CZi4kRXK-h_gIQIyuISP10Ll95UYhGjWkf3XfF5EnEEzMQy8X2plYWb0uiheF0BVQW9DG2sNmxnRJafzrfSmlg5H4_huq-j1Ee6wleNrQG-HHexAK8Rz9bWGQlLJoxQRujXgeXT33I"/>
+</div>
+<h3 class="font-label-caps text-label-caps text-on-background truncate">RETREAT</h3>
+</a>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-outline-variant bg-background flex flex-col md:flex-row justify-between items-center px-edge-margin py-12 mt-auto">
+<div class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mb-6 md:mb-0">
+            © 2024 STUDIO. ALL RIGHTS RESERVED.
+        </div>
+<nav class="flex gap-8 font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">
+<a class="hover:text-on-background hover:underline transition-colors duration-150" href="#">INSTAGRAM</a>
+<a class="hover:text-on-background hover:underline transition-colors duration-150" href="#">LINKEDIN</a>
+<a class="hover:text-on-background hover:underline transition-colors duration-150" href="#">TWITTER</a>
+</nav>
+</footer>
+</body></html>

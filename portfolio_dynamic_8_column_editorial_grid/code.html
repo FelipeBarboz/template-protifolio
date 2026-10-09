@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>STUDIO - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2f3131",
+                        "surface-tint": "#5e5e5e",
+                        "surface-container": "#eeeeee",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "secondary-container": "#e1dfdf",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "secondary": "#5e5e5e",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-primary-fixed": "#1b1b1b",
+                        "outline-variant": "#cfc4c5",
+                        "surface-dim": "#dadada",
+                        "inverse-on-surface": "#f0f1f1",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "inverse-primary": "#c6c6c6",
+                        "tertiary-container": "#1a1c1c",
+                        "primary": "#000000",
+                        "secondary-fixed": "#e4e2e2",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "on-tertiary-container": "#838484",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-primary-container": "#848484",
+                        "on-primary-fixed-variant": "#474747",
+                        "surface": "#ffffff",
+                        "surface-container-high": "#e8e8e8",
+                        "outline": "#7e7576",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-secondary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#4c4546",
+                        "primary-container": "#1b1b1b",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#464747",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#e2e2e2",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#626263",
+                        "tertiary": "#000000",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#f9f9f9",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-low": "#f3f3f4",
+                        "on-surface": "#000000",
+                        "background": "#ffffff",
+                        "on-background": "#000000",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "edge-margin": "40px",
+                        "section-gap": "120px",
+                        "element-gap": "12px",
+                        "gutter": "16px",
+                        "container-max": "1800px"
+                    },
+                    "fontFamily": {
+                        "display-xl": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "body-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-xl": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "600" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-md": ["16px", { "lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "label-caps": ["14px", { "lineHeight": "1", "letterSpacing": "0", "fontWeight": "500" }],
+                        "body-sm": ["14px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="w-full top-0 z-50 bg-transparent flex justify-between items-center pb-6 transition-colors duration-150 max-w-container-max mx-auto px-[10px] pt-[10px] mb-[160px]">
+<div class="font-semibold tracking-tight text-on-surface text-[20px]" style="">
+            STUDIO
+        </div>
+<div class="hidden md:flex items-center absolute left-1/2 -translate-x-1/2 gap-6">
+<a class="font-label-caps text-label-caps text-on-surface transition-opacity duration-150 text-[12px]" href="#" style="">WORK</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:opacity-70 transition-opacity duration-150 text-[12px]" href="#" style="">ABOUT</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:opacity-70 transition-opacity duration-150 text-[12px]" href="#" style="">NEWS</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:opacity-70 transition-opacity duration-150 text-[12px]" href="#" style="">CAREERS</a>
+</div>
+<a class="text-on-surface font-label-caps text-label-caps hover:opacity-70 transition-opacity duration-150 flex items-center gap-1 text-[12px]" href="#" style="">
+            GET IN TOUCH <span class="material-symbols-outlined text-[14px]" style="">arrow_forward</span>
+</a>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow max-w-container-max mx-auto w-full pt-[10px] pb-[10px] px-[10px]">
+<!-- Section Header & Toggle -->
+<div class="flex justify-between items-end mb-[10px]">
+<h1 class="font-display-xl text-display-xl text-on-surface" style="">All Projects (12)</h1>
+<div class="flex items-center gap-4">
+<button class="font-label-caps text-label-caps text-on-surface hover:opacity-70 transition-opacity duration-150" style="">GRID</button>
+<span class="text-on-surface-variant font-label-caps text-label-caps" style="">|</span>
+<a class="font-label-caps text-label-caps text-on-surface hover:opacity-70 transition-opacity duration-150" href="{{DATA:SCREEN:SCREEN_9}}" style="">LIST VIEW</a>
+</div>
+</div>
+<!-- Grid View -->
+<div class="grid grid-cols-1 md:grid-cols-8 gap-[10px] grid-flow-row-dense auto-rows-[200px]">
+<!-- Project Card 1 -->
+<div class="group cursor-pointer flex flex-col relative overflow-hidden col-span-1 md:col-span-3 md:row-span-3">
+<img alt="High-fashion editorial photography, luxury brand style" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ugZkIm9n8EIdBRHOkcwSyaQY2gzTRVojeex-tWiEyEzJrIt0KaAg9l-8lakx8rj_KiVSU5qXXwLi_J6RWzkOQ3QsdrvPYighYFwJrhOuDRMRu_s1x8wlgT1sO6aRbudrfKoX7LF5mpomxAuWiHqiho6gY0Rtq-AhWWzEY8UL_SgdcqDxjrStZejDc_Dhev08V8fY9tYAHoFS9ZX5apquhzLLZ5toUE_GBea1sphktlvErR38aeNhK_qEYVfECP3YKRH3_qG8P1i" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-6 left-6 z-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<h3 class="font-headline-md text-headline-md text-white" style="">Maison</h3>
+<p class="font-body-sm text-body-sm text-white/80 mt-1" style="">Editorial Campaign - 2024</p>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group cursor-pointer flex flex-col relative overflow-hidden col-span-1 md:col-span-5 md:row-span-2">
+<img alt="Sleek modern automotive photography" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uhdNkr40VSjiia2qNUwasJvFKTiVB97z6E1S6-y_5AmA7cI0NrwBeLhS3xM0vy8XNTWABpPRpiTYeDxWuF_dJt1WkRx6CuHTeBfOQS4Kbvbr1sC2tnLQz1Bp9gNkjxiWhdFuUpEzmjl81Dq1F-PO30BH9CKMYy0Meijoj1Sb2xxVpwlEB3llPSEFQS-GAqfCf80hQhwZWejmHvmJeEUoPq4o70ULHd3-CVM6cG3AkCJwQQiwKenoAL6fw" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-6 left-6 z-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<h3 class="font-headline-md text-headline-md text-white" style="">Aero</h3>
+<p class="font-body-sm text-body-sm text-white/80 mt-1" style="">Automotive Design - 2024</p>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group cursor-pointer flex flex-col relative overflow-hidden col-span-1 md:col-span-2 md:row-span-2">
+<img alt="Minimalist product design photography" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ui6HBeCYEQ9Fya9Sm8PrFfYc3TTQN07AgI4fyQxrLpo3aiA8_e_CAS2fG6YiL3xBZ3J88DbYdmewipt-tYw4E_lZhHryh4CDZH5Hhtc21dW_qNT-mQejy5dBUtL19QMR_RGt0s34mkWKHfuH-edhY5lrwuIZQrYezq-4BVr0cauPbBqgRBzD6epXw8HJogUwEk_7Q_dKDN86mo7Mz23MV7v_rG1mUhu10uEfahW0jm-HMEtBWZsTsIthSk" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-6 left-6 z-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<h3 class="font-headline-md text-headline-md text-white" style="">Aura Sound</h3>
+<p class="font-body-sm text-body-sm text-white/80 mt-1" style="">Product Design - 2023</p>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="group cursor-pointer flex flex-col relative overflow-hidden col-span-1 md:col-span-3 md:row-span-2">
+<img alt="Minimalist product design photography" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uhyqU9o2CNKIGzjJEfpIU5YfFB0sI3Y5PGVgRsIW-z2ye7jCw-24pfRYja0uoR_iYwjssCBjEB-46kg4w7AywXHZ8r-Jmb6_Xnwx6mh9vxl-9Kx-6Gj2eJLvL6YSlOylrzSojx4nESsuGJjRajZCheu8g_NP0ZG-6c9jjTVug7wj8oks_9Im_4lyOiZQgKad3bxeNsYtv3BC1jus7cFuhUwas9Sarh_panqB-UZuXSW8DazAWyHyeFs05M" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-6 left-6 z-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<h3 class="font-headline-md text-headline-md text-white" style="">Echo Series</h3>
+<p class="font-body-sm text-body-sm text-white/80 mt-1" style="">Industrial Design - 2023</p>
+</div>
+</div>
+<!-- Project Card 5 -->
+<div class="group cursor-pointer flex flex-col relative overflow-hidden col-span-1 md:col-span-3 md:row-span-3">
+<img alt="High-fashion editorial photography, luxury brand style" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uhBSFdzvWNxFpAFNaWiR75Lr4T3UipGA7qyOl5uklQ3XzoSxbtLZU83smfiOxhp5rDM0p2ZQoVTlyhJEJqwKa_4BNnEdksrgPkXNWOjzF1i5jKazeJIhx3FT_tuur92jQV3NXpUbX-xbJmG2WHJDh_-v5YzoFmcBmyuzylqaPcaDzN8jNZVBV0Uo-4VkcQfYvFbE0xRLyf_emhVsiCw_XGHf_3rAicX6UyNImuekmQCBJbRofDi_oFonF5kZpgqUZkR0OSzVHkoeA" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-6 left-6 z-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<h3 class="font-headline-md text-headline-md text-white" style="">Lumiere</h3>
+<p class="font-body-sm text-body-sm text-white/80 mt-1" style="">Art Direction - 2024</p>
+</div>
+</div>
+<!-- Project Card 6 -->
+<div class="group cursor-pointer flex flex-col relative overflow-hidden col-span-1 md:col-span-5 md:row-span-3">
+<img alt="Sleek modern automotive photography" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ui1vTXOspKF1eWmjtMA5tUzWBMKSR3Szzx9-AdgiVxbTg4fNvjQxM1YGca2EtBYRgfyeAPQDV1DQtmdTYZBjZ08xforwbU076wpcoPKt-0sxSg3-jXGXu6V0JjGINpOT6DK4oVpzBBxkEKWjvih52L2GxPQdG2VXes1qi89wpZ12iy45JURWTh5cwmIGJvI_YlWFZlSfjUwK7JExW1HcGKK31hFbzdL4vusUlxzcFfZf7C2hlnRt4ZyU-Kt0L0bAaE9s8QofF0kUg" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-6 left-6 z-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<h3 class="font-headline-md text-headline-md text-white" style="">Velocity</h3>
+<p class="font-body-sm text-body-sm text-white/80 mt-1" style="">Concept Vehicle - 2023</p>
+</div>
+</div>
+<!-- Project Card 7 -->
+<div class="group cursor-pointer flex flex-col relative overflow-hidden col-span-1 md:col-span-8 md:row-span-2">
+<img alt="Sleek modern automotive photography" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uiIKk0NUPaVV2iDBb5WtIs_HjlqvnElcrqty57nB5J_m4PE5K9UpK_JlCR-1hZo4ZMS-mKiNI14doEwir-kWZXScGSfyCUtjlsr0qlbLuvpYa0mkaT_4QNZ6UvbACbU0PDSa_6E1HGnxE35KxFxqJR-J56YKY8JgI08NS5tOh3azzu4Fr3QwwbpTyUuAXTkITU5C8TEtW_RfCQ9BBqO3IZik195CDFcYuBaOzBcvtb2viYlhwfcJ6t3xvCITSzPTz8fFHt825NNWQ" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-6 left-6 z-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<h3 class="font-headline-md text-headline-md text-white" style="">Nexus</h3>
+<p class="font-body-sm text-body-sm text-white/80 mt-1" style="">Transportation - 2022</p>
+</div>
+</div>
+<!-- Project Card 8 -->
+<div class="group cursor-pointer flex flex-col relative overflow-hidden col-span-1 md:col-span-4 md:row-span-3">
+<img alt="Minimalist product design photography" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ugZkIm9n8EIdBRHOkcwSyaQY2gzTRVojeex-tWiEyEzJrIt0KaAg9l-8lakx8rj_KiVSU5qXXwLi_J6RWzkOQ3QsdrvPYighYFwJrhOuDRMRu_s1x8wlgT1sO6aRbudrfKoX7LF5mpomxAuWiHqiho6gY0Rtq-AhWWzEY8UL_SgdcqDxjrStZejDc_Dhev08V8fY9tYAHoFS9ZX5apquhzLLZ5toUE_GBea1sphktlvErR38aeNhK_qEYVfECP3YKRH3_qG8P1i" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-6 left-6 z-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<h3 class="font-headline-md text-headline-md text-white" style="">Forma</h3>
+<p class="font-body-sm text-body-sm text-white/80 mt-1" style="">Tech Hardware - 2024</p>
+</div>
+</div>
+<!-- Project Card 9 -->
+<div class="group cursor-pointer flex flex-col relative overflow-hidden col-span-1 md:col-span-4 md:row-span-3">
+<img alt="High-fashion editorial photography, luxury brand style" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uhdNkr40VSjiia2qNUwasJvFKTiVB97z6E1S6-y_5AmA7cI0NrwBeLhS3xM0vy8XNTWABpPRpiTYeDxWuF_dJt1WkRx6CuHTeBfOQS4Kbvbr1sC2tnLQz1Bp9gNkjxiWhdFuUpEzmjl81Dq1F-PO30BH9CKMYy0Meijoj1Sb2xxVpwlEB3llPSEFQS-GAqfCf80hQhwZWejmHvmJeEUoPq4o70ULHd3-CVM6cG3AkCJwQQiwKenoAL6fw" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-6 left-6 z-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<h3 class="font-headline-md text-headline-md text-white" style="">Vanguard</h3>
+<p class="font-body-sm text-body-sm text-white/80 mt-1" style="">Editorial - 2023</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface flex justify-between items-center w-full px-[10px] pb-[10px] pt-8 max-w-container-max mx-auto uppercase">
+<div class="text-[10px] font-medium tracking-wider text-on-surface" style="">
+        © 2026 STUDIO
+    </div>
+<div class="flex gap-6">
+<a class="text-[10px] font-medium tracking-wider text-on-surface hover:opacity-70 transition-opacity" href="#" style="">INSTAGRAM</a>
+<a class="text-[10px] font-medium tracking-wider text-on-surface hover:opacity-70 transition-opacity" href="#" style="">LINKEDIN</a>
+<a class="text-[10px] font-medium tracking-wider text-on-surface hover:opacity-70 transition-opacity" href="#" style="">TWITTER</a>
+</div>
+</footer>
+</body></html>

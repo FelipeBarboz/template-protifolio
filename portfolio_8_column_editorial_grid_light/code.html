@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio - Studio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+                  "on-error-container": "#93000a",
+                  "primary-fixed": "#e2e2e2",
+                  "error": "#ba1a1a",
+                  "secondary-fixed-dim": "#c7c6c6",
+                  "outline": "#7e7576",
+                  "secondary": "#5e5e5e",
+                  "on-secondary-fixed": "#1b1c1c",
+                  "on-primary-container": "#848484",
+                  "surface-container-lowest": "#ffffff",
+                  "surface-container-low": "#f3f3f4",
+                  "outline-variant": "#cfc4c5",
+                  "on-primary-fixed-variant": "#474747",
+                  "surface-container": "#eeeeee",
+                  "inverse-surface": "#2f3131",
+                  "background": "#f9f9f9",
+                  "secondary-fixed": "#e4e2e2",
+                  "on-primary-fixed": "#1b1b1b",
+                  "on-error": "#ffffff",
+                  "surface-container-highest": "#e2e2e2",
+                  "on-tertiary": "#ffffff",
+                  "on-secondary-fixed-variant": "#464747",
+                  "inverse-primary": "#c6c6c6",
+                  "tertiary": "#000000",
+                  "primary-container": "#1b1b1b",
+                  "surface-variant": "#e2e2e2",
+                  "surface-tint": "#5e5e5e",
+                  "error-container": "#ffdad6",
+                  "on-tertiary-fixed-variant": "#454747",
+                  "surface-dim": "#dadada",
+                  "surface-container-high": "#e8e8e8",
+                  "on-secondary-container": "#636262",
+                  "inverse-on-surface": "#f0f1f1",
+                  "primary-fixed-dim": "#c6c6c6",
+                  "surface": "#f9f9f9",
+                  "tertiary-fixed-dim": "#c6c6c6",
+                  "on-tertiary-container": "#838484",
+                  "on-surface": "#1a1c1c",
+                  "tertiary-fixed": "#e2e2e2",
+                  "surface-bright": "#f9f9f9",
+                  "on-tertiary-fixed": "#1a1c1c",
+                  "on-primary": "#ffffff",
+                  "primary": "#000000",
+                  "on-background": "#1a1c1c",
+                  "secondary-container": "#e1dfdf",
+                  "on-secondary": "#ffffff",
+                  "tertiary-container": "#1a1c1c",
+                  "on-surface-variant": "#4c4546"
+          },
+          "borderRadius": {
+                  "DEFAULT": "0.25rem",
+                  "lg": "0.5rem",
+                  "xl": "0.75rem",
+                  "full": "9999px"
+          },
+          "spacing": {
+                  "element-gap": "12px",
+                  "edge-margin": "40px",
+                  "section-gap": "160px",
+                  "container-max": "1800px",
+                  "row-padding": "4px"
+          },
+          "fontFamily": {
+                  "label-micro": [
+                          "Inter"
+                  ],
+                  "display-xl": [
+                          "Inter"
+                  ],
+                  "body-lg": [
+                          "Inter"
+                  ],
+                  "label-caps": [
+                          "Inter"
+                  ],
+                  "body-sm": [
+                          "Inter"
+                  ],
+                  "headline-md": [
+                          "Inter"
+                  ],
+                  "headline-lg": [
+                          "Inter"
+                  ]
+          },
+          "fontSize": {
+                  "label-micro": [
+                          "10px",
+                          {
+                                  "lineHeight": "1",
+                                  "letterSpacing": "0.1em",
+                                  "fontWeight": "500"
+                          }
+                  ],
+                  "display-xl": [
+                          "48px",
+                          {
+                                  "lineHeight": "1.1",
+                                  "letterSpacing": "-0.04em",
+                                  "fontWeight": "600"
+                          }
+                  ],
+                  "body-lg": [
+                          "18px",
+                          {
+                                  "lineHeight": "1.6",
+                                  "letterSpacing": "0",
+                                  "fontWeight": "400"
+                          }
+                  ],
+                  "label-caps": [
+                          "12px",
+                          {
+                                  "lineHeight": "1",
+                                  "letterSpacing": "0.05em",
+                                  "fontWeight": "500"
+                          }
+                  ],
+                  "body-sm": [
+                          "14px",
+                          {
+                                  "lineHeight": "1.6",
+                                  "letterSpacing": "0",
+                                  "fontWeight": "400"
+                          }
+                  ],
+                  "headline-md": [
+                          "20px",
+                          {
+                                  "lineHeight": "1.4",
+                                  "letterSpacing": "-0.02em",
+                                  "fontWeight": "600"
+                          }
+                  ],
+                  "headline-lg": [
+                          "40px",
+                          {
+                                  "lineHeight": "1.2",
+                                  "letterSpacing": "-0.02em",
+                                  "fontWeight": "400"
+                          }
+                  ]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface-container-lowest text-on-surface font-body-lg text-body-lg min-h-screen pb-32">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full pt-[10px] bg-white/90 dark:bg-black/90 backdrop-blur-md border-none z-50">
+<div class="flex justify-between items-center px-10 max-w-[1800px] mx-auto w-full h-16">
+<div class="text-lg font-bold tracking-tighter text-black dark:text-white">STUDIO</div>
+<div class="hidden md:flex space-x-8 font-inter uppercase tracking-[0.2em] text-[11px] font-medium">
+<a class="text-black dark:text-white opacity-100 hover:opacity-70 transition-opacity duration-300" href="#">WORK</a>
+<a class="text-black/40 dark:text-white/40 hover:opacity-70 transition-opacity duration-300" href="#">ABOUT</a>
+<a class="text-black/40 dark:text-white/40 hover:opacity-70 transition-opacity duration-300" href="#">NEWS</a>
+<a class="text-black/40 dark:text-white/40 hover:opacity-70 transition-opacity duration-300" href="#">CAREERS</a>
+</div>
+<button class="font-inter uppercase tracking-[0.2em] text-[11px] font-medium text-black dark:text-white hover:opacity-70 transition-opacity duration-300 cursor-pointer flex items-center gap-2">
+        GET IN TOUCH
+      </button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="max-w-[1280px] mx-auto px-edge-margin pt-[186px]"> <!-- pt-[186px] accounts for nav height + gap -->
+<!-- Header Section -->
+<header class="flex justify-between items-end mb-12">
+<h1 class="font-display-xl text-display-xl text-on-surface m-0">All Projects (40)</h1>
+<div class="font-label-micro text-label-micro text-on-surface-variant flex gap-2">
+<button class="text-on-surface font-semibold hover:opacity-70 transition-opacity">GRID</button>
+<span>|</span>
+<button class="hover:text-on-surface transition-colors">LIST VIEW</button>
+</div>
+</header>
+<!-- Bento Grid Gallery -->
+<div class="grid grid-cols-8 grid-rows-5 gap-[10px] auto-rows-[240px]">
+<!-- Item 1: Large Feature (Landscape) -->
+<div class="col-span-4 row-span-2 relative group overflow-hidden bg-surface-variant">
+<img alt="Project 1" class="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-in-out" data-alt="Sleek silver sports car driving on a coastal road at sunset with dramatic lighting and motion blur" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK0ZcZXenGmIynrXxi9HT1DLmvRiiSv5q99KlcGjTxnkXiEi7Iux-w-2GI7LmT8V-wc6gB-ZxxuxLfFFwJVIyDIINo8YxdVFgrFVNfGrVOZ9s7_RgVojAShZe0CwAbiHOQd0junWmiVNgT7c5xnQDan2APLpBN6otkowcO2BkFeVCo5DwcGykootOZ0zeAy-LgLeUnHphc63ycx_NHWWa-cr1U6Do-NgyXJH_ta4ZZD_TOGBClFqBhq9Y6BjpfT-t4hMeP6_t69oE"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<h3 class="font-headline-md text-headline-md text-white m-0">Automotive Excellence</h3>
+<p class="font-body-sm text-body-sm text-white/80 mt-2">Brand Identity &amp; Campaign</p>
+</div>
+</div>
+<!-- Item 2: Tall Portrait -->
+<div class="col-span-2 row-span-3 relative group overflow-hidden bg-surface-variant">
+<img alt="Project 2" class="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-in-out" data-alt="High fashion editorial portrait of a model in avant-garde minimalist clothing against a concrete wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfDehsaSXGCm2iHxP0J9BItdjDAWa_aamTnkfI2uQm9xL-gMkGC64ISt7X9tV7-yD35Za4wbvFKvTnxkQTKKLyMwh3prpKU8ZSJ72Eti1OwqHdc6EIrcXNKOWnUbtvaqNkYBtJGrfmGpoBTVBCfmtcik37YIOpTAu5o88LQV_qLOyUizPlqDBiz6oOicednDhbAO5ygkx6UfCEwkV0qQeIn1jaKkPTxQMmysYVr8t6dpD2ZfOzWYKlHKMJN4OFEijOeCk0WKlmi88"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<h3 class="font-headline-md text-headline-md text-white m-0">Vogue Issue 12</h3>
+<p class="font-body-sm text-body-sm text-white/80 mt-2">Editorial Design</p>
+</div>
+</div>
+<!-- Item 3: Square -->
+<div class="col-span-2 row-span-2 relative group overflow-hidden bg-surface-variant">
+<img alt="Project 3" class="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-in-out" data-alt="Minimalist modern interior with a sleek leather chair and dramatic shadow play on white walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtqafdmhKc7DoUMV4uGG7nDxKuEecDJh5wL9E4dyqmDX8Quw4EunpJ76mi4uqgoovUCLfUzMKxPkd131pyo5JalYhSOrBaHrOsZmMT4PGGwvZng3R0eIsqXSnM81fwpbniKiPp2Tutcp3yinduGtoXCazzBNkYdxJleCotp7rsUnyev0wBZWiYqj1LsYk_6N_0jlR_ppKBVz87jGhkKa1DHm_nKDTTFlJK1z_6r434xQTttSSDIJZ2-iJ009qlDClUN1oKtkKr9Zk"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<h3 class="font-headline-md text-headline-md text-white m-0">Space &amp; Form</h3>
+<p class="font-body-sm text-body-sm text-white/80 mt-2">Spatial Design</p>
+</div>
+</div>
+<!-- Item 4: Wide Strip -->
+<div class="col-span-4 row-span-1 relative group overflow-hidden bg-surface-variant">
+<img alt="Project 4" class="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-in-out" data-alt="Abstract close-up of metallic motorcycle engine parts with high contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAamYs3lMLp38hRgWXVw7-n_1BcjhhCksC9mC9jartUutRzJBvgfZ6J1Y_-z1Mr2qYW8P9xeBIXDG8I19hCCmXFjidr5UYfX1QQf0fo3VNYNlVMOJpH7iP2b-FAwqNJP6jrFxbc2ZZQZRm1tMljWHPo-xLbE3H8_aGveEV7bxiRxUpoZ6yZMLQ8ZhDFefD-6sQ7G4DO47X33LxEi88_Gxg7dnedJqrbk1GrGkzmB13dyZ3-wQ6xhHONHiphPMYA1oA-VIPYklqv6VE"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
+<h3 class="font-headline-md text-headline-md text-white m-0 tracking-widest uppercase">Precision</h3>
+</div>
+</div>
+<!-- Item 5: Square -->
+<div class="col-span-2 row-span-2 relative group overflow-hidden bg-surface-variant">
+<img alt="Project 5" class="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-in-out" data-alt="Close-up black and white portrait of a woman with striking features and intense gaze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsjaV_F0DjTo_cep8eGaEpRPU5tIGcImknNObE4xZPZ2PtR2ZNFEoOl9JdFFypXs8OxrTO72hSYK4z6Nr5e03_e2_q3GWAxXQhEiBB8U_KTCQWZzEFCpuHT5tSeExpBWDbS6v-idN9jxmiJ0gRlTlb-vILuBK_gIkmuELE8AF7yq11R7BZU3wuLTVg9YyGp2QFTq7_bsWtERK0amMhFUW12MeA5-tbR3DnL06vptqvgsF5U8FNTeMouNW8XM6WGFeHqb87IUfF5uw"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<h3 class="font-headline-md text-headline-md text-white m-0">Faces</h3>
+<p class="font-body-sm text-body-sm text-white/80 mt-2">Photography</p>
+</div>
+</div>
+<!-- Item 6: Landscape -->
+<div class="col-span-4 row-span-2 relative group overflow-hidden bg-surface-variant">
+<img alt="Project 6" class="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-in-out" data-alt="Breathtaking architectural view of a brutalist concrete building against a stark white sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNz1fXfwhtOTQyoxmMPRPNLFyPNRBz6TefBBUfFwTdetJEb2NJx_gKepmeY1RsmCUtJDQjns-529ziDaWtGIXdswETkhNBBWr0LXcqhzM6srnTRDhId5FYJKkqGpBIxB4N74eAt19Yd3YJO5x4zaCP56vc_fPchde7EbI6B1HEUCJbMUX8MbDfVoDHDSr0cGIFSSB-0hnC9UlqGrJn5AslXzQE9yOVQyTGFA3ELeyKBzyZp-MI3qnPcFUjRlP-yyzn6hgQJQawmNE"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<h3 class="font-headline-md text-headline-md text-white m-0">Brutalist Echoes</h3>
+<p class="font-body-sm text-body-sm text-white/80 mt-2">Architecture &amp; Curation</p>
+</div>
+</div>
+<!-- Item 7: Square -->
+<div class="col-span-2 row-span-2 relative group overflow-hidden bg-surface-variant">
+<img alt="Project 7" class="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-in-out" data-alt="Minimalist abstract composition of folded white paper creating geometric shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtsJ2yyionNo4NA4iAZCcl4kaeRnUdzUbpLhYSJ5GQ0uxDXqXwZtuKNQ8tpE0713RYbEc9XJoSZuc4ZHrQb47AlnX5DuAaNEwTBltoCC-FTfj16_bbS-VvAe9-HN8LIa9FTC1vwQ4VlE_2dqG4fAI9PrNo-ILzuk84dcMgQH4bvLP7qslvVaOYCRV4Zd5-cVgamPssgGYGXUsw0wxCr4JJBmlev54IX7Uxscg0LdgKBdA3aWwdAbql6iBLRd1VTrCF6jdowFzzJEo"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<h3 class="font-headline-md text-headline-md text-white m-0">Paper Light</h3>
+<p class="font-body-sm text-body-sm text-white/80 mt-2">Art Direction</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="fixed bottom-0 w-full border-t border-black/5 dark:border-white/10 bg-white dark:bg-black z-50">
+<div class="flex justify-between items-center px-10 py-8 w-full max-w-[1800px] mx-auto font-inter uppercase text-[10px] tracking-[0.25em] font-light text-black/50 dark:text-white/50">
+<div class="text-[10px] font-bold text-black dark:text-white">
+        © 2026 STUDIO ALL RIGHTS RESERVED
+      </div>
+<div class="flex space-x-6">
+<a class="hover:text-black dark:hover:text-white transition-colors duration-200" href="#">INSTAGRAM</a>
+<a class="hover:text-black dark:hover:text-white transition-colors duration-200" href="#">LINKEDIN</a>
+<a class="hover:text-black dark:hover:text-white transition-colors duration-200" href="#">VIMEO</a>
+</div>
+</div>
+</footer>
+</body></html>

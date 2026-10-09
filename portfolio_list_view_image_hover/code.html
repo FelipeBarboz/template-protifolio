@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Studio Architects - List View</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "outline": "#7e7576",
+                        "on-surface-variant": "#4c4546",
+                        "primary-container": "#1b1b1b",
+                        "on-error": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f0f1f1",
+                        "background": "#f9f9f9",
+                        "on-primary-container": "#848484",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "inverse-surface": "#2f3131",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#eeeeee",
+                        "outline-variant": "#cfc4c5",
+                        "secondary-container": "#e1dfdf",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#000000",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface": "#1a1c1c",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e2e2e2",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dadada",
+                        "secondary": "#5e5e5e",
+                        "on-secondary-container": "#626263",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "primary-fixed": "#e2e2e2",
+                        "on-tertiary-container": "#838484",
+                        "on-secondary-fixed-variant": "#464747",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "secondary-fixed": "#e4e2e2",
+                        "surface-container-low": "#f3f3f4",
+                        "on-primary-fixed": "#1b1b1b",
+                        "surface-container-high": "#e8e8e8",
+                        "tertiary-fixed": "#e2e2e2",
+                        "tertiary-container": "#1a1c1c",
+                        "surface-bright": "#f9f9f9",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "on-primary-fixed-variant": "#474747",
+                        "surface-tint": "#5e5e5e",
+                        "inverse-primary": "#c6c6c6",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "primary": "#000000",
+                        "on-tertiary-fixed-variant": "#454747"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "section-gap": "160px",
+                        "element-gap": "12px",
+                        "container-max": "1440px",
+                        "edge-margin": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "display-xl": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.4", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "display-xl": ["80px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "500" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .material-symbols-outlined {
+                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-white dark:bg-neutral-950 fixed top-0 w-full z-50 border-b border-neutral-200 dark:border-neutral-800">
+<div class="flex justify-between items-center h-20 px-16 w-full">
+<div class="text-xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50">STUDIO</div>
+<div class="flex gap-8 font-['Inter'] font-medium tracking-[0.15em] text-[11px] uppercase">
+<a class="text-neutral-900 dark:text-neutral-50 border-b border-neutral-900 dark:border-neutral-50 pb-1 opacity-80 transition-all duration-150" href="#">WORK</a>
+<a class="text-neutral-400 dark:text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-200 transition-colors duration-150" href="#">ABOUT</a>
+<a class="text-neutral-400 dark:text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-200 transition-colors duration-150" href="#">NEWS</a>
+<a class="text-neutral-400 dark:text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-200 transition-colors duration-150" href="#">CAREERS</a>
+</div>
+<button class="bg-primary text-on-primary font-['Inter'] font-medium tracking-[0.15em] text-[11px] uppercase px-6 py-3 hover:bg-neutral-800 transition-colors duration-150">GET IN TOUCH</button>
+</div>
+</nav>
+<!-- Main Content -->
+<!-- 80px Nav + 160px Spacing = pt-[240px] -->
+<main class="flex-grow pt-[240px] px-edge-margin pb-section-gap w-full max-w-container-max mx-auto">
+<!-- Header & Toggle -->
+<header class="flex justify-between items-end mb-16">
+<h1 class="font-display-xl text-display-xl text-on-surface m-0">All Projects</h1>
+<div class="flex items-center gap-4 font-label-caps text-label-caps">
+<a class="text-secondary hover:text-on-surface transition-colors duration-150" href="#">GRID</a>
+<span class="w-[1px] h-3 bg-outline-variant"></span>
+<a class="text-on-surface border-b border-on-surface pb-0.5" href="#">LIST VIEW</a>
+</div>
+</header>
+<!-- Editorial List -->
+<ul class="w-full border-t border-outline-variant">
+<!-- Row 1 -->
+<li class="group relative border-b border-outline-variant py-8 flex justify-between items-center cursor-pointer transition-colors duration-300 hover:bg-surface-container-low">
+<h2 class="font-headline-md text-headline-md text-on-surface z-10 relative">THE GLASS HOUSE</h2>
+<div class="flex gap-16 font-body-sm text-body-sm z-10 relative">
+<span class="text-secondary w-32">RESIDENTIAL</span>
+<span class="text-on-surface">2023</span>
+</div>
+<!-- Hover Image Reveal -->
+<div class="absolute right-1/4 top-1/2 -translate-y-1/2 w-[480px] h-[320px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:z-20 transition-all duration-500 ease-out overflow-hidden">
+<img alt="" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" data-alt="minimalist glass box architecture surrounded by dense forest at twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC74YHptbz5Hism1jFBTO1ly9n6jMwC2hPLLgqYzlCw-vF262nxZancHCsLhS69eTuBTEfMIZFX5wLEA-hGgiEl8sxO9UlqDnRLASEImpm3LisDSZIXFV46D5LRl_cEF9RZjjIJp6RPCyQ01l2UhQA86_gA8JsMqG4MFDBMPeHJ3ppjLF42_IQwt8PclXQ-wTfUUmi0U2Jo4nIOrtpa7nOCkHSKaSgVppW3vji1TomCEEf0m1qi3YKZr4miWA9Z_Iu97-uruGOq0po"/>
+</div>
+</li>
+<!-- Row 2 -->
+<li class="group relative border-b border-outline-variant py-8 flex justify-between items-center cursor-pointer transition-colors duration-300 hover:bg-surface-container-low">
+<h2 class="font-headline-md text-headline-md text-on-surface z-10 relative">AURA PAVILION</h2>
+<div class="flex gap-16 font-body-sm text-body-sm z-10 relative">
+<span class="text-secondary w-32">CULTURAL</span>
+<span class="text-on-surface">2022</span>
+</div>
+<!-- Hover Image Reveal -->
+<div class="absolute right-1/4 top-1/2 -translate-y-1/2 w-[480px] h-[320px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:z-20 transition-all duration-500 ease-out overflow-hidden">
+<img alt="" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" data-alt="stark concrete pavilion interior with dramatic shaft of natural light hitting the floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS3rNk_WOLPWPbDyMvkNtxNNVbVSaZtQ8npa9ldXPdaihCKbDqdLqKo66qUQx1n02g9mMEZEuM88KbXLU_iKZVzpcrLSwpNT9N6p5_1Qnko63RtAcayLwg1cSCw3tHqsrBZ1QC3T1iTnrOlCkVaDPPnO1y6NrsWi4TVGkHC5N6qR7TLXi3XlQB2qkPxlVip4Nbx42D1-7t_Phl7eNpCH2MYkA0VLGLniEsrvaDKke8PyysT-pLAgSdA6nIJfx3R9JW7ie4z5yVPJA"/>
+</div>
+</li>
+<!-- Row 3 -->
+<li class="group relative border-b border-outline-variant py-8 flex justify-between items-center cursor-pointer transition-colors duration-300 hover:bg-surface-container-low">
+<h2 class="font-headline-md text-headline-md text-on-surface z-10 relative">NORDIC SANCTUARY</h2>
+<div class="flex gap-16 font-body-sm text-body-sm z-10 relative">
+<span class="text-secondary w-32">HOSPITALITY</span>
+<span class="text-on-surface">2023</span>
+</div>
+<!-- Hover Image Reveal -->
+<div class="absolute right-1/4 top-1/2 -translate-y-1/2 w-[480px] h-[320px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:z-20 transition-all duration-500 ease-out overflow-hidden">
+<img alt="" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" data-alt="serene scandinavian interior design with pale wood textures and minimalist furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC6Q5UTLvvsdp_ZnrK23jp2Cym0taxssdqfouyTkP3sSBI8sIJseBnn_oT3YsrxQ56GbwSDfQzm21ISGCYZN_YwDNhpfQ89Gl4t1i_pgGz7jkiBWI7BIXRaPLunXE91SH2b7f3tLZMZWkWry2whZangpr7Il2u0_cw9JHxD7NrDufOmO3fD73I48etKffIarWj9DNx5fCX-SzQ5CaYmyvw7CBpHH0hBtyq8TmH9ZXWYHKmAlWqFxq3uT7O6qDR_jon3rO6XXMhleY"/>
+</div>
+</li>
+<!-- Row 4 -->
+<li class="group relative border-b border-outline-variant py-8 flex justify-between items-center cursor-pointer transition-colors duration-300 hover:bg-surface-container-low">
+<h2 class="font-headline-md text-headline-md text-on-surface z-10 relative">URBAN CANVAS</h2>
+<div class="flex gap-16 font-body-sm text-body-sm z-10 relative">
+<span class="text-secondary w-32">COMMERCIAL</span>
+<span class="text-on-surface">2021</span>
+</div>
+<!-- Hover Image Reveal -->
+<div class="absolute right-1/4 top-1/2 -translate-y-1/2 w-[480px] h-[320px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:z-20 transition-all duration-500 ease-out overflow-hidden">
+<img alt="" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" data-alt="brutalist concrete facade of a commercial office building under clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq6irNVc92bCapRzXh3f6tKgnyu3sK4DjB4BmnLTd92UfxUXyel4s3w9onwK156P5lDzsAAyxeXrKFgy2MMrcIrrbm8vVYQTMS_yG24QDwjfg40ucHnNJIFXvPdRGIDX2uTxFoyArQilVPimhJzTOTDAM2_KpWkoWumS-_eWq2hXbiwj1k4IQqMo3hA93Y5UEoBYsoOP4iisvChIeo9RF4Qah8txJF-EY3IEigN8UFs7FMe8UmmpyNhmplL_goS4mLyVhIlX7q_AY"/>
+</div>
+</li>
+<!-- Row 5 -->
+<li class="group relative border-b border-outline-variant py-8 flex justify-between items-center cursor-pointer transition-colors duration-300 hover:bg-surface-container-low">
+<h2 class="font-headline-md text-headline-md text-on-surface z-10 relative">ECHO RESIDENCE</h2>
+<div class="flex gap-16 font-body-sm text-body-sm z-10 relative">
+<span class="text-secondary w-32">RESIDENTIAL</span>
+<span class="text-on-surface">2024</span>
+</div>
+<!-- Hover Image Reveal -->
+<div class="absolute right-1/4 top-1/2 -translate-y-1/2 w-[480px] h-[320px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:z-20 transition-all duration-500 ease-out overflow-hidden">
+<img alt="" class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-700 ease-out" data-alt="modern luxury home integrated into a rugged cliffside overlooking the ocean" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4G0sRLwL_AitrzlwFBXyN1FGAdkJ8KxEwhhzlAYB4utOe1UkVKTIPyu_1l2hClRvEwb6jUsdWj5Nk4PKgirrZsBfXMYEGcKo85hKdiY6LecYEpzM2hFwqGQpSAFxBp0m4pGeA0vE20JOS7i81CE4dsL_2hr8MCX--yj_MjfkvGxgEBbcdS_NmnxaRPMYrokfPzhKCcMvd7_SzTJA5Kk4UwFHl4zTHK3vLHYGVThZcRt2B-CAARh50Z4N_GBV6NcBxH2RWApTzlZc"/>
+</div>
+</li>
+</ul>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-neutral-950 w-full mt-auto py-12 border-t border-neutral-100 dark:border-neutral-900">
+<div class="flex justify-between items-center px-16 w-full font-['Inter'] text-[10px] tracking-widest uppercase">
+<p class="text-neutral-400 dark:text-neutral-500 m-0">© 2024 STUDIO ARCHITECTS. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-8 text-neutral-400 dark:text-neutral-500">
+<a class="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors duration-200" href="#">INSTAGRAM</a>
+<a class="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors duration-200" href="#">LINKEDIN</a>
+<a class="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors duration-200" href="#">PRIVACY</a>
+<a class="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors duration-200" href="#">TERMS</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nolan Barret - Archives</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow: hidden; /* Hide main body scrollbar to use custom scrolling */
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Infinite Scroll Styles */
+        .scroll-container {
+            height: calc(100vh - 100px - 72px); /* Viewport height minus header and footer */
+            overflow-y: scroll;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        }
+        .scroll-container::-webkit-scrollbar {
+            display: none; /* WebKit */
+        }
+        .scroll-content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .image-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+        
+    </style>
+</head>
+<body class="bg-surface text-primary antialiased min-h-screen flex flex-col tracking-[-0.01em] bg-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white pt-[10px]">
+<div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-6 pb-6 relative text-[14px]">
+<a class="font-medium tracking-tight text-black" href="#">Nolan Barret</a>
+<div class="hidden md:flex items-center gap-12 font-medium absolute left-1/2 -translate-x-1/2">
+<a class="text-black hover:text-gray-500 transition-colors duration-200" href="#">Index</a>
+<a class="text-black hover:text-gray-500 transition-colors duration-200" href="#">Archives</a>
+<a class="text-black hover:text-gray-500 transition-colors duration-200" href="#">Profile</a>
+</div>
+<div class="font-medium">
+                03:17:03 NY
+            </div>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-black absolute right-6 top-1/2 -translate-y-1/2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[100px] w-full max-w-[1280px] mx-auto px-6 relative h-[calc(100vh-72px)] flex flex-col">
+<h1 class="text-[32px] font-medium tracking-tight mb-8 mt-[160px] shrink-0">Archives</h1>
+<!-- Infinite Scroll Area -->
+<div class="scroll-container w-full" id="infinite-scroll-container">
+<div class="scroll-content" id="scroll-content">
+<!-- Content will be cloned here via JS for infinite loop -->
+<!-- Initial Set -->
+<div class="image-set">
+<!-- Row 1 -->
+<div class="image-row mb-16">
+<div class="flex flex-col gap-2">
+<div class="bg-gray-100 aspect-[4/3] overflow-hidden">
+<img alt="VTR_01" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs-L4ysg-p33lCRDQBmEZBzv8krg6J1Ih3ZMGLhsYr-jqLQ9KhrS57EOfgUye8nQle5Qw2UOjtVoNotVgd7dL7--9fW677WotKJdO4TWodCsyHyTiaFGtHZsVYRscSLq8gf3tCVUPHWIk8dMH_6IF3Bq3yoTIA3PyZWFO3G-IMCgL0V6rEuGwEhxnKG1E5GljK-z6BDO8wGy63l-62VgalEVRHkoD7WKK6RUbFg1P2xNx2boBlovML1CIZEtUCAGqjTp5pXlJ43Do"/>
+</div>
+<div class="flex justify-between font-mono text-[11px] text-gray-500 uppercase tracking-wider">
+<span>VTR_01.JPG</span>
+<span>2025</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="bg-gray-100 aspect-[4/3] overflow-hidden">
+<img alt="VTR_02" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFYJc77_zVAGcopTPGyJRrBQ21kMulz6gmGk0238u2UaAHbF-j1vwEoB7R0JxgKOybZwCxfnhdPUT9pZhObCOy4sfxmZR2g98KTmWKx9VjjyTuXPD42fLkKY9rpv8gzH_wMVBV5vyvjZSyWW2G26zjEOjdAWQoZWNTX-ZAPo9V1RYAPBSYAgtDNYzMhgC-uJN2F8hWCMcZB4pm1vt6DQB2t8eAMMz5QbBunmJtnN8gYkrC2xhhGhE5vPjGpL3H5dwkgYLzQiyl7uc"/>
+</div>
+<div class="flex justify-between font-mono text-[11px] text-gray-500 uppercase tracking-wider">
+<span>VTR_02.MP4</span>
+<span>2025</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="bg-gray-100 aspect-[4/3] overflow-hidden">
+<img alt="VTR_03" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeB2Bf5RnYfn-6mHPYt0lNq6sD5CZjGWJgRFqAurLGYTvcP4pojgBAFD5H2k5YOECG2Z8Oo0u1iaPzIZqJMpl5vqqa2VmhzyT8vZ3ignsJ-cV_rs_ETzjyho55k00aKmEac-5KSNFkjc37-cewcNso8k-fTaD_cG5ZpOUoVvgWb7gtdGIPIhMUZycOBZowiC8OP2PhkYgfGW0ShmqQtKZ1E07suZPOyTDClce9csWqz6t9hPu0l1KOSOC7oDw--cxJufuWBCYWJao"/>
+</div>
+<div class="flex justify-between font-mono text-[11px] text-gray-500 uppercase tracking-wider">
+<span>VTR_03.JPG</span>
+<span>2025</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="bg-gray-100 aspect-[4/3] overflow-hidden">
+<img alt="VTR_04" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJksuyFeTNEppuYR4-j2qqJZAzQwgPAmy2a5RNXRD0tgP7Ek_HDrWzkdTmYhR_GbYe09rgWxBC3R34Ckn1zUz7FQnd6kOjqiR6OPTKhq60ylHEwqbxn0koZDSqzCGtn1FreGJJd_VcBcmbJaroYm3y3-xIYeHpp2FQmmQ02udBbvnVRvrsmj4OKHh-4v17MpXISnmXmyoPib-Cr6QcTbDRPH8OjCDvwJIWpCGu-sPPIr9hvZ2ozuAlJ4EJWqCCpNWaCtuz7J2iAK0"/>
+</div>
+<div class="flex justify-between font-mono text-[11px] text-gray-500 uppercase tracking-wider">
+<span>VTR_04.MP4</span>
+<span>2025</span>
+</div>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="image-row mb-16">
+<div class="flex flex-col gap-2">
+<div class="bg-gray-100 aspect-[4/3] overflow-hidden">
+<img alt="NBL_01" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBswVSqpH4BapZPM4mLgKPExwWMAipWHdKw-Yajkzeb3T7tsmZjp4nCzm3hA8DGoBZytSnebTNXotjakWT9RbDwdbinmcXWPoN4i3y3duug-fx5-YO3J5SAjWNg5NZUNBRcLPmyCZboWpHq7_gJwde64WyrVRvZT_DXVe1Rkry4HL7FV-axKDeUH2iNV8mcLRkd2cRHQ6ChlcrFgZ79bjigauoppbZHV2GNx9PxZvtBCY2TRGgdHUr6W6CO56IXnJe0IFq7Bb6xbSY"/>
+</div>
+<div class="flex justify-between font-mono text-[11px] text-gray-500 uppercase tracking-wider">
+<span>NBL_01.JPG</span>
+<span>2024</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="bg-gray-100 aspect-[4/3] overflow-hidden">
+<img alt="NBL_02" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5MaOOk41YJIHqXLZAHMkW8XHO83Jh-VypsUEU0OErnF-FtQXytEbLmEZ8qlcYlpLTK_hzjNxhoT8HSrlOVvG9cs4Ym6nzoNLsy75q2fMZvel2RXeGUDGZQCl47seX6FfVcJWsTeVvS2CC-tMOOTFfmZVN3OcJ9wj2qPSlBHi8hB0jag7VzRoUeAGqozumJ5_D2caZvakaWpbLfdAvcvGVbEzQbnZ3oMW822fmRP-FV2ou90a5Vpsn28QhY9MkDs3GE3-JH_4tAuk"/>
+</div>
+<div class="flex justify-between font-mono text-[11px] text-gray-500 uppercase tracking-wider">
+<span>NBL_02.JPG</span>
+<span>2024</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="bg-gray-100 aspect-[4/3] overflow-hidden">
+<img alt="NBL_03" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPxsejeBmOpBM4EPpzJ4OcoCsXzy8F1ndDN9O8WGYMLXdmPCdYX9vFa4gPGoayxx-Y1n25G4TC75H72ww1RXE2kUSmL9HUoch8Nq7RMXh-FaZXHb2UF3nyCwWNdP6izqA5TyL9ebTtj08oF5jRVAQ0rq5nrBRblboW1lL4q6ztBcqMAsF_nNIxRvjSkVOvOZbKcRGZUfWhJx3Wr6rndsDSvmuf8eivJxPqVN3rcXrMbgv6hLJSWRMdpPxiP6TFuWx79RPpQkL8POc"/>
+</div>
+<div class="flex justify-between font-mono text-[11px] text-gray-500 uppercase tracking-wider">
+<span>NBL_03.MP4</span>
+<span>2024</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="bg-gray-100 aspect-[4/3] overflow-hidden">
+<img alt="NBL_04" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtxh3PtJCJRJzHubN-DhkkzbtNVlKF4H5KMGkCm7N-SXZAO7gm05NiH3VkwrDTEvVRiJLFri5WK-VSvuDbzc4YLZbfzJZiUYn57HbYGMxP_Cg4Vu347wcQRsREBqvD87j5wK4wJ1UZNdvhe2ExGg48codsRDwvGFd2ThI6xl8O8LwguNLJ4QIeq22rOsDAPWG7H_LAQIaXpGfX2EWDUBWyZ7vLwm88uuoc0Y3vYaxywOoixzuL4pI5R9JqpNik3BEmb_Sb1fHvfZA"/>
+</div>
+<div class="flex justify-between font-mono text-[11px] text-gray-500 uppercase tracking-wider">
+<span>NBL_04.JPG</span>
+<span>2024</span>
+</div>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="image-row mb-16">
+<div class="flex flex-col gap-2">
+<div class="bg-gray-100 aspect-[4/3] overflow-hidden">
+<img alt="CHR_01" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-FqX4TUGGRleKbHSG-EnV81jV_P2V9jYBfcpzGhyIj1XjyIZhfC57WLJdL4iJJydHdx9t7WmmIfftXN3_1Te8EjmKnKZfG0OlhOgqNCtKW2X6EKJWE0IsXw3iRblkQTj9jXfGNDDHf1vOX93MmlzD_8rvkXNG2SvMC0f7i5FA7_17uTljGGug2mCnJm5pjk5k061Ode673QYclosszzQAI41jIue82ua4Ds9a1LXJWsEZOxpJ1fFtDsRwjS5pJgeeK4SmU2ye2ac"/>
+</div>
+<div class="flex justify-between font-mono text-[11px] text-gray-500 uppercase tracking-wider">
+<span>CHR_01.MP4</span>
+<span>2023</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="bg-gray-100 aspect-[4/3] overflow-hidden">
+<img alt="CHR_02" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmpoQIuNg4SEuCACeGPvWrO70LaJ9eIZmknc13NZYTSbgXQ38MyA6w4MyFc8Rp2nZbAr9hQZR9_8b9LZCk8K27q0WfX7hPqkt3aGTRSMcvXtkALG3BvEASZOCO4ToNTvz9B0U6vwnDsg4OkSEy205jCCO88QnuowfAZmnPzYOk5234ULnTPuNzRZpl-qoU-XRCFVn1yt-MjRAFzCDVT87-hBwTkAqYwnNFQi9MYcUbOiHtinXt5Tcui5qNjZp_bLWrUnL9k55IIKA"/>
+</div>
+<div class="flex justify-between font-mono text-[11px] text-gray-500 uppercase tracking-wider">
+<span>CHR_02.JPG</span>
+<span>2023</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="bg-gray-100 aspect-[4/3] overflow-hidden">
+<img alt="CHR_03" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf9rLwI8Q2O5gln7mLjQOJht5ERhLXEOJXmvyP7ZVmHaWBXcQ9WqObxKjWrckGMVrvMkR17fVHGpVm5Crq_KKw0W__w1JG8uPc0WM3fWBjoLWJS6ef1JMbdTmhTCoNeWe53mD_PovEBN3-QV4JmdxMqKKVmBSxVymeRQwmc9JUBpAGWLmz3P2BDgdq0ZiNnIfERH0E0gQf2uDDegMQAoov3luXK4Sjz8YUH_YuKgCnsnLps-QEaa0e91hszPy-VepiEIPaBahTQPM"/>
+</div>
+<div class="flex justify-between font-mono text-[11px] text-gray-500 uppercase tracking-wider">
+<span>CHR_03.JPG</span>
+<span>2023</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="bg-gray-100 aspect-[4/3] overflow-hidden">
+<img alt="CHR_04" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkCELkKjPGg6RJUW-A_BJZlBS718C4Uhr_kTqjZcG8D8REizNMnBYHbWuL1XU2phtcb8bHQl5_1Q9TDY3baxG79PPUfJzCr_oUWf2CBzECcZtma6-nA1qeyXYJCaV6X1PVY8nfS_bsVH6ET7HWXvWIhgiYf6Y1c92AAPjqT6Low5JEjQ8SrIwD2enylp25HLrl1UCByQR5JSj4IY0kqf9F9H3TcN3Af-h64qDXOyzRDbDp1JENo8sYF3UOocMoC_eRYQ64h_bAD6Y"/>
+</div>
+<div class="flex justify-between font-mono text-[11px] text-gray-500 uppercase tracking-wider">
+<span>CHR_04.MP4</span>
+<span>2023</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Fixed Footer -->
+<footer class="fixed bottom-0 w-full bg-white z-50">
+<div class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between items-center px-6 py-6 gap-4">
+<p class="font-mono text-[11px] uppercase tracking-wider text-black">
+                © 2024 STUDIO. ALL RIGHTS RESERVED.
+            </p>
+<div class="flex gap-8 font-mono text-[11px] uppercase tracking-wider">
+<a class="text-black hover:text-gray-500 transition-all" href="#">Instagram</a>
+<a class="text-black hover:text-gray-500 transition-all" href="#">LinkedIn</a>
+<a class="text-black hover:text-gray-500 transition-all" href="#">Behance</a>
+</div>
+</div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('infinite-scroll-container');
+            const content = document.getElementById('scroll-content');
+            const originalSet = content.querySelector('.image-set');
+
+            // Clone content to create initial illusion of infinite loop
+            // We need enough content to fill the screen several times
+            for (let i = 0; i < 4; i++) {
+                content.appendChild(originalSet.cloneNode(true));
+            }
+
+            let isScrolling = false;
+            
+            function handleScroll() {
+                if (!isScrolling) {
+                    window.requestAnimationFrame(() => {
+                        const setHeight = originalSet.offsetHeight;
+                        const scrollTop = container.scrollTop;
+                        const containerHeight = container.offsetHeight;
+                        const scrollHeight = container.scrollHeight;
+
+                        // Scroll Down Loop
+                        // If we scrolled past the first set, jump back up by one set's height
+                        if (scrollTop > setHeight) {
+                            container.scrollTop = scrollTop - setHeight;
+                        } 
+                        // Scroll Up Loop
+                        // If we are at the very top, jump down by one set's height
+                        else if (scrollTop === 0) {
+                            container.scrollTop = setHeight;
+                        }
+
+                        isScrolling = false;
+                    });
+                    isScrolling = true;
+                }
+            }
+
+            container.addEventListener('scroll', handleScroll);
+            
+            // Set initial scroll position so we can scroll up immediately
+            setTimeout(() => {
+                container.scrollTop = originalSet.offsetHeight;
+            }, 100);
+            
+        });
+    </script>
+</body></html>

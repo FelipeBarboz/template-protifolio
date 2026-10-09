@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Studio Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#f9f9f9",
+                    "secondary-container": "#e1dfdf",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "tertiary": "#000000",
+                    "surface-container-high": "#e8e8e8",
+                    "on-secondary-container": "#636262",
+                    "inverse-primary": "#c6c6c6",
+                    "on-secondary-fixed-variant": "#464747",
+                    "outline": "#7e7576",
+                    "background": "#f9f9f9",
+                    "on-background": "#1a1c1c",
+                    "surface-container": "#eeeeee",
+                    "primary-container": "#1b1b1b",
+                    "secondary-fixed": "#e4e2e2",
+                    "primary-fixed-dim": "#c6c6c6",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "secondary": "#5e5e5e",
+                    "on-primary-container": "#848484",
+                    "primary-fixed": "#e2e2e2",
+                    "on-surface": "#1a1c1c",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-container-low": "#f3f3f4",
+                    "tertiary-container": "#1a1c1c",
+                    "surface-dim": "#dadada",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed": "#e2e2e2",
+                    "surface-variant": "#e2e2e2",
+                    "surface-tint": "#5e5e5e",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#4c4546",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "secondary-fixed-dim": "#c7c6c6",
+                    "inverse-surface": "#2f3131",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-primary-fixed": "#1b1b1b",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "on-tertiary-container": "#838484",
+                    "surface": "#f9f9f9",
+                    "on-error": "#ffffff",
+                    "primary": "#000000",
+                    "outline-variant": "#cfc4c5",
+                    "on-primary-fixed-variant": "#474747"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "row-padding": "4px",
+                    "edge-margin": "40px",
+                    "container-max": "1800px",
+                    "section-gap": "160px",
+                    "element-gap": "12px"
+            },
+            "fontFamily": {
+                    "headline-md": [
+                            "Inter"
+                    ],
+                    "body-sm": [
+                            "Inter"
+                    ],
+                    "display-xl": [
+                            "Inter"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "label-caps": [
+                            "Inter"
+                    ],
+                    "label-micro": [
+                            "Inter"
+                    ],
+                    "headline-lg": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "headline-md": [
+                            "20px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-sm": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "letterSpacing": "0",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-xl": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.04em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "letterSpacing": "0",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-caps": [
+                            "12px",
+                            {
+                                    "lineHeight": "1",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "label-micro": [
+                            "10px",
+                            {
+                                    "lineHeight": "1",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-lg": [
+                            "40px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .group:hover .hover-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col font-body-sm">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full pt-[10px] z-50 bg-white dark:bg-zinc-950 border-none transition-opacity duration-300">
+<div class="max-w-[1800px] mx-auto px-10 flex justify-between items-center h-16 mb-[160px]">
+<a class="text-xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50" href="#">STUDIO</a>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-inter text-xs tracking-[0.2em] uppercase font-medium antialiased text-zinc-900 dark:text-zinc-50 opacity-100 hover:opacity-100 transition-opacity duration-300 cursor-pointer" href="#">WORK</a>
+<a class="font-inter text-xs tracking-[0.2em] uppercase font-medium antialiased text-zinc-900 dark:text-zinc-50 opacity-60 hover:opacity-100 transition-opacity duration-300 cursor-pointer" href="#">ABOUT</a>
+<a class="font-inter text-xs tracking-[0.2em] uppercase font-medium antialiased text-zinc-900 dark:text-zinc-50 opacity-60 hover:opacity-100 transition-opacity duration-300 cursor-pointer" href="#">NEWS</a>
+<a class="font-inter text-xs tracking-[0.2em] uppercase font-medium antialiased text-zinc-900 dark:text-zinc-50 opacity-60 hover:opacity-100 transition-opacity duration-300 cursor-pointer" href="#">CAREERS</a>
+</div>
+<a class="font-inter text-xs tracking-[0.2em] uppercase font-medium antialiased text-zinc-900 dark:text-zinc-50 opacity-100 hover:opacity-100 transition-opacity duration-300 cursor-pointer flex items-center space-x-2" href="#">
+<span>CONTACT</span>
+</a>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow max-w-[1800px] mx-auto w-full px-10 pt-[236px]"> <!-- pt = 16px (h-16) + 160px (mb) + 60px extra to hit 160px visual gap from nav bottom -->
+<!-- Header -->
+<div class="mb-12 flex justify-between items-end border-b border-outline-variant pb-6">
+<h1 class="font-headline-lg text-headline-lg text-on-surface">All Projects (12)</h1>
+<div class="font-label-caps text-label-caps text-secondary flex items-center space-x-4">
+<span class="text-on-surface cursor-pointer">GRID</span>
+<span>|</span>
+<span class="hover:text-on-surface transition-colors cursor-pointer">LIST</span>
+</div>
+</div>
+<!-- 8-Column Bento Grid -->
+<div class="grid grid-cols-8 gap-element-gap auto-rows-[300px] mb-32">
+<!-- Large Feature (4 cols x 2 rows) -->
+<div class="col-span-4 row-span-2 relative group overflow-hidden bg-surface-container-low cursor-pointer">
+<img alt="Project Image" class="absolute inset-0 w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Monochrome high fashion studio portrait, strong shadows, minimal aesthetic, editorial styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJxcXfut2hdeADEpV4_31YFCtnfqx_yVD5-R7EHbrBxCGP2QOKZoHtgwmDegbaHD5KmrlofRx5L32Kr7Iu-cgFKCQ5Rcpsv44zU9n_VJeAVK3edELPoeLBOml7GaHJ-Ris1m4-2mkA9S7iHeHm2XMivz45iVsFNgylMy3G9EtgS_HoCY5oc9rSuBS2MQ5fhqEeMpedKfy1LKytFrmh62OujmD3biAmhiRt7tPHXeYtfZcnaR5k-FvlPR8WQd4Tjilnd3Z7qUUyA2s"/>
+<div class="absolute inset-0 bg-black/20 hover-overlay opacity-0 transition-opacity duration-300"></div>
+<div class="absolute bottom-6 left-6 right-6 flex justify-between items-end text-white z-10">
+<div>
+<h2 class="font-headline-md text-headline-md mb-2">AW24 Campaign</h2>
+<p class="font-label-caps text-label-caps opacity-80">FASHION / 2024</p>
+</div>
+</div>
+</div>
+<!-- Square Tile (2 cols x 1 row) -->
+<div class="col-span-2 row-span-1 relative group overflow-hidden bg-surface-container-low cursor-pointer">
+<img alt="Project Image" class="absolute inset-0 w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Abstract brutalist architecture detail, concrete textures, stark contrast, sharp angles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYeKr0RKld2NPNegGi3c66Ry8P3taXALdaQr5o_SMzDeZT9gW7zZwBZVsGa37nJI8evc08hkj8TvD0W1XE-yZc6adc2mcXcJUBUgxCQb8AI4lsByvbpe7bLzDiJGlnI7z7iIVTwIXNc6MvqWdZ8ma4cKz5G7Y__0HnNhqtUHRCj1yHqpTLz-eQ6mr-_jpYMXyAY_Qu94KfhtcZ5hFgei4KMXpxJPfEdJA3vqEQlRB-DnREcYmAEqV0cEcMpmXuvwohZKDeh6bJ-uA"/>
+<div class="absolute inset-0 bg-black/20 hover-overlay opacity-0 transition-opacity duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4 flex flex-col text-white z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<h2 class="font-body-lg text-body-lg mb-1">Concrete Void</h2>
+<p class="font-label-micro text-label-micro opacity-80">ARCHITECTURE</p>
+</div>
+</div>
+<!-- Vertical Feature (2 cols x 2 rows) -->
+<div class="col-span-2 row-span-2 relative group overflow-hidden bg-surface-container-low cursor-pointer">
+<img alt="Project Image" class="absolute inset-0 w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Sleek sports car detail, monochrome studio lighting, metallic reflections, minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjM9hkhKmPpAZCn702a2fHoWIYY0eg_JgqmedRnFlZZKcvyuGlY5YLb2d0uHwcIyzkZCU-JIK2bZu-5iEhnYQgcR4DPEh8D0vAcysLqBPypSsG0839iEuTQsr2Syd9bE2IGXKRmUg_pIjB7xxtnv_OPH4ORf2VYEWMTHUSxNpPiki987WZ_jJHiF2mnlcgv1N-kjeGx3yIAkCIpcTeZDMU49bWOAL66Vedv6sqX4X-g-joAz244HBT2vMR7lyOHQ85-1Exf0Qtx8E"/>
+<div class="absolute inset-0 bg-black/20 hover-overlay opacity-0 transition-opacity duration-300"></div>
+<div class="absolute bottom-6 left-6 right-6 flex flex-col text-white z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<h2 class="font-headline-md text-headline-md mb-2">Aero Dynamics</h2>
+<p class="font-label-caps text-label-caps opacity-80">AUTOMOTIVE / 2023</p>
+</div>
+</div>
+<!-- Wide Tile (2 cols x 1 row) -->
+<div class="col-span-2 row-span-1 relative group overflow-hidden bg-surface-container-low cursor-pointer">
+<img alt="Project Image" class="absolute inset-0 w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist fashion still life, fabric textures, clean lines, monochromatic grey tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjTRDAQoMYuUATEmrTmNS3P6VMcT9T-bLCaYCunz-7nYfmmDHHkO9-jiv9_34ywR1fsgy8qjy9NetVwyOSVqIDwZFqPI12yi8BcfIiy_-QtUL3g5gGdpuuXf6Vwq_v3xn9brJq71gc_jtRRGhpBO5zjyId_TQz8D5Uoiz5YSHz7EEGtIOAbDeHdBfcWrxTqDQPMXMhLuGnN3dQlKhuGUxPMOZQYME-EJoL7n8MBAy2u_ZByfCFfgvrQNIUPbwALuJAioORHmEt2ac"/>
+<div class="absolute inset-0 bg-black/20 hover-overlay opacity-0 transition-opacity duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4 flex flex-col text-white z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<h2 class="font-body-lg text-body-lg mb-1">Textural Study</h2>
+<p class="font-label-micro text-label-micro opacity-80">EDITORIAL</p>
+</div>
+</div>
+<!-- Panoramic (6 cols x 1 row) -->
+<div class="col-span-6 row-span-1 relative group overflow-hidden bg-surface-container-low cursor-pointer">
+<img alt="Project Image" class="absolute inset-0 w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Wide shot of modern glass building facade, minimalist corporate architecture, overcast sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtes0djeoawHbtSBm74KILoHBoduRdFP3iKOGEv1l9huadYiJpoRNEiNsmEfYF0tsxdD_ostC0UTogZ-lCI9nzDLQKs7vmtEL0TYzuP6N2tEb-hArjF4KmYpD6-GH7eOzE2Hr7VL9hTbzby4huMQCPJ5c7kG3imJsR4Wu2xfxloTt9wB4nUEwRYfvPH_LBeDe7vWMRgGtwEvtgJFGbJCNFlekHxtosmAqDR1UXxVvbPytkHzQ0euOiYs46nzeY_GrTNpYTqTL9eGg"/>
+<div class="absolute inset-0 bg-black/20 hover-overlay opacity-0 transition-opacity duration-300"></div>
+<div class="absolute bottom-6 left-6 right-6 flex justify-between items-end text-white z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div>
+<h2 class="font-headline-md text-headline-md mb-2">Glass Monolith</h2>
+<p class="font-label-caps text-label-caps opacity-80">ARCHITECTURE / 2024</p>
+</div>
+</div>
+</div>
+<!-- Square Tile (2 cols x 1 row) -->
+<div class="col-span-2 row-span-1 relative group overflow-hidden bg-surface-container-low cursor-pointer">
+<img alt="Project Image" class="absolute inset-0 w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Close up of luxury vehicle interior details, leather textures, monochrome contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA70zZKezg3JVqtLmmWIWUrsmbvAz-vv7UDX491gYh1Pfo1OOvEG4X9BRIm_S1pAAZQLxRQUdwmC8bDlsmLaSpIC-bEkpwSObRJKWFdiafPKDq-RbXT3B_eWXX9FJ6EM_khhJnBKlNUd2XADwmxbYlE95uY-jZ-BNOWlcaXxzdgYREYNcBBwlLG5WiWQ9oZEYwojmdYR9e6sCuSmn4uLWswkUww2tbL4AHnGMJ_jHMvg2xgByeLWwrGuutY214QPZ1F8XjTewu6y_s"/>
+<div class="absolute inset-0 bg-black/20 hover-overlay opacity-0 transition-opacity duration-300"></div>
+<div class="absolute bottom-4 left-4 right-4 flex flex-col text-white z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<h2 class="font-body-lg text-body-lg mb-1">Interior Detail</h2>
+<p class="font-label-micro text-label-micro opacity-80">AUTOMOTIVE</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full pb-[10px] mt-auto bg-transparent border-t border-zinc-100 dark:border-zinc-900">
+<div class="max-w-[1800px] mx-auto px-10 flex justify-between items-center py-8">
+<div class="font-inter text-[10px] tracking-[0.3em] uppercase leading-none text-zinc-400 dark:text-zinc-500">
+                ©2024 ALL RIGHTS RESERVED
+            </div>
+<div class="flex space-x-8">
+<a class="font-inter text-[10px] tracking-[0.3em] uppercase leading-none text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors duration-300" href="#">INSTAGRAM</a>
+<a class="font-inter text-[10px] tracking-[0.3em] uppercase leading-none text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors duration-300" href="#">LINKEDIN</a>
+<a class="font-inter text-[10px] tracking-[0.3em] uppercase leading-none text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors duration-300" href="#">TWITTER</a>
+</div>
+</div>
+</footer>
+</body></html>
